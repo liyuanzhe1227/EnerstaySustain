@@ -9,6 +9,7 @@ const translations = {
     "hero.eyebrow": "碳管理 · ESG · 标准稽核 · 科研合作",
     "hero.title": "面向企业与高校的低碳标准咨询和科研转化平台",
     "hero.copy": "Enerstay Sustainability 以标准方法、工程经验和论文训练能力，提供碳盘查、PCF/LCA、ESG 披露、净零路径、ISO 稽核、培训课程与科研合作服务。",
+    "hero.calendly": "预约15分钟",
     "hero.cta": "预约咨询",
     "hero.secondary": "查看服务",
     "stats.years": "连续项目经验",
@@ -17,9 +18,17 @@ const translations = {
     "intro.kicker": "关于 Enerstay",
     "intro.title": "以标准、工程和科研连接低碳转型",
     "intro.copy": "Enerstay Sustainability Pte. Ltd. 注册于新加坡，专注环境、安全与可持续发展管理解决方案。团队具备 ISO14064 Lead Auditor、GHG Manager、新加坡注册 Workplace Safety and Health Officer 等资质，并服务于制造业、半导体、新能源、建筑环境、高校科研与国际研学项目。",
-    "images.energy": "能源与建筑低碳",
-    "images.research": "科研与技术验证",
-    "images.training": "培训与能力建设",
+    "founder.kicker": "谁在负责交付",
+    "founder.title": "Prof. Dr. Yuanzhe Li 牵头交付",
+    "founder.copy": "Enerstay Sustainability 由 Prof. Dr. Yuanzhe Li 主理，连接新加坡碳监管、国际标准审核、半导体减排和科研训练经验。项目通常由本人参与范围界定、方法审核、关键交付物复核与客户沟通。",
+    "founder.point1": "NEA 碳定价法案相关核查与复杂行业经验",
+    "founder.point2": "EDB REG(E) 资源效率项目背书能力",
+    "founder.point3": "SCI、SSCI、ESCI、EI 论文合作与科研训练",
+    "founder.linkedin": "LinkedIn",
+    "founder.scholar": "Google Scholar",
+    "images.energy": "半导体洁净室与减排工程",
+    "images.research": "科研训练与项目答辩",
+    "images.training": "低碳能源与实施场景",
     "services.kicker": "咨询服务",
     "services.title": "面向企业落地与高校合作的咨询服务",
     "services.carbon.title": "碳盘查、PCF 与 LCA",
@@ -34,6 +43,19 @@ const translations = {
     "services.research.copy": "围绕绿色建筑、AI 能效、LCA/PCF、材料与环境工程开展选题设计、数据分析、论文训练与成果转化支持。",
     "services.training.title": "企业培训与国际研学",
     "services.training.copy": "ISO14064/14067、净零路径、ESG 顾问报告、半导体减碳、职业安全健康与定制科研课程。",
+    "pricing.kicker": "如何开始",
+    "pricing.title": "先用低门槛方式判断是否匹配",
+    "pricing.copy": "项目价格按企业规模、组织边界、数据质量、是否需要第三方认证或政府补助材料而定。正式报价前，Enerstay 会先完成需求判断和范围界定。",
+    "pricing.step1.label": "免费",
+    "pricing.step1.title": "15 分钟初步沟通",
+    "pricing.step1.copy": "确认行业、监管压力、目标时间线和是否适合进入下一步。",
+    "pricing.step2.label": "范围界定",
+    "pricing.step2.title": "3-5 个工作日形成项目建议",
+    "pricing.step2.copy": "输出工作范围、交付物、时间表、资料清单和报价依据。",
+    "pricing.step3.label": "定制报价",
+    "pricing.step3.title": "按边界、认证和补助路径报价",
+    "pricing.step3.copy": "适用于 ISO/GHG/PCF/LCA、REG(E)、NEA 碳税、ESG 保证准备和培训项目。",
+    "pricing.cta": "预约范围界定",
     "categories.kicker": "学术与项目方向",
     "categories.title": "学术和项目分类介绍",
     "categories.lca.title": "生命周期评价与低碳设计",
@@ -72,7 +94,7 @@ const translations = {
     "method.four.copy": "支持第三方认证、报告复核、成果固化与下一轮优化。",
     "training.kicker": "培训课程",
     "training.title": "培训课程与能力建设",
-    "training.copy": "参考现有课程材料，培训可按企业、高校、政府园区或科研团队定制。课程可中英双语授课，并可配套案例练习、数据表、报告模板与考核材料。",
+    "training.copy": "Enerstay Sustainability Academy 可基于自有教材、案例练习、数据表、报告模板与考核材料，为企业、高校、政府园区或科研团队定制中英双语课程；也可与合作机构共同设计证书、专项训练和研学项目。",
     "training.iso.title": "ISO14064 温室气体盘查与核查",
     "training.iso.copy": "覆盖 Part 1、Part 2、Part 3，包含组织盘查、项目减排、核查流程、抽样、重要性、证据链与审核发现。",
     "training.pcf.title": "ISO14067 产品碳足迹与 LCA",
@@ -85,6 +107,14 @@ const translations = {
     "training.esg.copy": "从议题识别、指标选取、数据治理、报告框架到保证准备，帮助企业团队形成内部执行能力。",
     "training.wsh.title": "环境安全与职业健康课程",
     "training.wsh.copy": "可覆盖 ISO45001、工作场所安全、受限空间作业、应急响应、HAZMAT 与安全管理体系。",
+    "training.toolkit.title": "Enerstay 碳数据与报告工具包",
+    "training.toolkit.copy": "使用 Enerstay 自有教材、计算表、访谈清单和报告模板，训练团队完成数据收集、边界判断、证据整理和管理层汇报。",
+    "training.iase.title": "IASE Level 1 & Level 2 合作课程",
+    "training.iase.copy": "面向可持续金融、ESG 基础能力和进阶顾问能力建设，可结合企业案例、测验和双语工作坊交付。",
+    "training.iso14001.title": "ISO14001:2026 转版与内审训练",
+    "training.iso14001.copy": "针对环境管理体系转版、合规义务、生命周期思维、风险机会、内审计划和整改闭环开展专项训练。",
+    "training.cpa.title": "NEA CPA 碳定价法案培训",
+    "training.cpa.copy": "围绕新加坡碳税、可报告设施、排放报告、核查准备、复杂行业数据链和管理层责任开展实务课程。",
     "cases.kicker": "项目经验",
     "cases.title": "成果实施与匿名化案例",
     "cases.copy": "团队曾为新加坡及东南亚大型制造企业与科研机构提供温室气体管理、碳税合规、资源效率项目、减碳方案、内外部稽核和科研成果转化支持。以下内容以能力和成果为主，客户名称与底稿细节不公开披露。",
@@ -94,9 +124,10 @@ const translations = {
     "cases.chip4": "新能源电池",
     "cases.chip5": "建筑环境",
     "cases.chip6": "废弃物管理",
+    "cases.metricYear": "2020至今",
     "cases.metric1": "ISO14064 与碳税相关咨询经验",
-    "cases.metric2": "减碳方案与扶持资金提案经验",
-    "cases.metric3": "新加坡半导体企业减碳方案支持",
+    "cases.metric2": "资源效率补助与减排项目背书路径",
+    "cases.metric3": "可在 NDA 下提供项目范围和交付证据",
     "cases.edb.title": "资源效率补助与减排项目背书",
     "cases.edb.copy": "围绕 REG(E) 相关资源效率项目，协助企业梳理项目边界、基准情景、节能减排逻辑、投资与回收期、MRV 证据包和政府申报材料。",
     "cases.nea.title": "碳税、复杂行业核查与半导体能力",
@@ -115,21 +146,26 @@ const translations = {
     "credentials.copy": "这里只展示与咨询服务直接相关的核心资质，不列出证书号码和授权截止日期。完整证明材料可在项目尽调或合作流程中提供。",
     "credentials.edb.title": "Independent Qualified Endorser for REG(E)",
     "credentials.edb.copy": "可支持资源效率与减排项目的技术评估、节能量与排放减量逻辑、政府补助申请材料和项目 MRV 证据包。",
+    "credentials.edb.meaning": "客户意义：可直接支持 REG(E) 补贴申请所需的技术背书和证据组织。",
     "credentials.nea.title": "Accredited Lead Verifier / Independent Reviewer / Semiconductor Complex Sector Expert",
     "credentials.nea.copy": "聚焦新加坡碳定价法案下的排放核查、独立复核和半导体复杂行业技术判断，支持高风险数据与边界问题处理。",
+    "credentials.nea.meaning": "客户意义：可把碳税合规、复杂排放源和审计证据链提前做成可核查状态。",
     "credentials.sra.title": "Standards, Research & Assurance Capability",
     "credentials.sra.copy": "以 ISO、PAS、ESG 保证和科研产出为基础，连接标准审计、工程实施和论文/项目成果转化。",
+    "credentials.sra.meaning": "客户意义：同一套数据可服务报告、认证、培训和科研成果转化。",
     "credentials.cat1": "碳、净零与保证",
     "credentials.cat2": "法规、管理体系与 ESG",
     "credentials.cat3": "安全、韧性与专业训练",
     "contact.kicker": "开始咨询",
     "contact.title": "把下一步减碳、合规或科研合作讲清楚",
     "contact.copy": "欢迎说明你的行业、所在地区、当前需求与目标时间线。Enerstay 可提供初步诊断、项目范围界定、培训方案或合作计划建议。",
+    "contact.whatsappLabel": "WhatsApp",
     "contact.phoneLabel": "电话",
     "contact.emailLabel": "邮箱",
     "form.name": "姓名 / Name",
     "form.email": "邮箱 / Email",
     "form.need": "咨询需求 / Requirement",
+    "form.placeholder": "请选择咨询需求",
     "form.option1": "碳核算与 ISO 稽核",
     "form.option2": "ESG 与环境安全管理",
     "form.option3": "节能减碳项目",
@@ -149,6 +185,7 @@ const translations = {
     "hero.eyebrow": "Carbon Management · ESG · Standards Audit · Research Collaboration",
     "hero.title": "Low-carbon standards and research translation",
     "hero.copy": "Enerstay Sustainability combines auditable methods, engineering experience and research training to deliver carbon inventory, PCF/LCA, ESG disclosure, net-zero pathways, ISO audit support, training programs and publication collaboration.",
+    "hero.calendly": "Book 15 minutes",
     "hero.cta": "Book a consultation",
     "hero.secondary": "Explore services",
     "stats.years": "Years of project continuity",
@@ -157,9 +194,17 @@ const translations = {
     "intro.kicker": "About Enerstay",
     "intro.title": "Connecting standards, engineering and research for low-carbon transition",
     "intro.copy": "Enerstay Sustainability Pte. Ltd. is registered in Singapore and focuses on environmental, safety and sustainability management solutions. The team holds credentials including ISO14064 Lead Auditor, GHG Manager and Singapore-registered Workplace Safety and Health Officer, serving manufacturing, semiconductor, new energy, built environment, university research and international study programs.",
-    "images.energy": "Energy and low-carbon buildings",
-    "images.research": "Research and technical validation",
-    "images.training": "Training and capability building",
+    "founder.kicker": "Who Leads The Work",
+    "founder.title": "Led by Prof. Dr. Yuanzhe Li",
+    "founder.copy": "Enerstay Sustainability is led by Prof. Dr. Yuanzhe Li, connecting Singapore carbon regulation, international standards auditing, semiconductor abatement and research training experience. Projects are typically scoped, method-reviewed and quality-checked directly by the principal consultant.",
+    "founder.point1": "NEA carbon-pricing verification and complex-sector experience",
+    "founder.point2": "EDB REG(E) resource-efficiency endorsement capability",
+    "founder.point3": "SCI, SSCI, ESCI and EI publication collaboration and research training",
+    "founder.linkedin": "LinkedIn",
+    "founder.scholar": "Google Scholar",
+    "images.energy": "Semiconductor cleanroom and abatement engineering",
+    "images.research": "Research training and project defense",
+    "images.training": "Low-carbon energy and implementation",
     "services.kicker": "Consulting Services",
     "services.title": "Consulting services for companies and universities",
     "services.carbon.title": "Carbon Inventory, PCF & LCA",
@@ -174,6 +219,19 @@ const translations = {
     "services.research.copy": "Topic design, data analysis, paper training and translation support around green buildings, AI energy efficiency, LCA/PCF, materials and environmental engineering.",
     "services.training.title": "Corporate Training & International Programs",
     "services.training.copy": "ISO14064/14067, net-zero pathways, ESG consultant reports, semiconductor decarbonization, occupational safety and customized research courses.",
+    "pricing.kicker": "How To Start",
+    "pricing.title": "Start with a low-friction fit check",
+    "pricing.copy": "Pricing depends on company scale, organizational boundaries, data readiness, third-party certification needs and whether government grant materials are involved. Enerstay first clarifies fit and scope before issuing a formal proposal.",
+    "pricing.step1.label": "Free",
+    "pricing.step1.title": "15-minute discovery call",
+    "pricing.step1.copy": "Confirm sector, regulatory pressure, target timeline and whether the work should move to scoping.",
+    "pricing.step2.label": "Scoping",
+    "pricing.step2.title": "Project brief in 3-5 business days",
+    "pricing.step2.copy": "Define scope, deliverables, timeline, document list and proposal basis.",
+    "pricing.step3.label": "Custom quote",
+    "pricing.step3.title": "Quoted by boundary, assurance and grant path",
+    "pricing.step3.copy": "Suitable for ISO/GHG/PCF/LCA, REG(E), NEA carbon tax, ESG assurance readiness and training projects.",
+    "pricing.cta": "Book a scoping call",
     "categories.kicker": "Academic & Project Tracks",
     "categories.title": "Academic and project focus areas",
     "categories.lca.title": "Life Cycle Assessment & Low-Carbon Design",
@@ -212,7 +270,7 @@ const translations = {
     "method.four.copy": "Support third-party certification, report review, outcome retention and the next optimization cycle.",
     "training.kicker": "Training Programs",
     "training.title": "Training programs and capability building",
-    "training.copy": "Based on existing course materials, programs can be customized for companies, universities, industrial parks and research teams. Courses can be bilingual and paired with exercises, data sheets, report templates and assessments.",
+    "training.copy": "Enerstay Sustainability Academy can customize bilingual programs for companies, universities, industrial parks and research teams using Enerstay's own training materials, case exercises, data sheets, report templates and assessment packs. Joint certificate, specialist and study programs can also be designed with partners.",
     "training.iso.title": "ISO14064 GHG Inventory & Verification",
     "training.iso.copy": "Covers Part 1, Part 2 and Part 3, including organizational inventory, project reductions, verification flow, sampling, materiality, evidence chains and findings.",
     "training.pcf.title": "ISO14067 Product Carbon Footprint & LCA",
@@ -225,6 +283,14 @@ const translations = {
     "training.esg.copy": "From topic identification, metrics and data governance to reporting frameworks and assurance preparation.",
     "training.wsh.title": "Environmental Safety & Occupational Health Courses",
     "training.wsh.copy": "Can cover ISO45001, workplace safety, confined-space operations, emergency response, HAZMAT and safety management systems.",
+    "training.toolkit.title": "Enerstay Carbon Data & Reporting Toolkit",
+    "training.toolkit.copy": "Uses Enerstay's own manuals, calculators, interview checklists and report templates to train teams on data collection, boundary decisions, evidence control and management reporting.",
+    "training.iase.title": "IASE Level 1 & Level 2 Partner Courses",
+    "training.iase.copy": "Designed for sustainable finance, ESG foundations and advanced advisory capability, with company cases, quizzes and bilingual workshops.",
+    "training.iso14001.title": "ISO14001:2026 Transition & Internal Audit Training",
+    "training.iso14001.copy": "Specialist training on EMS transition, compliance obligations, life-cycle thinking, risks and opportunities, internal audit planning and corrective-action closure.",
+    "training.cpa.title": "NEA CPA Carbon Pricing Act Training",
+    "training.cpa.copy": "Practical courses on Singapore carbon tax, reportable facilities, emissions reporting, verification readiness, complex-sector data chains and management accountability.",
     "cases.kicker": "Experience",
     "cases.title": "Implemented outcomes and anonymized cases",
     "cases.copy": "The team has supported major manufacturers and research organizations in Singapore and Southeast Asia with GHG management, carbon-tax compliance, resource-efficiency projects, abatement plans, internal and external audits, and research translation. The content below focuses on capabilities and outcomes while client names and working papers remain confidential.",
@@ -234,9 +300,10 @@ const translations = {
     "cases.chip4": "New Energy Batteries",
     "cases.chip5": "Built Environment",
     "cases.chip6": "Waste Management",
+    "cases.metricYear": "2020-present",
     "cases.metric1": "ISO14064 and carbon-tax consulting experience",
-    "cases.metric2": "Decarbonization plans and funding proposal experience",
-    "cases.metric3": "Singapore semiconductor companies supported",
+    "cases.metric2": "Resource-efficiency grant and abatement endorsement pathway",
+    "cases.metric3": "Project scope and delivery evidence available under NDA",
     "cases.edb.title": "Resource-efficiency grants and abatement project endorsement",
     "cases.edb.copy": "For REG(E)-related resource-efficiency projects, support includes project boundaries, baseline scenarios, energy and emissions logic, investment payback, MRV evidence packs and government submission materials.",
     "cases.nea.title": "Carbon tax, complex-sector verification and semiconductor capability",
@@ -255,21 +322,26 @@ const translations = {
     "credentials.copy": "This section highlights core qualifications directly related to consulting services. Certificate numbers and authorization expiry dates are not listed publicly; full supporting evidence can be provided during project due diligence or collaboration review.",
     "credentials.edb.title": "Independent Qualified Endorser for REG(E)",
     "credentials.edb.copy": "Supports technical assessment for resource-efficiency and abatement projects, savings and emissions-reduction logic, government grant submissions and MRV evidence packages.",
+    "credentials.edb.meaning": "Client value: supports the technical endorsement and evidence pack required for REG(E) grant applications.",
     "credentials.nea.title": "Accredited Lead Verifier / Independent Reviewer / Semiconductor Complex Sector Expert",
     "credentials.nea.copy": "Focused on emissions verification, independent review and semiconductor complex-sector judgement under Singapore's carbon-pricing framework, especially for high-risk data and boundary issues.",
+    "credentials.nea.meaning": "Client value: carbon-tax compliance, complex emission sources and audit evidence can be prepared before verification pressure peaks.",
     "credentials.sra.title": "Standards, Research & Assurance Capability",
     "credentials.sra.copy": "Connects standards auditing, engineering implementation and publication or project translation through ISO, PAS, ESG assurance and research outputs.",
+    "credentials.sra.meaning": "Client value: one data foundation can support reporting, certification, training and research translation.",
     "credentials.cat1": "Carbon, Net Zero & Assurance",
     "credentials.cat2": "Regulatory, Management Systems & ESG",
     "credentials.cat3": "Safety, Resilience & Professional Training",
     "contact.kicker": "Start A Consultation",
     "contact.title": "Clarify your next step in decarbonization, compliance or research collaboration",
     "contact.copy": "Share your industry, location, current requirement and target timeline. Enerstay can provide initial diagnosis, project scoping, training proposals or collaboration planning.",
+    "contact.whatsappLabel": "WhatsApp",
     "contact.phoneLabel": "Phone",
     "contact.emailLabel": "Email",
     "form.name": "Name",
     "form.email": "Email",
     "form.need": "Requirement",
+    "form.placeholder": "Select a requirement",
     "form.option1": "Carbon accounting and ISO audit",
     "form.option2": "ESG, environment and safety management",
     "form.option3": "Energy and emission reduction project",
@@ -284,6 +356,10 @@ const translations = {
 let activeLanguage = "zh";
 const toggle = document.querySelector("[data-lang-toggle]");
 const nodes = document.querySelectorAll("[data-i18n]");
+const consultationForm = document.querySelector("[data-consultation-form]");
+const siteHeader = document.querySelector(".site-header");
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const navLinks = document.querySelectorAll(".nav a");
 
 function renderLanguage(language) {
   activeLanguage = language;
@@ -300,6 +376,42 @@ function renderLanguage(language) {
 
 toggle.addEventListener("click", () => {
   renderLanguage(activeLanguage === "zh" ? "en" : "zh");
+});
+
+menuToggle?.addEventListener("click", () => {
+  const isOpen = siteHeader?.classList.toggle("nav-open") || false;
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    siteHeader?.classList.remove("nav-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
+});
+
+consultationForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const submitButton = consultationForm.querySelector(".form-button");
+  submitButton?.setAttribute("aria-busy", "true");
+  if (submitButton) {
+    submitButton.textContent = activeLanguage === "zh" ? submitButton.dataset.busyZh : submitButton.dataset.busyEn;
+  }
+  const formData = new FormData(consultationForm);
+  const message = [
+    "Hello Enerstay, I would like to start a consultation.",
+    `Name: ${formData.get("name") || ""}`,
+    `Email: ${formData.get("email") || ""}`,
+    `Requirement: ${formData.get("requirement") || ""}`,
+    `Project background: ${formData.get("message") || ""}`
+  ].join("\n");
+  window.open(`https://wa.me/6586267896?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+  window.setTimeout(() => {
+    submitButton?.setAttribute("aria-busy", "false");
+    if (submitButton) {
+      submitButton.textContent = activeLanguage === "zh" ? submitButton.dataset.defaultZh : submitButton.dataset.defaultEn;
+    }
+  }, 900);
 });
 
 renderLanguage(localStorage.getItem("enerstay-language") || "zh");
