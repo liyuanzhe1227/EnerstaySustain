@@ -19,7 +19,7 @@ const translations = {
     "intro.title": "以标准、工程和科研连接低碳转型",
     "intro.copy": "Enerstay Sustainability Pte. Ltd. 注册于新加坡，专注环境、安全与可持续发展管理解决方案。团队具备 ISO14064 Lead Auditor、GHG Manager、新加坡注册 Workplace Safety and Health Officer 等资质，并服务于制造业、半导体、新能源、建筑环境、高校科研与国际研学项目。",
     "founder.kicker": "谁在负责交付",
-    "founder.title": "Prof. Dr. Yuanzhe Li 牵头交付",
+    "founder.title": "Prof. Dr. Yuanzhe Li 主理",
     "founder.copy": "Enerstay Sustainability 由 Prof. Dr. Yuanzhe Li 主理，连接新加坡碳监管、国际标准审核、半导体减排和科研训练经验。项目通常由本人参与范围界定、方法审核、关键交付物复核与客户沟通。",
     "founder.point1": "NEA 碳定价法案相关核查与复杂行业经验",
     "founder.point2": "EDB REG(E) 资源效率项目背书能力",
