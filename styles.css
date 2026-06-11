@@ -50,9 +50,20 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
-.brand img {
-  width: clamp(190px, 22vw, 268px);
+.brand-logo {
+  display: block;
+  width: clamp(210px, 20vw, 300px);
+  aspect-ratio: 1120 / 340;
+  height: auto;
+  max-height: 72px;
+  object-fit: contain;
+  object-position: left center;
   background: #ffffff;
+}
+
+.footer-brand .brand-logo {
+  width: clamp(190px, 18vw, 250px);
+  max-height: 62px;
 }
 
 .menu-toggle {
@@ -1058,8 +1069,9 @@ textarea {
     padding-bottom: 10px;
   }
 
-  .brand img {
-    width: 178px;
+  .brand-logo {
+    width: clamp(170px, 52vw, 230px);
+    max-height: 56px;
   }
 
   .hero {
