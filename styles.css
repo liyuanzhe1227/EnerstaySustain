@@ -764,6 +764,134 @@ h3 {
   gap: 14px;
 }
 
+.training-system {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: 14px;
+  align-items: stretch;
+  margin-bottom: 14px;
+}
+
+.training-hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.training-hero-card .section-kicker {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.training-hero-card h3 {
+  max-width: 520px;
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.08;
+}
+
+.training-hero-card p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.training-contacts {
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.training-contacts a {
+  display: grid;
+  gap: 2px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.training-contacts span {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.training-contacts strong {
+  font-size: 18px;
+}
+
+.training-contacts em {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-style: normal;
+  overflow-wrap: anywhere;
+}
+
+.training-featured {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.training-featured article,
+.course-pathways article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.training-featured article {
+  min-height: 290px;
+}
+
+.training-featured span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-bottom: 16px;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.training-featured p,
+.course-pathways p {
+  color: var(--muted);
+}
+
+.training-featured ul {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.training-featured li {
+  padding-left: 14px;
+  border-left: 3px solid var(--ink);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.course-pathways {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 14px 0;
+}
+
 .training-list article {
   display: grid;
   grid-template-columns: 54px 1fr;
@@ -933,6 +1061,7 @@ h3 {
 
 .contact-direct strong {
   font-size: 20px;
+  overflow-wrap: anywhere;
 }
 
 .contact-form {
@@ -1038,6 +1167,7 @@ textarea {
   .case-layout,
   .case-detail-grid,
   .research,
+  .training-system,
   .credential-highlights,
   .contact {
     grid-template-columns: 1fr;
@@ -1046,6 +1176,7 @@ textarea {
   .track-grid,
   .standard-grid,
   .image-strip,
+  .training-featured,
   .founder-points,
   .pricing-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1116,6 +1247,8 @@ textarea {
   .track-grid,
   .standard-grid,
   .training-list,
+  .training-featured,
+  .course-pathways,
   .image-strip,
   .founder-points,
   .pricing-grid,
@@ -1154,6 +1287,9 @@ textarea {
   .method-panel,
   .service-card,
   .founder-card,
+  .training-hero-card,
+  .training-featured article,
+  .course-pathways article,
   .pricing-grid article,
   .case-detail-grid article,
   .credential-highlights article,
