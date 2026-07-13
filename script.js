@@ -425,7 +425,140 @@ const translations = {
   }
 };
 
-let activeLanguage = "zh";
+Object.assign(translations.zh, {
+  "nav.credentials": "资质",
+  "nav.team": "团队",
+  "hero.eyebrow": "半导体 · 工业设施 · 新加坡碳税 · GHG核查/验证",
+  "hero.title": "工业碳保证与合规审核",
+  "hero.copy": "面向半导体与工业企业，提供 GHG 核查/验证、ISO 管理体系二方/三方审核、NEA CPA 碳税准备、CBAM/PCF 数据训练和可核查 MRV 证据链建设。",
+  "hero.meeting": "预约会议",
+  "hero.secondary": "查看资质",
+  "stats.years": "工业项目经验积累",
+  "stats.roles": "核心监管级资质",
+  "credentials.title": "核心资质与监管授权",
+  "credentials.copy": "核心监管授权和专业资质前置展示。正式 verification、validation、assurance 或二方/三方审核以授权范围、独立性要求、客户委托、保密协议和适用认可要求为边界。",
+  "credentials.nea.copy": "新加坡碳定价法案下的排放核查、独立复核和半导体复杂行业技术判断。",
+  "credentials.edb.copy": "支持资源效率与减排项目的技术评估、节能量/减排量逻辑和 MRV 证据包。",
+  "credentials.bsi.title": "ISO 14064 Lead Verifier / ISAE 3000 Qualified Assurer",
+  "credentials.bsi.copy": "覆盖 GHG verification / validation、净零路径、碳中和声明和可持续披露保证准备。",
+  "services.kicker": "Core Capabilities",
+  "services.title": "服务能力",
+  "services.carbon.copy": "组织 GHG、项目减排、产品碳足迹和披露保证准备，重点是边界、证据、抽样和结论边界。",
+  "services.material.title": "管理体系二方/三方审核",
+  "services.material.copy": "针对环境、能源、职业健康安全和供应链管理体系开展二方/三方审核、供应商审核和发现跟踪。",
+  "services.energy.copy": "把活动数据、排放因子、设备记录、供应商资料和复核轨迹组织成 verification-ready evidence pack。",
+  "team.kicker": "Team & Role Separation",
+  "team.title": "团队与角色分离",
+  "team.copy": "Enerstay 将主理、培训、审核项目协调和外部技术复核分开管理。涉及正式保证、核查、验证或二方/三方审核时，先进行利益冲突和角色边界判断。",
+  "team.yuanzhe": "负责技术方向、复杂行业判断、监管授权边界和关键交付物复核。",
+  "team.zeean": "负责企业培训、合作证书课程、学员沟通和 Enerstay Academy 课程交付。",
+  "team.jiahui": "负责审核项目排期、文件协调、客户沟通和项目过程质量跟踪。",
+  "team.partner.title": "认证机构与 IMS 合作网络",
+  "team.partner.copy": "涉及中国市场 IMS 三体系、供应商审核和认证机构资源时，可通过保密合作网络进行技术协同；具体合作方信息按项目保密要求处理。",
+  "cases.title": "匿名化案例与项目经验",
+  "cases.copy": "客户名称、底稿和项目结论不公开；以下仅保留行业、规模和能力边界，用于说明典型场景。",
+  "cases.edb.m1": "排放源/资料类型",
+  "cases.edb.m2": "工业项目经验",
+  "cases.nea.m1": "碳定价法案路径",
+  "cases.nea.m2": "半导体复杂行业",
+  "cases.sra.m1": "论文/合作成果",
+  "cases.sra.m2": "课程与白皮书",
+  "cases.edb.copy": "高 GWP 气体、尾气处理设备、活动数据、设备记录、异常数据和证据链控制。",
+  "cases.nea.copy": "排放报告、verification readiness、复杂数据链、内部 QA/QC、管理层责任和独立复核资料准备。",
+  "cases.sra.title": "高校平台与科研知识产品",
+  "cases.sra.copy": "参考中国矿业大学碳中和研究院等高校公开方向，形成课程、论文训练、白皮书和标准化知识产品。",
+  "standards.title": "标准与框架",
+  "standards.copy": "把反复出现的标准统一放在一张表里。正式项目以授权范围、独立性要求、客户委托、保密协议和适用认可要求为边界。",
+  "standards.iso14064": "组织 GHG、项目减排、validation / verification",
+  "standards.iso14067": "产品碳足迹、LCA、边界、分配和 critical review",
+  "standards.iso14068": "碳中和声明、净零路径、减排优先和保证准备",
+  "standards.systems": "环境、职业健康安全、能源管理体系审核",
+  "standards.assurance": "可持续披露、环境数据控制、报告保证准备",
+  "standards.iwa": "欧盟出口链条、净零指南、气候行动实施训练",
+  "training.title": "培训课程",
+  "training.copy": "Enerstay Sustainability Academy 基于自有教材、案例练习、数据表、报告模板与考核材料，提供企业内训、合作证书课程、审核员能力课程和海外 ESG 研学项目；课程不等同于正式核查或保证结论。",
+  "training.group1": "标准核查类",
+  "training.group2": "披露与 ESG 类",
+  "training.group3": "行业实战与合作课程",
+  "research.title": "科研与知识产品",
+  "research.copy": "科研合作参考中国矿业大学相关研究方向，并持续分享 Enerstay Sustainability 支持的科研、课程和行业知识产品；欢迎通过 LinkedIn 订阅追踪最新动态。",
+  "research.cumt": "中国矿业大学研究方向",
+  "research.linkedin": "Enerstay LinkedIn",
+  "contact.title": "联系与预约",
+  "contact.copy": "建议先通过邮件或预约会议说明行业、地区、标准、目标用途和时间线。Enerstay 会先判断角色边界、独立性要求和适用路径。",
+  "contact.meeting": "预约会议",
+  "contact.emailCta": "邮件联系",
+  "form.submit": "发送邮件"
+});
+
+Object.assign(translations.en, {
+  "nav.credentials": "Credentials",
+  "nav.team": "Team",
+  "hero.eyebrow": "Semiconductors · Industrial Facilities · Singapore Carbon Tax · GHG Verification",
+  "hero.title": "Industrial carbon assurance and compliance audits",
+  "hero.copy": "For semiconductor and industrial companies: GHG verification / validation, ISO second/third-party management-system audits, NEA CPA readiness, CBAM/PCF data training and verification-ready MRV evidence systems.",
+  "hero.meeting": "Book a meeting",
+  "hero.secondary": "View credentials",
+  "stats.years": "Industrial project experience",
+  "stats.roles": "Core regulatory-level qualifications",
+  "credentials.title": "Core qualifications and regulatory authorizations",
+  "credentials.copy": "Core regulatory authorizations and professional qualifications are shown upfront. Formal verification, validation, assurance or second/third-party audit work is bounded by authorization scope, independence requirements, client mandate, NDAs and applicable accreditation requirements.",
+  "credentials.nea.copy": "Emissions verification, independent review and semiconductor complex-sector judgement under Singapore's Carbon Pricing Act.",
+  "credentials.edb.copy": "Technical assessment, savings/emissions-reduction logic and MRV evidence packs for resource-efficiency and abatement projects.",
+  "credentials.bsi.title": "ISO 14064 Lead Verifier / ISAE 3000 Qualified Assurer",
+  "credentials.bsi.copy": "GHG verification / validation, net-zero pathways, carbon-neutrality claims and sustainability-disclosure assurance readiness.",
+  "services.kicker": "Core Capabilities",
+  "services.title": "Service capabilities",
+  "services.carbon.copy": "Organizational GHG, project reductions, product carbon footprint and disclosure-assurance readiness, focused on boundaries, evidence, sampling and conclusion limits.",
+  "services.material.title": "Second/third-party management-system audits",
+  "services.material.copy": "Second/third-party audits, supplier audits and findings follow-up for environmental, energy, safety and supply-chain management systems.",
+  "services.energy.copy": "Organize activity data, emission factors, equipment records, supplier information and review trails into verification-ready evidence packs.",
+  "team.kicker": "Team & Role Separation",
+  "team.title": "Team and role separation",
+  "team.copy": "Enerstay separates principal technical direction, training delivery, audit project coordination and external technical review. Formal assurance, verification, validation and second/third-party audit work starts with conflict-of-interest and role-boundary checks.",
+  "team.yuanzhe": "Leads technical direction, complex-sector judgement, regulatory authorization boundaries and key deliverable review.",
+  "team.zeean": "Leads corporate training, partner certificate courses, learner communication and Enerstay Academy delivery.",
+  "team.jiahui": "Leads audit project scheduling, document coordination, client communication and process quality tracking.",
+  "team.partner.title": "Certification-body and IMS collaboration network",
+  "team.partner.copy": "For China-market IMS, supplier audits and certification-body resources, technical collaboration can be arranged through a confidential partner network; specific partner information is handled under project confidentiality requirements.",
+  "cases.title": "Anonymized cases and project experience",
+  "cases.copy": "Client names, working papers and project conclusions are not disclosed. The cards retain only sector, scale and capability boundaries to show typical scenarios.",
+  "cases.edb.m1": "emission-source / evidence types",
+  "cases.edb.m2": "industrial project experience",
+  "cases.nea.m1": "Carbon Pricing Act pathway",
+  "cases.nea.m2": "semiconductor complex sector",
+  "cases.sra.m1": "papers / collaboration outputs",
+  "cases.sra.m2": "courses and white papers",
+  "cases.edb.copy": "High-GWP gases, abatement equipment, activity data, equipment records, abnormal data and evidence-chain control.",
+  "cases.nea.copy": "Emissions reporting, verification readiness, complex data chains, internal QA/QC, management accountability and independent-review documentation.",
+  "cases.sra.title": "University platforms and research knowledge products",
+  "cases.sra.copy": "References public directions from platforms such as the CUMT Carbon Neutrality Institute and converts them into courses, paper training, white papers and standards knowledge products.",
+  "standards.title": "Standards and frameworks",
+  "standards.copy": "Repeated standards are consolidated into one table. Formal engagements are bounded by authorization scope, independence requirements, client mandate, NDAs and applicable accreditation requirements.",
+  "standards.iso14064": "Organizational GHG, project reductions, validation / verification",
+  "standards.iso14067": "Product carbon footprint, LCA, boundaries, allocation and critical review",
+  "standards.iso14068": "Carbon-neutrality claims, net-zero pathways, reduction-first logic and assurance readiness",
+  "standards.systems": "Environmental, occupational health and safety, and energy management-system audits",
+  "standards.assurance": "Sustainability disclosure, environmental data controls and report-assurance readiness",
+  "standards.iwa": "EU export chains, net-zero guidance and climate-action training",
+  "training.title": "Training programs",
+  "training.copy": "Enerstay Sustainability Academy uses in-house materials, case exercises, data sheets, report templates and assessment packs for corporate training, partner certificate courses, auditor capability programs and overseas ESG study programs. Courses are not formal verification or assurance conclusions.",
+  "training.group1": "Standards and verification courses",
+  "training.group2": "Disclosure and ESG courses",
+  "training.group3": "Industry practice and partner courses",
+  "research.title": "Research and knowledge products",
+  "research.copy": "Academic collaboration references relevant CUMT research directions and shares research, training and industry knowledge products supported by Enerstay Sustainability. Follow Enerstay on LinkedIn for updates.",
+  "research.cumt": "CUMT research direction",
+  "research.linkedin": "Enerstay LinkedIn",
+  "contact.title": "Contact and meeting request",
+  "contact.copy": "Please share sector, location, applicable standard, intended use and timeline by email or meeting request. Enerstay will first check role boundaries, independence requirements and the suitable pathway.",
+  "contact.meeting": "Book a meeting",
+  "contact.emailCta": "Email enquiry",
+  "form.submit": "Prepare email"
+});
+
+let activeLanguage = "en";
+const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
 const nodes = document.querySelectorAll("[data-i18n]");
 const engagementForm = document.querySelector("[data-engagement-form]");
@@ -443,7 +576,7 @@ function renderLanguage(language) {
     }
   });
   toggle.textContent = language === "zh" ? "EN" : "中";
-  localStorage.setItem("enerstay-language", language);
+  localStorage.setItem(languageStorageKey, language);
 }
 
 toggle.addEventListener("click", () => {
@@ -471,13 +604,13 @@ engagementForm?.addEventListener("submit", (event) => {
   }
   const formData = new FormData(engagementForm);
   const message = [
-    "Hello Enerstay, I would like to discuss an audit, verification, training or research collaboration.",
+    "Hello Enerstay, I would like to discuss second/third-party audit, GHG verification / validation, training or research collaboration.",
     `Name: ${formData.get("name") || ""}`,
     `Email: ${formData.get("email") || ""}`,
     `Requirement: ${formData.get("requirement") || ""}`,
     `Project background: ${formData.get("message") || ""}`
   ].join("\n");
-  window.open(`https://wa.me/6586267896?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+  window.location.href = `mailto:enquires@enerstaysustainability.com?subject=${encodeURIComponent("Enerstay engagement request")}&body=${encodeURIComponent(message)}`;
   window.setTimeout(() => {
     submitButton?.setAttribute("aria-busy", "false");
     if (submitButton) {
@@ -486,4 +619,4 @@ engagementForm?.addEventListener("submit", (event) => {
   }, 900);
 });
 
-renderLanguage(localStorage.getItem("enerstay-language") || "zh");
+renderLanguage(localStorage.getItem(languageStorageKey) || "en");
