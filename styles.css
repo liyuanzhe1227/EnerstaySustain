@@ -1372,6 +1372,186 @@ textarea {
   margin: 24px 0;
 }
 
+.training-actions {
+  margin-top: 24px;
+}
+
+.catalog-hero {
+  position: relative;
+  min-height: calc(92vh - 76px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #111;
+}
+
+.catalog-hero-media {
+  position: absolute;
+  inset: 0;
+}
+
+.catalog-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(0.15) contrast(1.06);
+  opacity: 0.72;
+}
+
+.catalog-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8, 18, 16, 0.94) 0%, rgba(8, 18, 16, 0.78) 48%, rgba(8, 18, 16, 0.2) 100%),
+    linear-gradient(0deg, rgba(8, 18, 16, 0.78), rgba(8, 18, 16, 0.05) 58%);
+}
+
+.catalog-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 36px));
+  margin: 0 clamp(18px, 6vw, 76px) clamp(34px, 8vh, 84px);
+  color: #fff;
+}
+
+.catalog-hero .eyebrow {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.academy-system {
+  border-bottom: 1px solid var(--line);
+}
+
+.academy-feature-grid,
+.course-card-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.academy-feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.academy-feature-grid article {
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.academy-feature-grid span {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.academy-feature-grid p,
+.course-card p,
+.course-card small,
+.catalog-contact p {
+  color: var(--muted);
+}
+
+.course-catalog {
+  border-bottom: 1px solid var(--line);
+}
+
+.course-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.course-card-grid.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.course-card {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 8px 28px rgba(23, 33, 31, 0.05);
+}
+
+.course-card.featured-course {
+  border-color: #111;
+  box-shadow: var(--shadow);
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-meta span,
+.course-meta strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.course-meta strong {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.course-card h3 {
+  min-height: 78px;
+}
+
+.course-card .course-tags {
+  margin-top: auto;
+  padding: 18px 0 12px;
+}
+
+.course-card small {
+  display: block;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.catalog-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: start;
+}
+
+.catalog-contact {
+  display: grid;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.catalog-contact p {
+  margin: 10px 0 0;
+}
+
 @media (max-width: 920px) {
   .site-header {
     grid-template-columns: 1fr auto auto;
@@ -1421,6 +1601,10 @@ textarea {
 	  .split-head,
 	  .credential-highlights,
 	  .team-grid,
+	  .academy-feature-grid,
+	  .course-card-grid,
+	  .course-card-grid.two-up,
+	  .catalog-cta,
 	  .contact {
 	    grid-template-columns: 1fr;
 	  }
@@ -1492,6 +1676,10 @@ textarea {
     min-height: 760px;
   }
 
+  .catalog-hero {
+    min-height: 760px;
+  }
+
   .hero-content {
     margin-bottom: 28px;
   }
@@ -1525,7 +1713,9 @@ textarea {
   .image-strip,
   .founder-points,
   .pricing-grid,
-  .case-detail-grid,
+	  .case-detail-grid,
+	  .academy-feature-grid,
+	  .course-card-grid,
 	  .credential-highlights,
 	  .priority-highlights,
 	  .credential-list {
@@ -1581,6 +1771,14 @@ textarea {
 
 	  .case-metrics {
 	    grid-template-columns: auto 1fr;
+	  }
+
+	  .course-card {
+	    min-height: auto;
+	  }
+
+	  .course-card h3 {
+	    min-height: auto;
 	  }
 
 	  .training-accordion summary {
