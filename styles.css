@@ -769,6 +769,125 @@ h3 {
   margin-top: 28px;
 }
 
+.sdg-research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.sdg-research-grid article {
+  min-height: 174px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.sdg-research-grid span,
+.paper-meta span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-bottom: 14px;
+  padding: 3px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfaf7;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.sdg-research-grid h3 {
+  margin-bottom: 8px;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.18;
+}
+
+.sdg-research-grid p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.research-catalog-hero .catalog-hero-content {
+  max-width: 860px;
+}
+
+.research-catalog {
+  display: grid;
+  gap: 24px;
+}
+
+.research-paper-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.research-paper-grid:has(.research-paper-card:nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.research-paper-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 10px 30px rgba(12, 12, 12, 0.04);
+}
+
+.research-paper-card.featured-course {
+  background: #111;
+  color: #fff;
+}
+
+.research-paper-card.featured-course p,
+.research-paper-card.featured-course .paper-meta strong {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.paper-meta span {
+  margin-bottom: 0;
+}
+
+.paper-meta strong {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.research-paper-card h3 {
+  margin-bottom: 14px;
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 1.18;
+}
+
+.research-paper-card p {
+  color: var(--muted);
+}
+
+.research-paper-card a {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 18px;
+  border-bottom: 2px solid currentColor;
+  font-weight: 900;
+}
+
 .training-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1604,6 +1723,7 @@ textarea {
 	  .academy-feature-grid,
 	  .course-card-grid,
 	  .course-card-grid.two-up,
+	  .research-paper-grid,
 	  .catalog-cta,
 	  .contact {
 	    grid-template-columns: 1fr;
@@ -1617,6 +1737,10 @@ textarea {
 	  .founder-points,
 	  .pricing-grid {
 	    grid-template-columns: repeat(2, minmax(0, 1fr));
+	  }
+
+	  .sdg-research-grid {
+	    grid-template-columns: 1fr;
 	  }
 
 	  .priority-highlights {
