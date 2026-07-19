@@ -836,8 +836,7 @@ Object.assign(translations.en, {
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
-const langCurrent = document.querySelector("[data-lang-current]");
-const langNext = document.querySelector("[data-lang-next]");
+const langOptions = document.querySelectorAll("[data-lang-option]");
 const nodes = document.querySelectorAll("[data-i18n]");
 const engagementForm = document.querySelector("[data-engagement-form]");
 const siteHeader = document.querySelector(".site-header");
@@ -853,9 +852,10 @@ function renderLanguage(language) {
       node.textContent = translations[language][key];
     }
   });
-  if (langCurrent && langNext) {
-    langCurrent.textContent = language === "zh" ? "中" : "EN";
-    langNext.textContent = language === "zh" ? "EN" : "中";
+  if (langOptions.length) {
+    langOptions.forEach((option) => {
+      option.dataset.active = String(option.dataset.langOption === language);
+    });
   } else if (toggle) {
     toggle.textContent = language === "zh" ? "EN" : "中";
   }
