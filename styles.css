@@ -731,6 +731,63 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.training-overview {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 16px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.training-visual {
+  margin: 0;
+}
+
+.training-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.training-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.training-proof-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.training-proof-grid span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.training-proof-grid strong {
+  margin: 12px 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  line-height: 1.08;
+}
+
+.training-proof-grid p {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .sdg-panel {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -784,7 +841,6 @@ h3 {
   background: var(--paper);
 }
 
-.sdg-research-grid span,
 .paper-meta span {
   display: inline-flex;
   align-items: center;
@@ -799,6 +855,35 @@ h3 {
   font-weight: 900;
 }
 
+.sdg-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.sdg-icons span {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.sdg-icons .sdg-2 { background: #dda63a; color: #111; }
+.sdg-icons .sdg-4 { background: #c5192d; }
+.sdg-icons .sdg-7 { background: #fbc412; color: #111; }
+.sdg-icons .sdg-8 { background: #a21942; }
+.sdg-icons .sdg-9 { background: #fd6925; }
+.sdg-icons .sdg-11 { background: #fd9d24; color: #111; }
+.sdg-icons .sdg-12 { background: #bf8b2e; }
+.sdg-icons .sdg-13 { background: #3f7e44; }
+.sdg-icons .sdg-14 { background: #0a97d9; }
+
 .sdg-research-grid h3 {
   margin-bottom: 8px;
   font-size: clamp(18px, 2vw, 22px);
@@ -808,6 +893,56 @@ h3 {
 .sdg-research-grid p {
   color: var(--muted);
   font-size: 14px;
+}
+
+.sdg-research-grid small {
+  display: block;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.scholar-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.scholar-card span {
+  grid-row: span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 78px;
+  min-height: 78px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.scholar-card strong {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.scholar-card em {
+  color: var(--muted);
+  font-size: 13px;
+  font-style: normal;
 }
 
 .research-catalog-hero .catalog-hero-content {
@@ -1717,6 +1852,7 @@ textarea {
 	  .case-detail-grid,
 	  .research,
 	  .training-system,
+	  .training-overview,
 	  .split-head,
 	  .credential-highlights,
 	  .team-grid,
@@ -1740,6 +1876,10 @@ textarea {
 	  }
 
 	  .sdg-research-grid {
+	    grid-template-columns: 1fr;
+	  }
+
+	  .training-proof-grid {
 	    grid-template-columns: 1fr;
 	  }
 
