@@ -58,6 +58,7 @@
         <span></span>
       </button>
       <nav class="nav" aria-label="Primary navigation">
+        <a href="#home" data-i18n="nav.home">Home</a>
         <a href="#credentials" data-i18n="nav.credentials">Credentials</a>
         <a href="#services" data-i18n="nav.services">Services</a>
         <a href="#team" data-i18n="nav.team">Team</a>
@@ -67,13 +68,13 @@
         <a href="#research" data-i18n="nav.research">Research</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
-      <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle>中</button>
+      <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-current>EN</span><span data-lang-next>中</span></button>
     </header>
 
     <main id="home">
       <section class="hero">
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/semiconductor-cleanroom.jpg" alt="" fetchpriority="high">
+        <div class="hero-media">
+          <img src="assets/semiconductor-cleanroom.jpg" alt="Semiconductor cleanroom industrial facility for carbon and compliance audit work" fetchpriority="high">
         </div>
         <div class="hero-content">
           <p class="eyebrow" data-i18n="hero.eyebrow">Semiconductors · Industrial Facilities · Singapore Carbon Tax · GHG Verification</p>
@@ -89,11 +90,15 @@
             <span>BSI</span>
           </div>
           <dl class="hero-stats trust-stats">
-            <div><dt>Since 2020</dt><dd data-i18n="stats.years">Industrial project experience</dd></div>
-            <div><dt>3</dt><dd data-i18n="stats.roles">Core regulatory-level qualifications</dd></div>
-            <div><dt>60+</dt><dd data-i18n="stats.papers">SCI/SSCI publications and collaboration outputs</dd></div>
+            <div><span aria-hidden="true">S</span><dt>Since 2020</dt><dd data-i18n="stats.years">Industrial project experience</dd></div>
+            <div><span aria-hidden="true">Q</span><dt>3</dt><dd data-i18n="stats.roles">Core regulatory-level qualifications</dd></div>
+            <div><span aria-hidden="true">P</span><dt>60+</dt><dd data-i18n="stats.papers">SCI/SSCI publications and collaboration outputs</dd></div>
           </dl>
         </div>
+      </section>
+
+      <section class="trust-bridge" aria-label="Engagement boundary">
+        <p data-i18n="bridge.copy">Start with credentials, role boundaries and evidence requirements; then select the right verification, validation, audit, training or research pathway.</p>
       </section>
 
       <section id="credentials" class="section credentials credentials-priority">
@@ -150,6 +155,9 @@
             <p data-i18n="services.energy.copy">Review activity data, emission factors, equipment records, supplier information and review trails against verification-ready evidence-pack requirements.</p>
             <div class="tag-row"><span>Activity Data</span><span>Emission Factors</span><span>Evidence Pack</span><span>Review Trail</span></div>
           </article>
+        </div>
+        <div class="section-actions">
+          <a class="button secondary" href="#contact" data-i18n="services.cta">Check the applicable pathway</a>
         </div>
       </section>
 
@@ -238,6 +246,9 @@
           <div><strong>ISO 14001 / 45001 / 50001</strong><span data-i18n="standards.systems">Environmental, occupational health and safety, and energy management-system audits</span><em>IMS Audit</em></div>
           <div><strong>ISSB / SGX / ISAE 3000</strong><span data-i18n="standards.assurance">Sustainability disclosure, environmental data controls and report-assurance evidence review</span><em>Disclosure</em></div>
           <div><strong>CBAM / IWA 42 / IWA 48</strong><span data-i18n="standards.iwa">EU export chains, net-zero guidance and climate-action training</span><em>Training</em></div>
+        </div>
+        <div class="section-actions">
+          <a class="button secondary" href="#contact" data-i18n="standards.cta">Clarify applicable standards</a>
         </div>
       </section>
 
@@ -358,7 +369,7 @@
         <form class="contact-form" data-engagement-form novalidate>
           <label><span data-i18n="form.name">Name</span><input name="name" type="text" autocomplete="name" required></label>
           <label><span data-i18n="form.email">Email</span><input name="email" type="email" autocomplete="email" required></label>
-          <label><span data-i18n="form.need">Requirement</span><select name="requirement" required><option value="" selected disabled data-i18n="form.placeholder">Select a requirement</option><option data-i18n="form.option1">GHG verification / validation</option><option data-i18n="form.option2">ISO second/third-party audit</option><option data-i18n="form.option3">NEA CPA / industrial MRV</option><option data-i18n="form.option4">International research program</option><option data-i18n="form.option5">Corporate training</option></select></label>
+          <label><span data-i18n="form.need">Requirement</span><select name="requirement" required><option value="" selected disabled data-i18n="form.placeholder">Select a requirement</option><option data-i18n="form.option1">GHG verification</option><option data-i18n="form.option2">ISO audit</option><option data-i18n="form.option3">NEA CPA / MRV</option><option data-i18n="form.option4">Research program</option><option data-i18n="form.option5">Training</option></select></label>
           <label><span data-i18n="form.message">Project background</span><textarea name="message" rows="4"></textarea></label>
           <button class="button primary form-button" type="submit" aria-busy="false" data-default-zh="发送邮件" data-default-en="Prepare email" data-busy-zh="正在打开邮件..." data-busy-en="Opening email..." data-i18n="form.submit">Prepare email</button>
         </form>
@@ -370,6 +381,11 @@
         <img class="brand-logo" src="assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability">
       </a>
       <p><span data-i18n="footer.copy">Enerstay Sustainability Pte. Ltd. | Singapore-based industrial carbon assurance, GHG verification / validation, second/third-party audits, training and research knowledge platform.</span><br><a href="tel:+6586267896">+65 8626 7896</a> · <a href="mailto:enquires@enerstaysustainability.com">enquires@enerstaysustainability.com</a><br>3791 Jalan Bukit Merah, #03-05, E-Centre @ Redhill, Singapore 159471</p>
+      <div class="footer-social" aria-label="Contact and social links">
+        <a href="https://wa.me/6586267896" target="_blank" rel="noreferrer" aria-label="WhatsApp">WA</a>
+        <a href="https://www.linkedin.com/company/enerstaysustainability/posts/?feedView=all&viewAsMember=true" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a href="mailto:enquires@enerstaysustainability.com" aria-label="Email">M</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>

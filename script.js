@@ -426,6 +426,7 @@ const translations = {
 };
 
 Object.assign(translations.zh, {
+  "nav.home": "首页",
   "nav.credentials": "资质",
   "nav.team": "团队",
   "nav.research": "科研",
@@ -436,6 +437,7 @@ Object.assign(translations.zh, {
   "hero.secondary": "查看资质",
   "stats.years": "工业项目经验积累",
   "stats.roles": "核心监管级资质",
+  "bridge.copy": "先看资质、角色边界和证据要求，再判断适合的核查、验证、审核、培训或科研路径。",
   "credentials.title": "核心资质与监管授权",
   "credentials.copy": "核心监管授权和专业资质前置展示。正式 verification、validation、assurance 或二方/三方审核以授权范围、独立性要求、客户委托、保密协议和适用认可要求为边界。",
   "credentials.nea.copy": "新加坡碳定价法案下的排放核查、独立复核和半导体复杂行业技术判断。",
@@ -448,6 +450,7 @@ Object.assign(translations.zh, {
   "services.material.title": "管理体系二方/三方审核",
   "services.material.copy": "针对环境、能源、职业健康安全和供应链管理体系开展二方/三方审核、供应商审核和发现跟踪。",
   "services.energy.copy": "按 verification-ready evidence pack 要求审阅活动数据、排放因子、设备记录、供应商资料和复核轨迹。",
+  "services.cta": "判断适用路径",
   "team.kicker": "Team & Role Separation",
   "team.title": "团队与角色分离",
   "team.copy": "Enerstay 将主理、培训、审核项目协调和外部技术复核分开管理。涉及正式保证、核查、验证或二方/三方审核时，先进行利益冲突和角色边界判断。",
@@ -477,6 +480,7 @@ Object.assign(translations.zh, {
   "standards.systems": "环境、职业健康安全、能源管理体系审核",
   "standards.assurance": "可持续披露、环境数据控制、报告保证证据审阅",
   "standards.iwa": "欧盟出口链条、净零指南、气候行动实施训练",
+  "standards.cta": "确认适用标准",
   "training.title": "培训课程",
   "training.copy": "Enerstay Sustainability Academy 基于自有教材、案例练习、数据表、报告模板与考核材料，提供企业内训、合作证书课程、审核员能力课程和海外 ESG 研学项目；课程不等同于正式核查或保证结论。",
   "training.group1": "标准核查类",
@@ -516,10 +520,16 @@ Object.assign(translations.zh, {
   "contact.copy": "建议先通过邮件或预约会议说明行业、地区、标准、目标用途和时间线。Enerstay 会先判断角色边界、独立性要求和适用路径。",
   "contact.meeting": "预约会议",
   "contact.emailCta": "邮件联系",
+  "form.option1": "GHG 核查/验证",
+  "form.option2": "ISO 审核",
+  "form.option3": "NEA CPA / MRV",
+  "form.option4": "科研项目",
+  "form.option5": "培训",
   "form.submit": "发送邮件"
 });
 
 Object.assign(translations.en, {
+  "nav.home": "Home",
   "nav.credentials": "Credentials",
   "nav.team": "Team",
   "nav.research": "Research",
@@ -530,6 +540,7 @@ Object.assign(translations.en, {
   "hero.secondary": "View credentials",
   "stats.years": "Industrial project experience",
   "stats.roles": "Core regulatory-level qualifications",
+  "bridge.copy": "Start with credentials, role boundaries and evidence requirements; then select the right verification, validation, audit, training or research pathway.",
   "credentials.title": "Core qualifications and regulatory authorizations",
   "credentials.copy": "Core regulatory authorizations and professional qualifications are shown upfront. Formal verification, validation, assurance or second/third-party audit work is bounded by authorization scope, independence requirements, client mandate, NDAs and applicable accreditation requirements.",
   "credentials.nea.copy": "Emissions verification, independent review and semiconductor complex-sector judgement under Singapore's Carbon Pricing Act.",
@@ -542,6 +553,7 @@ Object.assign(translations.en, {
   "services.material.title": "Second/third-party management-system audits",
   "services.material.copy": "Second/third-party audits, supplier audits and findings follow-up for environmental, energy, safety and supply-chain management systems.",
   "services.energy.copy": "Review activity data, emission factors, equipment records, supplier information and review trails against verification-ready evidence-pack requirements.",
+  "services.cta": "Check the applicable pathway",
   "team.kicker": "Team & Role Separation",
   "team.title": "Team and role separation",
   "team.copy": "Enerstay separates principal technical direction, training delivery, audit project coordination and external technical review. Formal assurance, verification, validation and second/third-party audit work starts with conflict-of-interest and role-boundary checks.",
@@ -571,6 +583,7 @@ Object.assign(translations.en, {
   "standards.systems": "Environmental, occupational health and safety, and energy management-system audits",
   "standards.assurance": "Sustainability disclosure, environmental data controls and report-assurance evidence review",
   "standards.iwa": "EU export chains, net-zero guidance and climate-action training",
+  "standards.cta": "Clarify applicable standards",
   "training.title": "Training programs",
   "training.copy": "Enerstay Sustainability Academy uses in-house materials, case exercises, data sheets, report templates and assessment packs for corporate training, partner certificate courses, auditor capability programs and overseas ESG study programs. Courses are not formal verification or assurance conclusions.",
   "training.group1": "Standards and verification courses",
@@ -610,6 +623,11 @@ Object.assign(translations.en, {
   "contact.copy": "Please share sector, location, applicable standard, intended use and timeline by email or meeting request. Enerstay will first check role boundaries, independence requirements and the suitable pathway.",
   "contact.meeting": "Book a meeting",
   "contact.emailCta": "Email enquiry",
+  "form.option1": "GHG verification",
+  "form.option2": "ISO audit",
+  "form.option3": "NEA CPA / MRV",
+  "form.option4": "Research program",
+  "form.option5": "Training",
   "form.submit": "Prepare email"
 });
 
@@ -818,6 +836,8 @@ Object.assign(translations.en, {
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
+const langCurrent = document.querySelector("[data-lang-current]");
+const langNext = document.querySelector("[data-lang-next]");
 const nodes = document.querySelectorAll("[data-i18n]");
 const engagementForm = document.querySelector("[data-engagement-form]");
 const siteHeader = document.querySelector(".site-header");
@@ -833,7 +853,12 @@ function renderLanguage(language) {
       node.textContent = translations[language][key];
     }
   });
-  toggle.textContent = language === "zh" ? "EN" : "中";
+  if (langCurrent && langNext) {
+    langCurrent.textContent = language === "zh" ? "中" : "EN";
+    langNext.textContent = language === "zh" ? "EN" : "中";
+  } else if (toggle) {
+    toggle.textContent = language === "zh" ? "EN" : "中";
+  }
   localStorage.setItem(languageStorageKey, language);
 }
 
