@@ -1919,15 +1919,15 @@ textarea {
 
 .standard-logo-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
 }
 
 .standard-logo-grid article {
   display: grid;
-  grid-template-rows: 66px auto 1fr;
+  grid-template-rows: 82px auto 1fr;
   gap: 10px;
-  min-height: 188px;
+  min-height: 202px;
   padding: 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1937,8 +1937,8 @@ textarea {
 
 .standard-logo {
   display: block;
-  width: 112px;
-  height: 66px;
+  width: 142px;
+  height: 78px;
   align-self: start;
   justify-self: start;
   object-fit: contain;
@@ -2255,7 +2255,7 @@ textarea {
 	  .founder-points,
 	  .pricing-grid,
   .standard-logo-grid {
-	    grid-template-columns: repeat(2, minmax(0, 1fr));
+	    grid-template-columns: repeat(3, minmax(0, 1fr));
 	  }
 
 	  .sdg-research-grid {
@@ -2425,8 +2425,8 @@ textarea {
 
   .standard-logo-grid .standard-logo {
     grid-row: span 2;
-    width: 76px;
-    height: 58px;
+    width: 84px;
+    height: 64px;
   }
 
   .research {
