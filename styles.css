@@ -1935,98 +1935,14 @@ textarea {
   box-shadow: 0 10px 30px rgba(12, 12, 12, 0.035);
 }
 
-.standard-mark {
-  display: inline-grid;
-  width: 86px;
-  height: 58px;
-  place-items: center;
+.standard-logo {
+  display: block;
+  width: 112px;
+  height: 66px;
   align-self: start;
   justify-self: start;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8f7f3;
-  color: var(--ink);
-  font-size: 19px;
-  font-weight: 950;
-  letter-spacing: 0;
-  line-height: 1;
-}
-
-.mark-issb,
-.mark-gri {
-  border-radius: 50%;
-  background: #142767;
-  color: #fff;
-}
-
-.mark-tnfd {
-  grid-template-columns: repeat(2, 1fr);
-  background:
-    linear-gradient(90deg, #69728b 49%, transparent 50%),
-    linear-gradient(0deg, #69728b 49%, transparent 50%),
-    #f2f3f6;
-  color: #fff;
-}
-
-.mark-sasb {
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 64%, #ffffff 0 32%, transparent 33%), #8f8f8f;
-  color: #8b1f2d;
-}
-
-.mark-nea {
-  background: linear-gradient(135deg, #e9f5ef, #ffffff);
-  color: #4d8b3f;
-}
-
-.mark-edb {
-  color: #173b83;
-  font-size: 24px;
-}
-
-.mark-cdp {
-  color: #263444;
-  font-size: 24px;
-}
-
-.mark-sbti {
-  color: #6aa5b8;
-}
-
-.mark-ghg {
-  border-radius: 50%;
-  background: radial-gradient(circle, #52c7bd 0 34%, #e8fbf7 35% 62%, #fff 63%);
-  color: #247b74;
-}
-
-.mark-verra {
-  border-color: #33769e;
-  color: #2c668a;
-  font-size: 17px;
-}
-
-.mark-account {
-  color: #2b6f62;
-}
-
-.mark-iaasb {
-  color: #67748a;
-}
-
-.mark-gold {
-  color: #767676;
-}
-
-.mark-iso {
-  background: #2c75a9;
-  color: #fff;
-  font-size: 26px;
-}
-
-.mark-iwa {
-  background: #c91e22;
-  color: #fff;
-  font-size: 24px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .standard-logo-grid strong {
@@ -2507,11 +2423,10 @@ textarea {
     align-items: center;
   }
 
-  .standard-logo-grid .standard-mark {
+  .standard-logo-grid .standard-logo {
     grid-row: span 2;
-    width: 64px;
-    height: 52px;
-    font-size: 15px;
+    width: 76px;
+    height: 58px;
   }
 
   .research {
