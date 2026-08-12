@@ -19,8 +19,8 @@ const translations = {
     "intro.title": "以工业碳保证、标准审核和科研产品连接低碳转型",
     "intro.copy": "Enerstay Sustainability Pte. Ltd. 注册于新加坡，定位为工业碳保证与专业标准平台，重点发展 NEA CPA evidence review、ISO 14064 / 14067、复杂行业高 GWP 气体、CBAM 数据、ESG 环境数据控制、二方/三方审核、高端培训、数字化 MRV、学术发表与标准化知识产品。",
     "founder.kicker": "谁在负责交付",
-    "founder.title": "Dr. Strange 主理",
-    "founder.copy": "Enerstay Sustainability 由 Dr. Strange 主理，连接新加坡碳监管、GHG verification / validation、ISO 管理体系审核、半导体高 GWP 气体与科研训练经验。涉及保证、核查或审核的工作，按独立性、利益冲突和授权范围进行边界管理。",
+    "founder.title": "Prof. Dr. Yuanzhe Li 主理",
+    "founder.copy": "Enerstay Sustainability 由 Prof. Dr. Yuanzhe Li 主理，连接新加坡碳监管、GHG verification / validation、ISO 管理体系审核、半导体高 GWP 气体与科研训练经验。",
     "founder.point1": "NEA 碳定价法案相关核查与复杂行业经验",
     "founder.point2": "Applus+ 等企业合作与CBAM培训资源",
     "founder.point3": "SCI、SSCI、ESCI、EI 论文合作与科研训练",
@@ -231,8 +231,8 @@ const translations = {
     "intro.title": "Connecting industrial carbon assurance, standards audits and research products",
     "intro.copy": "Enerstay Sustainability Pte. Ltd. is registered in Singapore and positioned as an industrial carbon assurance and professional standards platform, focusing on NEA CPA evidence review, ISO 14064 / 14067, complex-sector high-GWP gases, CBAM data, ESG environmental data controls, second/third-party audits, executive training, digital MRV, publications and standardisation knowledge products.",
     "founder.kicker": "Who Leads The Work",
-    "founder.title": "Led by Dr. Strange",
-    "founder.copy": "Enerstay Sustainability is led by Dr. Strange, connecting Singapore carbon regulation, GHG verification / validation, ISO management-system audits, semiconductor high-GWP gases and research training. Assurance, verification and audit work is controlled by independence, conflict-of-interest and authorization boundaries.",
+    "founder.title": "Led by Prof. Dr. Yuanzhe Li",
+    "founder.copy": "Enerstay Sustainability is led by Prof. Dr. Yuanzhe Li, connecting Singapore carbon regulation, GHG verification / validation, ISO management-system audits, semiconductor high-GWP gases and research training.",
     "founder.point1": "NEA carbon-pricing verification and complex-sector experience",
     "founder.point2": "Applus+ collaboration and CBAM training resources",
     "founder.point3": "SCI, SSCI, ESCI and EI publication collaboration and research training",
@@ -597,7 +597,7 @@ Object.assign(translations.en, {
   "nav.research": "Research",
   "hero.eyebrow": "Semiconductors · Industrial Facilities · Singapore Carbon Tax · GHG Verification",
   "hero.title": "Industrial carbon assurance and compliance audits",
-  "hero.copy": "Independent GHG verification / validation and ISO second/third-party audits for semiconductor and industrial facilities. Formal CPA work is delivered only through the applicable NEA-accredited verification company; training and research are separately governed.",
+  "hero.copy": "Enerstay delivers GHG verification / validation, second- and third-party ISO audits, and evidence-led MRV reviews for semiconductor and industrial operations in Singapore and across Asia.",
   "hero.meeting": "Book a meeting",
   "hero.secondary": "View credentials",
   "credentials.kicker": "Qualifications & Scope",
@@ -605,7 +605,7 @@ Object.assign(translations.en, {
   "stats.roles": "Core regulatory-level qualifications",
   "bridge.copy": "Start with credentials, role boundaries and evidence requirements; then select the right verification, validation, audit, training or research pathway.",
   "credentials.title": "Professional qualifications and delivery boundaries",
-  "credentials.copy": "Selected personnel qualifications and programme roles are shown upfront. They do not represent organizational accreditation of Enerstay. Formal verification, validation, assurance and second/third-party audit work proceeds only after confirming the required accredited entity, authorization scope, competence and independence.",
+  "credentials.copy": "Selected personnel qualifications span Singapore carbon regulation, resource-efficiency endorsement, international GHG verification and sustainability assurance.",
   "credentials.nea.title": "Personnel qualification: Lead Verifier / Independent Reviewer / Sector 3 Expert",
   "credentials.nea.copy": "Carbon Pricing Act verification competence for work delivered through an NEA-accredited verification company and within that entity's accredited sector scope.",
   "credentials.edb.title": "Personnel qualification: Independent Qualified Endorser (QE) for REG(E)",
@@ -751,7 +751,7 @@ Object.assign(translations.en, {
   "form.option3": "NEA CPA / MRV",
   "form.option4": "Research program",
   "form.option5": "Training",
-  "form.submit": "Prepare email"
+  "form.submit": "Request meeting"
 });
 
 Object.assign(translations.zh, {
@@ -1068,6 +1068,318 @@ Object.assign(translations.en, {
   "researchPage.cta.linkedin": "Follow Enerstay LinkedIn"
 });
 
+Object.assign(translations.zh, {
+  "hero.eyebrow": "半导体 · 工业设施 · GHG 核查",
+  "hero.title": "面向工业运营的独立碳核查",
+  "hero.copy": "Enerstay 面向新加坡及亚洲的半导体与工业运营，提供 GHG verification / validation、ISO 二方与三方审核，以及以证据为基础的 MRV 审阅。",
+  "hero.meeting": "预约免费 15 分钟沟通",
+  "hero.secondary": "查看服务",
+  "stats.years": "工业与半导体项目经验",
+  "stats.credentials.value": "3 项核心资质",
+  "stats.roles": "NEA · EDB · BSI",
+  "stats.papers": "已发表论文与合作成果",
+  "bridge.copy": "服务复杂工业数据、受监管碳报告，以及需要经受独立复核的证据体系。",
+  "credentials.kicker": "核心资质",
+  "credentials.title": "让客户快速判断能力基础",
+  "credentials.copy": "核心人员资质覆盖新加坡碳监管、资源效率背书、国际 GHG 核查与可持续保证。",
+  "credentials.nea.title": "NEA CPA 复杂行业核查能力",
+  "credentials.nea.copy": "具备 Lead Verifier、Independent Reviewer 与 Sector 3 半导体复杂行业经验。",
+  "credentials.edb.title": "EDB REG(E) Qualified Endorser",
+  "credentials.edb.copy": "支持资源效率项目及其证据包的 Independent Qualified Endorser 能力。",
+  "credentials.bsi.title": "BSI GHG、净零与保证资质",
+  "credentials.bsi.copy": "人员资质覆盖 ISO 14064、ISO 14068-1、净零路径、ISO 50001 与 ISAE 3000。",
+  "credentials.boundaryLink": "了解项目范围如何治理",
+  "services.carbon.title": "GHG 核查与验证",
+  "services.carbon.copy": "独立审阅组织温室气体清单、项目减排、产品碳足迹和环境披露。",
+  "services.material.title": "ISO 管理体系审核",
+  "services.energy.title": "工业 MRV 与证据审阅",
+  "services.energy.copy": "以证据为基础评估活动数据、排放因子、设备记录、供应商信息和复核轨迹。",
+  "services.cta": "沟通项目需求",
+  "team.kicker": "团队",
+  "team.title": "多专业协同的交付团队",
+  "team.copy": "合规把控、技术判断、课程交付与项目协调分别由具名负责人承担，确保客户对接清晰。",
+  "team.balance.role": "合规与大客户负责人",
+  "team.yuanzhe.role": "技术与科研负责人",
+  "team.zeean.role": "培训负责人",
+  "team.jiahui.role": "审核项目负责人",
+  "team.yuanzhe": "负责技术方向、复杂行业判断、科研转化和关键交付物复核。",
+  "team.partner.title": "扩展 TIC 与 IMS 网络",
+  "team.partner.copy": "跨境或多场所项目可协调认证机构、技术复核与审核员资源。",
+  "cases.copy": "以下匿名化案例展示典型行业、规模与产出，同时遵守客户保密要求。",
+  "standards.title": "与具体任务匹配的标准",
+  "standards.copy": "在项目开始前确认适用的核查准则、审核标准、保证要求和报告参考。",
+  "standards.preview.carbon": "温室气体清单、产品碳足迹与碳中和核查准则。",
+  "standards.preview.ims": "环境、职业健康安全与能源管理体系审核准则。",
+  "standards.preview.assurance": "非财务信息与可持续保证要求。",
+  "standards.preview.sg": "新加坡监管核查与资源效率项目路径。",
+  "standards.preview.reporting": "在项目需要时使用的披露与报告参考。",
+  "standards.preview.programmes": "碳项目规则与方法学参考。",
+  "standards.directory": "查看完整标准目录",
+  "standards.cta": "沟通具体任务",
+  "training.copy": "可通过 APEX 直接进入线上课程，也可由 Enerstay Academy 与选定合作方组织实践型专班。",
+  "training.apex.type": "主要线上平台",
+  "training.apex.title": "APEX 线上 ISO 与审核员课程",
+  "training.apex.copy": "直接进入已发布的 ISO 管理体系、审核员能力、合规与质量方法课程。",
+  "training.apex.cta": "浏览 APEX 课程",
+  "training.apex.details": "查看推荐学习路径",
+  "training.applus.type": "合作课程",
+  "training.applus.title": "Applus+ CBAM 系列",
+  "training.applus.copy": "面向选定合作专班的管理、嵌入排放数据与 QA/QC 学习路径。",
+  "training.applus.cta": "查看 CBAM 路径",
+  "training.iase.type": "合作课程",
+  "training.iase.title": "IASE ESG Level 1 与 Level 2",
+  "training.iase.copy": "面向基础与进阶专业学习者的结构化 ESG 课程路径。",
+  "training.iase.cta": "查看 IASE 路径",
+  "training.academy.type": "Enerstay Academy",
+  "training.academy.title": "实践型自有课程",
+  "training.academy.copy": "工业案例、证据工作表、中英双语交付与 1-2 天企业专班。",
+  "training.academy.cta": "查看 Academy 目录",
+  "training.corporate": "申请企业专班",
+  "contact.copy": "请告诉我们你的行业、所在地和目标，我们会把需求转给相应的技术、审核、培训或科研负责人。",
+  "contact.meeting": "预约免费 15 分钟沟通",
+  "form.date": "期望日期",
+  "form.time": "期望新加坡时间",
+  "form.timePlaceholder": "请选择时间段",
+  "form.submit": "提交会议申请",
+  "form.privacy": "你的资料仅用于回复本次申请。",
+  "form.success": "已收到会议申请，我们会尽快通过邮件回复。",
+  "form.error": "暂时无法提交，请稍后重试或直接发送邮件。",
+  "form.invalid": "请完整填写姓名、邮箱、需求、日期和时间。",
+  "footer.standards": "标准目录",
+  "footer.boundaries": "服务边界"
+});
+
+Object.assign(translations.en, {
+  "hero.eyebrow": "Semiconductors · Industrial Facilities · GHG Verification",
+  "hero.title": "Independent carbon verification for industrial operations",
+  "hero.copy": "Enerstay delivers GHG verification / validation, second- and third-party ISO audits, and evidence-led MRV reviews for semiconductor and industrial operations in Singapore and across Asia.",
+  "hero.meeting": "Request a free 15-minute meeting",
+  "hero.secondary": "Explore services",
+  "stats.years": "Industrial and semiconductor project work",
+  "stats.credentials.value": "3 core credentials",
+  "stats.roles": "NEA · EDB · BSI",
+  "stats.papers": "Published papers and collaboration outputs",
+  "bridge.copy": "Built for complex industrial data, regulated carbon reporting and evidence that must stand up to independent review.",
+  "credentials.kicker": "Credentials",
+  "credentials.title": "Credentials clients can rely on",
+  "credentials.copy": "Selected personnel qualifications span Singapore carbon regulation, resource-efficiency endorsement, international GHG verification and sustainability assurance.",
+  "credentials.nea.title": "NEA CPA complex-sector verification",
+  "credentials.nea.copy": "Lead Verifier, Independent Reviewer and Sector 3 semiconductor expertise for Singapore Carbon Pricing Act work.",
+  "credentials.edb.title": "EDB REG(E) Qualified Endorser",
+  "credentials.edb.copy": "Independent Qualified Endorser capability for resource-efficiency projects and evidence packages.",
+  "credentials.bsi.title": "BSI GHG, net-zero and assurance qualifications",
+  "credentials.bsi.copy": "Personnel qualifications covering ISO 14064, ISO 14068-1, net-zero pathways, ISO 50001 and ISAE 3000.",
+  "credentials.boundaryLink": "How engagement scope is governed",
+  "services.carbon.title": "GHG verification and validation",
+  "services.carbon.copy": "Independent review of organizational inventories, project reductions, product carbon footprints and environmental disclosures.",
+  "services.material.title": "ISO management-system audits",
+  "services.energy.title": "Industrial MRV and evidence review",
+  "services.energy.copy": "Evidence-led assessment of activity data, emission factors, equipment records, supplier information and review trails.",
+  "services.cta": "Discuss your project",
+  "team.kicker": "Team",
+  "team.title": "A multidisciplinary delivery team",
+  "team.copy": "Compliance leadership, technical judgement, training delivery and project coordination are assigned to named leads for clear client ownership.",
+  "team.balance.role": "Compliance & Key Accounts Lead",
+  "team.yuanzhe.role": "Technical & Research Principal",
+  "team.zeean.role": "Training Lead",
+  "team.jiahui.role": "Audit Project Lead",
+  "team.yuanzhe": "Leads technical direction, complex-sector judgement, research translation and key deliverable review.",
+  "team.partner.title": "Extended TIC and IMS network",
+  "team.partner.copy": "Additional certification-body, technical-review and auditor resources can be coordinated for cross-border or multi-site assignments.",
+  "cases.copy": "Selected anonymized examples show typical sector, scale and outputs while respecting client confidentiality.",
+  "standards.title": "Standards matched to the assignment",
+  "standards.copy": "We select the applicable verification criteria, audit standards, assurance requirements and reporting references before work begins.",
+  "standards.preview.carbon": "GHG inventories, product carbon footprints and carbon-neutrality verification criteria.",
+  "standards.preview.ims": "Environmental, safety and energy management-system audit criteria.",
+  "standards.preview.assurance": "Non-financial and sustainability assurance requirements.",
+  "standards.preview.sg": "Singapore regulatory verification and resource-efficiency pathways.",
+  "standards.preview.reporting": "Disclosure and reporting references used when required by the assignment.",
+  "standards.preview.programmes": "Carbon-programme rules and methodology references.",
+  "standards.directory": "View full standards directory",
+  "standards.cta": "Discuss your assignment",
+  "training.copy": "Access direct online learning through APEX, or build a practice-led cohort with Enerstay Academy and selected programme partners.",
+  "training.apex.type": "Primary online platform",
+  "training.apex.title": "APEX online ISO and auditor learning",
+  "training.apex.copy": "Go directly to published online courses in ISO management systems, auditor capability, compliance and quality methods.",
+  "training.apex.cta": "Browse APEX courses",
+  "training.apex.details": "See recommended pathways",
+  "training.applus.type": "Collaborative programme",
+  "training.applus.title": "Applus+ CBAM series",
+  "training.applus.copy": "Management, embedded-emissions data and QA/QC tracks for selected collaborative cohorts.",
+  "training.applus.cta": "View CBAM pathway",
+  "training.iase.type": "Collaborative programme",
+  "training.iase.title": "IASE ESG Level 1 & 2",
+  "training.iase.copy": "Structured ESG learning pathways for foundation and advanced professional cohorts.",
+  "training.iase.cta": "View IASE pathway",
+  "training.academy.type": "Enerstay Academy",
+  "training.academy.title": "Practice-led proprietary courses",
+  "training.academy.copy": "Industrial cases, evidence worksheets, bilingual delivery and 1-2 day corporate cohorts.",
+  "training.academy.cta": "View Academy catalogue",
+  "training.corporate": "Request a corporate cohort",
+  "contact.copy": "Tell us your sector, location and goal. We will route your request to the appropriate technical, audit, training or research lead.",
+  "contact.meeting": "Request a free 15-minute meeting",
+  "form.date": "Preferred date",
+  "form.time": "Preferred Singapore time",
+  "form.timePlaceholder": "Select a time",
+  "form.submit": "Request meeting",
+  "form.privacy": "Your details are used only to respond to this request.",
+  "form.success": "Your meeting request has been received. We will reply by email shortly.",
+  "form.error": "We could not submit the request. Please try again or email us directly.",
+  "form.invalid": "Please complete your name, email, requirement, date and time.",
+  "footer.standards": "Standards directory",
+  "footer.boundaries": "Service boundaries"
+});
+
+Object.assign(translations.zh, {
+  "standardsPage.kicker": "标准目录",
+  "standardsPage.title": "核查准则、审核标准与报告参考",
+  "standardsPage.copy": "清晰呈现 verification、audit、assurance、报告与培训任务中各类标准的作用。",
+  "standardsPage.map.kicker": "参考图谱",
+  "standardsPage.map.title": "机构与框架",
+  "standardsPage.map.copy": "官方标志用于识别来源机构或框架；每项在任务中的作用均在标志下方说明。",
+  "standardsPage.criteria.kicker": "任务准则",
+  "standardsPage.criteria.title": "不同标准如何使用",
+  "standardsPage.criteria.copy": "标准的具体作用会写入方案、合同与报告。披露框架不作为认证标准，指南也不作为核查准则。",
+  "standardsPage.criteria.verification": "用于组织 GHG、项目减排、产品碳足迹、LCA 和碳中和 verification / validation 任务。",
+  "standardsPage.criteria.audit": "作为环境、职业健康安全与能源管理体系审核的约定准则。",
+  "standardsPage.criteria.assurance": "用于适用的非财务信息与可持续保证业务，并考虑司法管辖区和生效日期。",
+  "standardsPage.criteria.disclosure": "在客户委托或报告路径要求时作为报告、披露或核算参考。",
+  "standardsPage.criteria.programme": "项目特定规则、资格条件、方法学和授权路径。",
+  "standardsPage.criteria.guidance": "用于学习、路径设计和历史背景，不作为可认证标准。",
+  "standardsPage.cta": "沟通具体任务",
+  "standardsPage.boundary": "查看服务边界",
+  "boundaryPage.kicker": "服务边界",
+  "boundaryPage.title": "用清晰角色保障独立工作的可信度",
+  "boundaryPage.copy": "本页集中说明核查、审核、培训与科研如何划分范围，让主页专注于客户需求与交付能力。",
+  "boundaryPage.model.kicker": "运营模式",
+  "boundaryPage.model.title": "四条清晰治理的工作路径",
+  "boundaryPage.verification.title": "GHG 核查与验证",
+  "boundaryPage.verification.copy": "正式工作遵循适用项目规则、认可机构、能力和授权要求，结论仅通过所需路径出具。",
+  "boundaryPage.audit.title": "二方与三方审核",
+  "boundaryPage.audit.copy": "管理体系和供应商审核依据约定准则、范围和客户委托开展，审核发现与培训保持区分。",
+  "boundaryPage.training.title": "专业培训",
+  "boundaryPage.training.copy": "培训通过课程、案例与练习提升能力，不出具或预先决定正式核查、验证、审核或保证结论。",
+  "boundaryPage.research.title": "科研与知识产品",
+  "boundaryPage.research.copy": "科研、论文训练和 Academy 材料属于教育成果，与正式独立业务分开治理。",
+  "boundaryPage.controls.kicker": "项目控制",
+  "boundaryPage.controls.title": "正式工作开始前完成的检查",
+  "boundaryPage.controls.scope": "范围与准则",
+  "boundaryPage.controls.scope.copy": "在开始前约定主题、组织或产品边界、报告期、适用标准和预期使用者。",
+  "boundaryPage.controls.competence": "能力与授权",
+  "boundaryPage.controls.competence.copy": "根据任务核对行业能力、人员资质、项目规则和认可机构要求。",
+  "boundaryPage.controls.independence": "独立性与利益冲突",
+  "boundaryPage.controls.independence.copy": "接受独立工作前复核角色、既往工作、商业关系和团队配置。",
+  "boundaryPage.controls.reporting": "报告路径",
+  "boundaryPage.controls.reporting.copy": "在方案与项目文件中明确最终报告或结论的责任主体。",
+  "boundaryPage.cta": "沟通具体任务",
+  "boundaryPage.standards": "查看标准目录"
+});
+
+Object.assign(translations.en, {
+  "standardsPage.kicker": "Standards Directory",
+  "standardsPage.title": "Criteria, audit standards and reporting references",
+  "standardsPage.copy": "A clear map of the standards used to define verification, audit, assurance, reporting and training assignments.",
+  "standardsPage.map.kicker": "Reference Map",
+  "standardsPage.map.title": "Organizations and frameworks",
+  "standardsPage.map.copy": "Official marks identify the source organization or framework. The role of each item is stated below its mark.",
+  "standardsPage.criteria.kicker": "Assignment Criteria",
+  "standardsPage.criteria.title": "How each standard is used",
+  "standardsPage.criteria.copy": "Standards are assigned a specific role in the proposal, contract and report. A reporting framework is not treated as a certification standard, and guidance is not treated as verification criteria.",
+  "standardsPage.criteria.verification": "Used for organizational GHG, project reductions, product carbon footprints, LCA and carbon-neutrality verification or validation assignments.",
+  "standardsPage.criteria.audit": "Used as agreed criteria for environmental, occupational health and safety, and energy management-system audits.",
+  "standardsPage.criteria.assurance": "Used for applicable non-financial and sustainability assurance engagements, subject to jurisdiction and effective-date requirements.",
+  "standardsPage.criteria.disclosure": "Used as reporting, disclosure or accounting references when required by the client mandate or reporting programme.",
+  "standardsPage.criteria.programme": "Programme-specific rules, eligibility conditions, methodologies and authorization pathways.",
+  "standardsPage.criteria.guidance": "Used for learning, pathway design and historical context; not presented as certifiable standards.",
+  "standardsPage.cta": "Discuss your assignment",
+  "standardsPage.boundary": "Read service boundaries",
+  "boundaryPage.kicker": "Service Boundaries",
+  "boundaryPage.title": "Clear roles for credible independent work",
+  "boundaryPage.copy": "This page explains how verification, audits, training and research are scoped. It is kept separate so the main site can focus on client needs and delivery capability.",
+  "boundaryPage.model.kicker": "Operating Model",
+  "boundaryPage.model.title": "Four clearly governed workstreams",
+  "boundaryPage.verification.title": "GHG verification and validation",
+  "boundaryPage.verification.copy": "Formal work follows the applicable programme, accredited-entity, competence and authorization requirements. Conclusions are issued only through the required route.",
+  "boundaryPage.audit.title": "Second- and third-party audits",
+  "boundaryPage.audit.copy": "Management-system and supplier audits are delivered against agreed criteria, scope and client mandate, with findings and follow-up kept distinct from training.",
+  "boundaryPage.training.title": "Professional training",
+  "boundaryPage.training.copy": "Training develops capability through courses, cases and exercises. It does not issue or predetermine a formal verification, validation, audit or assurance conclusion.",
+  "boundaryPage.research.title": "Research and knowledge products",
+  "boundaryPage.research.copy": "Research, publication training and Academy materials are educational outputs and are governed separately from formal independent engagements.",
+  "boundaryPage.controls.kicker": "Engagement Controls",
+  "boundaryPage.controls.title": "Checks completed before formal work",
+  "boundaryPage.controls.scope": "Scope and criteria",
+  "boundaryPage.controls.scope.copy": "The subject matter, organizational or product boundary, reporting period, applicable standard and intended users are agreed before work starts.",
+  "boundaryPage.controls.competence": "Competence and authorization",
+  "boundaryPage.controls.competence.copy": "Sector competence, personnel qualifications, programme rules and any accredited-entity requirements are checked against the assignment.",
+  "boundaryPage.controls.independence": "Independence and conflicts",
+  "boundaryPage.controls.independence.copy": "Roles, previous work, commercial relationships and team allocation are reviewed before accepting independent work.",
+  "boundaryPage.controls.reporting": "Reporting route",
+  "boundaryPage.controls.reporting.copy": "The entity responsible for the final report or conclusion is identified in the proposal and engagement documentation.",
+  "boundaryPage.cta": "Discuss an assignment",
+  "boundaryPage.standards": "View standards directory"
+});
+
+Object.assign(translations.zh, {
+  "catalog.cta": "浏览线上课程",
+  "catalog.routes.kicker": "学习方式",
+  "catalog.routes.title": "线上、合作与 Academy 学习路径",
+  "catalog.routes.copy": "通过 APEX 直接线上学习，或选择 Enerstay、Applus+ 与 IASE 路径组织带领式专班。",
+  "catalog.routes.online.type": "主要线上平台",
+  "catalog.routes.online.copy": "直接进入已发布的 ISO、审核员能力、合规与质量课程。",
+  "catalog.routes.partner.title": "Applus+ CBAM 专班",
+  "catalog.routes.partner.copy": "选定的管理、嵌入排放数据与 QA/QC 课程。",
+  "catalog.routes.partner.cta": "查看 CBAM 路径",
+  "catalog.routes.iase.type": "合作课程",
+  "catalog.routes.iase.title": "IASE ESG Level 1 与 Level 2",
+  "catalog.routes.iase.copy": "面向专业学习者的基础与进阶 ESG 学习路径。",
+  "catalog.routes.iase.cta": "查看 IASE 路径",
+  "catalog.routes.owned.type": "Enerstay Academy",
+  "catalog.routes.owned.title": "实践型课程体系",
+  "catalog.routes.owned.copy": "自有工业案例、工作表和中英双语 1-2 天专班。",
+  "catalog.online.note": "APEX 课程页面、报名与学习记录由外部平台管理。",
+  "catalog.partner.copy": "选定 CBAM 专班包含管理、嵌入排放数据与 QA/QC 三条学习路径，具体安排按班级确认。",
+  "catalog.partner.note": "Applus+ 合作仅适用于经特别约定的专班。",
+  "catalog.iase.kicker": "ESG 合作路径",
+  "catalog.iase.title": "IASE ESG Level 1 与 Level 2",
+  "catalog.iase.copy": "从 ESG 基础到应用型专业实践的结构化进阶路径，面向企业与个人专班。",
+  "catalog.iase.level1": "基础路径涵盖 ESG 概念、利益相关方、重要议题、治理与负责任商业基础。",
+  "catalog.iase.level2": "进阶路径涵盖 ESG 整合、风险、报告、分析与专业决策。",
+  "catalog.iase.cohort": "专班交付",
+  "catalog.iase.cohort.copy": "Academy 可协调企业与专业专班，并在报名之前确认日程和考核安排。",
+  "catalog.reference.note": "BSI 链接仅作为公开的标准历史来源。"
+});
+
+Object.assign(translations.en, {
+  "catalog.cta": "Browse online courses",
+  "catalog.routes.kicker": "Ways to Learn",
+  "catalog.routes.title": "Online, collaborative and Academy pathways",
+  "catalog.routes.copy": "Start with APEX for direct online learning, or choose an Enerstay, Applus+ or IASE pathway for a facilitated cohort.",
+  "catalog.routes.online.type": "Primary online platform",
+  "catalog.routes.online.copy": "Direct online access to published ISO, auditor, compliance and quality courses.",
+  "catalog.routes.partner.title": "Applus+ CBAM cohorts",
+  "catalog.routes.partner.copy": "Selected management, embedded-emissions data and QA/QC programmes.",
+  "catalog.routes.partner.cta": "View CBAM pathway",
+  "catalog.routes.iase.type": "Collaboration",
+  "catalog.routes.iase.title": "IASE ESG Level 1 & 2",
+  "catalog.routes.iase.copy": "Foundation and advanced ESG learning pathways for professional cohorts.",
+  "catalog.routes.iase.cta": "View IASE pathway",
+  "catalog.routes.owned.type": "Enerstay Academy",
+  "catalog.routes.owned.title": "Practice-led curriculum",
+  "catalog.routes.owned.copy": "Proprietary industrial cases, worksheets and bilingual 1-2 day cohort delivery.",
+  "catalog.online.note": "APEX course pages, enrolment and learner records are managed on the external platform.",
+  "catalog.partner.copy": "Selected CBAM cohorts combine management, embedded-emissions data and QA/QC learning tracks. Programme arrangements are confirmed for each cohort.",
+  "catalog.partner.note": "Applus+ collaboration applies only to specifically agreed cohorts.",
+  "catalog.iase.kicker": "Collaborative ESG Pathway",
+  "catalog.iase.title": "IASE ESG Level 1 and Level 2",
+  "catalog.iase.copy": "A structured progression from ESG foundations to applied professional practice for corporate and individual cohorts.",
+  "catalog.iase.level1": "Foundation pathway covering ESG concepts, stakeholders, material topics, governance and responsible business fundamentals.",
+  "catalog.iase.level2": "Advanced pathway covering applied ESG integration, risk, reporting, analysis and professional decision-making.",
+  "catalog.iase.cohort": "Cohort delivery",
+  "catalog.iase.cohort.copy": "Corporate and professional cohorts can be coordinated through the Academy with schedule and assessment details confirmed before enrolment.",
+  "catalog.reference.note": "BSI links are provided as public standards-history sources."
+});
+
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
@@ -1113,28 +1425,44 @@ navLinks.forEach((link) => {
   });
 });
 
-engagementForm?.addEventListener("submit", (event) => {
+engagementForm?.querySelector('input[type="date"]')?.setAttribute("min", new Date().toISOString().slice(0, 10));
+
+engagementForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   const submitButton = engagementForm.querySelector(".form-button");
+  const status = engagementForm.querySelector("[data-form-status]");
+  engagementForm.classList.add("was-validated");
+  if (!engagementForm.checkValidity()) {
+    if (status) status.textContent = translations[activeLanguage]["form.invalid"];
+    engagementForm.querySelector(":invalid")?.focus();
+    return;
+  }
   submitButton?.setAttribute("aria-busy", "true");
+  if (submitButton) submitButton.disabled = true;
+  if (status) status.textContent = "";
   if (submitButton) {
     submitButton.textContent = activeLanguage === "zh" ? submitButton.dataset.busyZh : submitButton.dataset.busyEn;
   }
   const formData = new FormData(engagementForm);
-  const message = [
-    "Hello Enerstay, I would like to discuss second/third-party audit, GHG verification / validation, training or research collaboration.",
-    `Name: ${formData.get("name") || ""}`,
-    `Email: ${formData.get("email") || ""}`,
-    `Requirement: ${formData.get("requirement") || ""}`,
-    `Project background: ${formData.get("message") || ""}`
-  ].join("\n");
-  window.location.href = `mailto:enquires@enerstaysustainability.com?subject=${encodeURIComponent("Enerstay engagement request")}&body=${encodeURIComponent(message)}`;
-  window.setTimeout(() => {
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/enquires@enerstaysustainability.com", {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: formData
+    });
+    if (!response.ok) throw new Error("Submission failed");
+    engagementForm.reset();
+    engagementForm.classList.remove("was-validated");
+    if (status) status.textContent = translations[activeLanguage]["form.success"];
+  } catch (error) {
+    if (status) status.textContent = translations[activeLanguage]["form.error"];
+  } finally {
     submitButton?.setAttribute("aria-busy", "false");
+    if (submitButton) submitButton.disabled = false;
     if (submitButton) {
       submitButton.textContent = activeLanguage === "zh" ? submitButton.dataset.defaultZh : submitButton.dataset.defaultEn;
     }
-  }, 900);
+  }
 });
 
 renderLanguage(localStorage.getItem(languageStorageKey) || "en");
