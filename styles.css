@@ -3337,3 +3337,311 @@ textarea {
     grid-template-areas: "value" "label" !important;
   }
 }
+
+/* 2026-08-14 layout integrity: research cards, standards marks and public sources. */
+.research.research-text-only {
+  display: block;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.research-text-only .section-kicker,
+.research-text-only h2,
+.research-text-only > div > p {
+  max-width: 860px;
+}
+
+.research-text-only h2 {
+  font-size: 44px;
+  line-height: 1.08;
+}
+
+.research-text-only .sdg-research-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.research-text-only .sdg-research-grid article {
+  min-width: 0;
+  min-height: 0;
+  padding: 22px 22px 20px;
+  overflow: visible;
+}
+
+.research-text-only .sdg-research-grid h3 {
+  min-height: 52px;
+  font-size: 22px;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.research-text-only .sdg-research-grid p,
+.research-text-only .sdg-research-grid small {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.research-paper-card h3 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.public-reference-panel {
+  display: grid;
+  grid-template-columns: minmax(240px, .78fr) minmax(0, 1.22fr);
+  gap: 28px;
+  margin-top: 18px;
+  padding: 26px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+
+.public-reference-panel h3 {
+  margin-bottom: 8px;
+}
+
+.public-reference-panel p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, .7);
+  font-size: 14px;
+}
+
+.public-reference-panel .section-kicker {
+  color: rgba(255, 255, 255, .62);
+}
+
+.public-reference-panel nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.public-reference-panel a {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .06);
+}
+
+.public-reference-panel a:hover {
+  background: rgba(255, 255, 255, .12);
+}
+
+.public-reference-panel a span {
+  color: rgba(255, 255, 255, .68);
+  font-size: 12px;
+}
+
+.standards-preview-grid article {
+  grid-template-columns: 122px minmax(0, 1fr);
+  min-width: 0;
+  min-height: 172px;
+  align-items: center;
+  overflow: visible;
+}
+
+.standards-preview-grid img,
+.standards-preview-grid .standard-ref-mark {
+  width: 116px;
+  max-width: 116px;
+  height: 76px;
+  max-height: 76px;
+  justify-self: center;
+  object-fit: contain;
+  object-position: center;
+}
+
+.standards-preview-grid strong,
+.standards-preview-grid p {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.standard-ref-mark {
+  display: grid;
+  width: 150px;
+  max-width: 100%;
+  height: 82px;
+  align-content: center;
+  gap: 3px;
+  padding: 10px 12px;
+  border: 1px solid #bfc4c7;
+  background: #f8f9f8;
+  color: #172c3d;
+  line-height: 1.1;
+}
+
+.standard-ref-mark span {
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.standard-ref-mark b {
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.standard-ref-wide b {
+  font-size: 12px;
+}
+
+.standard-logo-grid {
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+  gap: 14px;
+}
+
+.standard-logo-grid article {
+  grid-template-rows: 96px auto minmax(0, 1fr);
+  min-width: 0;
+  min-height: 254px;
+  gap: 12px;
+  padding: 18px;
+  overflow: visible;
+}
+
+.standard-logo-grid .standard-logo,
+.standard-logo-grid .standard-ref-mark {
+  width: min(156px, 100%);
+  max-width: 156px;
+  height: 82px;
+  max-height: 82px;
+  align-self: center;
+  justify-self: start;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.standard-logo-surface {
+  display: grid;
+  width: min(176px, 100%);
+  height: 82px;
+  place-items: center;
+  align-self: center;
+  justify-self: start;
+  padding: 10px 12px;
+}
+
+.standard-logo-surface .standard-logo {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.standard-logo-surface-dark {
+  border-radius: 4px;
+  background: #202522;
+}
+
+.standard-logo-grid strong,
+.standard-logo-grid em {
+  min-width: 0;
+  overflow: visible;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.standard-logo-grid strong {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.standard-logo-grid em {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.form-scheduling-note {
+  display: block;
+  padding: 12px 14px;
+  border-left: 3px solid var(--ink);
+  background: #f3f1eb;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .public-reference-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .standard-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .research-text-only h2 {
+    font-size: 32px;
+  }
+
+  .research-text-only .sdg-research-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .research-text-only .sdg-research-grid h3 {
+    min-height: 0;
+    font-size: 20px;
+  }
+
+  .public-reference-panel nav {
+    grid-template-columns: 1fr;
+  }
+
+  .standards-preview-grid article {
+    grid-template-columns: 98px minmax(0, 1fr);
+    gap: 14px;
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .standards-preview-grid img,
+  .standards-preview-grid .standard-ref-mark {
+    width: 92px;
+    max-width: 92px;
+    height: 66px;
+    max-height: 66px;
+  }
+}
+
+@media (max-width: 520px) {
+  .team-grid a[href^="mailto:"] {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .standard-logo-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .standard-logo-grid article {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 90px auto auto;
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .standard-logo-grid .standard-logo,
+  .standard-logo-grid .standard-ref-mark,
+  .standard-logo-grid .standard-logo-surface {
+    grid-row: auto;
+    width: min(156px, 100%);
+    height: 78px;
+    justify-self: start;
+  }
+
+  .standards-preview-grid article {
+    grid-template-columns: 1fr;
+  }
+
+  .standards-preview-grid img,
+  .standards-preview-grid .standard-ref-mark {
+    justify-self: start;
+  }
+}
