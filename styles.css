@@ -3505,14 +3505,41 @@ textarea {
 
 .standard-logo-grid .standard-logo,
 .standard-logo-grid .standard-ref-mark {
-  width: min(156px, 100%);
-  max-width: 156px;
-  height: 82px;
+  width: auto;
+  max-width: min(176px, 100%);
+  height: auto;
   max-height: 82px;
   align-self: center;
   justify-self: start;
   object-fit: contain;
   object-position: left center;
+}
+
+.standard-logo-grid .standard-logo-ifrs,
+.standard-logo-grid .standard-logo-sasb {
+  max-width: min(180px, 100%);
+  max-height: 78px;
+}
+
+.standard-logo-grid .standard-logo-edb {
+  max-width: min(158px, 100%);
+  max-height: 78px;
+}
+
+.standard-logo-grid .standard-logo-cdp {
+  max-width: min(154px, 100%);
+  max-height: 64px;
+  color: #111;
+}
+
+.standard-logo-grid .standard-logo-sbti {
+  max-width: min(164px, 100%);
+  max-height: 80px;
+}
+
+.standard-logo-grid .standard-logo-accountability {
+  max-width: min(178px, 100%);
+  max-height: 58px;
 }
 
 .standard-logo-surface {
@@ -3631,8 +3658,10 @@ textarea {
   .standard-logo-grid .standard-ref-mark,
   .standard-logo-grid .standard-logo-surface {
     grid-row: auto;
-    width: min(156px, 100%);
-    height: 78px;
+    width: auto;
+    max-width: min(176px, 100%);
+    height: auto;
+    max-height: 78px;
     justify-self: start;
   }
 
