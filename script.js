@@ -1804,6 +1804,34 @@ Object.assign(translations.zh, {
   "trustmarkPage.stat.themes": "个拟定主题领域"
 });
 
+Object.assign(translations.en, {
+  "team.copy": "Compliance leadership, technical judgement, training delivery, audit coordination and Trustmark governance are assigned to named leads for clear ownership.",
+  "team.philip.role": "Trustmark Governance Lead",
+  "team.philip": "Leads scheme-governance coordination, application-flow control, evidence administration and liaison across assessment, technical review and approval roles for the ENERSTAY TRUSTMARK pilot.",
+  "team.heroCta": "Meet the named leads",
+  "team.stat.leads": "functional leads",
+  "team.stat.roles": "defined responsibilities",
+  "team.stat.network": "regional and cross-border coordination",
+  "newsPage.heroCta": "View dated updates",
+  "newsPage.stat.records": "dated public records",
+  "newsPage.stat.sources": "public source channels",
+  "newsPage.stat.outputs": "research and collaboration outputs"
+});
+
+Object.assign(translations.zh, {
+  "team.copy": "合规把控、技术判断、课程交付、审核协调与 Trustmark 治理分别由具名负责人承担，确保职责和对接清晰。",
+  "team.philip.role": "Trustmark 治理负责人",
+  "team.philip": "负责 ENERSTAY TRUSTMARK 试点的体系治理协调、申请流程控制、证据管理，以及评估、技术复核与批准角色之间的衔接。",
+  "team.heroCta": "查看具名负责人",
+  "team.stat.leads": "位职能负责人",
+  "team.stat.roles": "类明确职责",
+  "team.stat.network": "区域与跨境协同",
+  "newsPage.heroCta": "查看日期记录",
+  "newsPage.stat.records": "条公开日期记录",
+  "newsPage.stat.sources": "个公开来源渠道",
+  "newsPage.stat.outputs": "项科研与合作成果"
+});
+
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");

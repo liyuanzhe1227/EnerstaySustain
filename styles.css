@@ -4748,3 +4748,72 @@ html[lang="zh-CN"] .trustmark-hero h1 {
     padding: 22px;
   }
 }
+
+/* Team and updates use the same image-led page system as the specialist catalogues. */
+.team-catalog-hero h1 {
+  max-width: 860px;
+}
+
+.updates-catalog-hero h1 {
+  max-width: 920px;
+}
+
+.team-catalog-hero .catalog-hero-media img,
+.updates-catalog-hero .catalog-hero-media img {
+  object-position: center;
+}
+
+.team-directory .team-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.team-directory .team-grid article {
+  grid-column: span 2;
+}
+
+.team-directory .team-grid article:nth-last-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.team-directory .team-grid article > a {
+  overflow-wrap: anywhere;
+}
+
+.team-directory .team-grid article > a[href^="mailto:"] {
+  font-size: 12px;
+}
+
+@media (max-width: 980px) {
+  .team-directory .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-directory .team-grid article,
+  .team-directory .team-grid article:nth-last-child(-n + 2) {
+    grid-column: auto;
+  }
+
+  .team-directory .team-grid article:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-catalog-hero .catalog-hero-media img,
+  .updates-catalog-hero .catalog-hero-media img {
+    object-position: 64% center;
+  }
+
+  .team-directory .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-directory .team-grid article:last-child {
+    grid-column: auto;
+  }
+
+  .team-directory .team-grid article > a[href^="mailto:"] {
+    font-size: 11px;
+  }
+}
