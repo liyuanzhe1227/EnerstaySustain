@@ -3675,6 +3675,446 @@ textarea {
   }
 }
 
+/* 2026 information-architecture and responsive consolidation. */
+.research-text-only {
+  width: min(1180px, calc(100% - 36px));
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
+.research-text-only > div {
+  width: 100%;
+  min-width: 0;
+}
+
+.compact-directory-hero {
+  padding-bottom: clamp(30px, 4vw, 48px);
+}
+
+.compact-directory-hero .section-head {
+  margin-bottom: 0;
+}
+
+.compact-directory-hero h1 {
+  max-width: 900px;
+  margin-bottom: 18px;
+  font-size: clamp(42px, 5.6vw, 72px);
+}
+
+html[lang="zh-CN"] .compact-directory-hero h1 {
+  font-size: clamp(38px, 5.2vw, 64px);
+}
+
+.credential-scope-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.credential-scope-groups > div {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.credential-scope-groups > div > strong {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.credential-scope-groups .credential-mini-list {
+  gap: 7px;
+}
+
+.credential-scope-groups .framework-tags span {
+  border-color: #cbd7d2;
+  background: #eff6f3;
+  color: #244c40;
+}
+
+.entry-card-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.entry-card-grid > a {
+  grid-column: span 2;
+  min-width: 0;
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--ink);
+  border-radius: 8px;
+  background: var(--paper);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.entry-card-grid > a:nth-child(4),
+.entry-card-grid > a:nth-child(5) {
+  grid-column: span 3;
+}
+
+.entry-card-grid > a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.entry-card-grid > a > span {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.entry-card-grid h3 {
+  margin: 0 0 10px;
+  font-size: clamp(22px, 2vw, 28px);
+}
+
+.entry-card-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.team-directory,
+.experience-directory {
+  padding-top: 28px;
+}
+
+.team-directory .team-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.team-directory .team-grid article {
+  min-height: 330px;
+  padding: 28px;
+}
+
+.team-directory .team-grid h2 {
+  margin: 18px 0 12px;
+  font-size: clamp(26px, 2.8vw, 34px);
+}
+
+.experience-directory .case-detail-grid {
+  margin-top: 0;
+}
+
+.experience-directory .case-detail-grid h2 {
+  margin: 0 0 12px;
+  font-size: clamp(23px, 2.1vw, 29px);
+}
+
+.experience-directory .public-reference-panel h2 {
+  margin: 0 0 8px;
+  font-size: clamp(26px, 2.8vw, 34px);
+}
+
+.trustmark-hero {
+  gap: clamp(36px, 5vw, 72px);
+  min-height: 600px;
+  padding-block: clamp(64px, 7vw, 92px);
+}
+
+.trustmark-hero h1 {
+  max-width: 760px;
+  font-size: clamp(44px, 4.5vw, 62px);
+  line-height: 1.04;
+}
+
+html[lang="zh-CN"] .trustmark-hero h1 {
+  font-size: clamp(40px, 4.2vw, 56px);
+  line-height: 1.08;
+}
+
+.trustmark-identity-panel {
+  min-height: 300px;
+}
+
+.trustmark-identity-panel > span {
+  font-size: clamp(30px, 3vw, 42px);
+}
+
+.trustmark-phase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.trustmark-phase-grid article {
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-top: 5px solid #26735e;
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.trustmark-phase-grid article:nth-child(2) { border-top-color: #087d78; }
+.trustmark-phase-grid article:nth-child(3) { border-top-color: #224b93; }
+.trustmark-phase-grid article:nth-child(4) { border-top-color: #594168; }
+
+.trustmark-phase-grid header {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  min-height: 88px;
+  margin-bottom: 18px;
+}
+
+.trustmark-phase-grid header > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.trustmark-phase-grid h3 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.trustmark-phase-grid small {
+  display: block;
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.trustmark-phase-grid ol {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 1px;
+  list-style: none;
+  background: var(--line);
+}
+
+.trustmark-phase-grid li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px 12px;
+  background: #f8f7f3;
+}
+
+.trustmark-phase-grid li b {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.trustmark-interest {
+  display: grid;
+  grid-template-columns: minmax(280px, .78fr) minmax(0, 1.22fr);
+  gap: clamp(30px, 6vw, 76px);
+  align-items: start;
+  border-top: 1px solid var(--line);
+}
+
+.trustmark-interest > div {
+  position: sticky;
+  top: 112px;
+}
+
+.trustmark-interest > div p:last-child {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.updates-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+  padding-top: 30px;
+}
+
+.updates-timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.updates-timeline > article {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 24px;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.updates-timeline time {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.updates-timeline article > div > span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #eff3f1;
+  color: #244c40;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.updates-timeline h3 {
+  margin-top: 0;
+  font-size: clamp(24px, 2.4vw, 32px);
+}
+
+.updates-timeline p {
+  color: var(--muted);
+}
+
+.updates-timeline article > div > a:not(.button) {
+  display: inline-flex;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--ink);
+  font-weight: 850;
+}
+
+.updates-channels {
+  position: sticky;
+  top: 104px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+}
+
+.updates-channels h2 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.updates-channels > p:not(.section-kicker) {
+  color: rgba(255, 255, 255, .7);
+}
+
+.updates-channels > a {
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .07);
+}
+
+.updates-channels > a span {
+  color: rgba(255, 255, 255, .68);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .entry-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .entry-card-grid > a,
+  .entry-card-grid > a:nth-child(4),
+  .entry-card-grid > a:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .entry-card-grid > a:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .credential-scope-groups,
+  .trustmark-phase-grid,
+  .trustmark-interest,
+  .updates-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .team-directory .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trustmark-interest > div,
+  .updates-channels {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .compact-directory-hero h1,
+  html[lang="zh-CN"] .compact-directory-hero h1,
+  .trustmark-hero h1,
+  html[lang="zh-CN"] .trustmark-hero h1 {
+    font-size: clamp(34px, 10vw, 42px);
+  }
+
+  .entry-card-grid,
+  .team-directory .team-grid,
+  .credential-scope-groups,
+  .trustmark-phase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-paper-grid:has(.research-paper-card:nth-child(2):last-child) {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-card-grid > a:last-child {
+    grid-column: auto;
+  }
+
+  .entry-card-grid > a,
+  .team-directory .team-grid article {
+    min-height: 0;
+  }
+
+  .trustmark-hero {
+    min-height: 0;
+    padding-block: 48px;
+  }
+
+  .trustmark-identity-panel {
+    min-height: 220px;
+  }
+
+  .trustmark-phase-grid article,
+  .updates-timeline > article {
+    padding: 22px;
+  }
+
+  .updates-timeline > article {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .updates-timeline time {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .experience-directory .case-detail-grid h2,
+  .team-directory .team-grid h2 {
+    font-size: 26px;
+  }
+}
+
 /* Trustmark, news and final cross-device layout guards. */
 .nav {
   gap: clamp(10px, 1vw, 20px);

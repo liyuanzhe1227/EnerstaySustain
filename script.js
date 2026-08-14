@@ -1660,6 +1660,122 @@ Object.assign(translations.zh, {
   "newsPage.press.copy": "如需来源材料、会议信息或科研媒体资料，请联系传播团队。"
 });
 
+Object.assign(translations.en, {
+  "nav.news": "Updates",
+  "footer.news": "Updates",
+  "credentials.peopleLabel": "Selected team-held qualifications and training",
+  "credentials.frameworkLabel": "Standards and frameworks applied when scoped",
+  "entry.kicker": "Explore Enerstay",
+  "entry.title": "Go directly to the detail you need",
+  "entry.copy": "The homepage stays concise; each specialist area has its own complete page.",
+  "entry.standards.title": "Standards directory",
+  "entry.standards.copy": "Verification criteria, audit standards and reporting references.",
+  "entry.trustmark.title": "ENERSTAY TRUSTMARK™",
+  "entry.trustmark.copy": "Scheme status, proposed scope, governance and interest registration.",
+  "entry.training.title": "Training catalogue",
+  "entry.training.copy": "Academy, partner and external course-access pathways.",
+  "entry.research.title": "Research catalogue",
+  "entry.research.copy": "Published outputs organized by ESG themes and SDG targets.",
+  "entry.updates.title": "Public updates",
+  "entry.updates.copy": "Dated media coverage and conference activity with source links.",
+  "trustmarkPage.process.copy": "The proposed lifecycle assigns intake, assessment, technical review, approval and ongoing control to defined functions.",
+  "trustmarkPage.phase.intake": "Application and scoping",
+  "trustmarkPage.phase.intake.owner": "Governance Office",
+  "trustmarkPage.phase.assessment": "Evidence assessment",
+  "trustmarkPage.phase.assessment.owner": "Assigned Assessment Team",
+  "trustmarkPage.phase.review": "Review and decision",
+  "trustmarkPage.phase.review.owner": "Independent Technical Review and Authorized Decision",
+  "trustmarkPage.phase.control": "Licence and continuing control",
+  "trustmarkPage.phase.control.owner": "Governance Office with impartiality oversight",
+  "trustmarkForm.kicker": "Pilot Interest",
+  "trustmarkForm.title": "Register interest in a future pilot pathway",
+  "trustmarkForm.copy": "Share the proposed subject and intended claim. The submission records interest only and is not an application or an assurance engagement.",
+  "trustmarkForm.name": "Name",
+  "trustmarkForm.email": "Email",
+  "trustmarkForm.organization": "Organization",
+  "trustmarkForm.scope": "Proposed pathway",
+  "trustmarkForm.placeholder": "Select a pathway",
+  "trustmarkForm.personnel": "Personnel",
+  "trustmarkForm.product": "Product",
+  "trustmarkForm.organizationOption": "Organization",
+  "trustmarkForm.project": "Project",
+  "trustmarkForm.general": "General scheme interest",
+  "trustmarkForm.message": "Proposed subject, evidence and intended claim",
+  "trustmarkForm.submit": "Register pilot interest",
+  "trustmarkForm.note": "Interest registration does not confirm eligibility, acceptance, certification or mark use.",
+  "trustmarkForm.success": "Your interest has been recorded. The scheme team will respond by email.",
+  "trustmarkForm.invalid": "Please complete your name, email, proposed pathway and message.",
+  "newsPage.kicker": "Updates",
+  "newsPage.title": "Research coverage and conference updates",
+  "newsPage.copy": "A concise, source-linked record of dated external coverage and public professional activity.",
+  "newsPage.timeline.kicker": "Dated Record",
+  "newsPage.timeline.title": "Latest public updates",
+  "newsPage.timeline.copy": "Entries are listed in reverse chronological order and link directly to their public source.",
+  "newsPage.channels.kicker": "Public Channels",
+  "newsPage.channels.title": "Follow the full record",
+  "newsPage.channels.copy": "Research catalogues and the company feed are maintained separately from dated news entries.",
+  "newsPage.channels.research": "Browse the research catalogue",
+  "newsPage.channels.linkedin": "Follow company updates"
+});
+
+Object.assign(translations.zh, {
+  "nav.news": "动态",
+  "footer.news": "动态",
+  "credentials.peopleLabel": "团队持有的代表性个人资质与培训",
+  "credentials.frameworkLabel": "按任务范围适用的标准与框架",
+  "entry.kicker": "深入了解 Enerstay",
+  "entry.title": "直接进入所需的专业内容",
+  "entry.copy": "首页仅保留关键入口，各专业领域均设有完整独立页面。",
+  "entry.standards.title": "标准目录",
+  "entry.standards.copy": "核查准则、审核标准与报告参考框架。",
+  "entry.trustmark.title": "ENERSTAY TRUSTMARK™",
+  "entry.trustmark.copy": "查看体系状态、拟定范围、治理安排与试点意向登记。",
+  "entry.training.title": "培训课程目录",
+  "entry.training.copy": "查看 Academy 自有、合作与外部课程访问路径。",
+  "entry.research.title": "科研成果目录",
+  "entry.research.copy": "按 ESG 主题与 SDG 目标整理已发表成果。",
+  "entry.updates.title": "公开动态",
+  "entry.updates.copy": "查看带日期与公开来源的媒体报道和会议活动。",
+  "trustmarkPage.process.copy": "拟定流程由明确职能分别承担受理、评估、技术复核、批准与持续控制。",
+  "trustmarkPage.phase.intake": "申请与范围界定",
+  "trustmarkPage.phase.intake.owner": "Trustmark 治理办公室",
+  "trustmarkPage.phase.assessment": "证据评估",
+  "trustmarkPage.phase.assessment.owner": "指定评估团队",
+  "trustmarkPage.phase.review": "复核与批准决定",
+  "trustmarkPage.phase.review.owner": "独立技术复核与获授权批准职能",
+  "trustmarkPage.phase.control": "许可与持续控制",
+  "trustmarkPage.phase.control.owner": "治理办公室与公正性监督",
+  "trustmarkForm.kicker": "试点意向",
+  "trustmarkForm.title": "登记未来试点路径意向",
+  "trustmarkForm.copy": "请说明拟评审对象与预期声明。提交内容仅用于记录意向，不构成申请或保证业务。",
+  "trustmarkForm.name": "姓名",
+  "trustmarkForm.email": "邮箱",
+  "trustmarkForm.organization": "组织名称",
+  "trustmarkForm.scope": "拟选路径",
+  "trustmarkForm.placeholder": "请选择路径",
+  "trustmarkForm.personnel": "人员",
+  "trustmarkForm.product": "产品",
+  "trustmarkForm.organizationOption": "组织",
+  "trustmarkForm.project": "项目",
+  "trustmarkForm.general": "体系一般意向",
+  "trustmarkForm.message": "拟评审对象、证据与预期声明",
+  "trustmarkForm.submit": "登记试点意向",
+  "trustmarkForm.note": "意向登记不代表资格确认、受理、认证或标志使用许可。",
+  "trustmarkForm.success": "试点意向已记录，体系团队将通过邮件回复。",
+  "trustmarkForm.invalid": "请填写姓名、邮箱、拟选路径和说明。",
+  "newsPage.kicker": "动态",
+  "newsPage.title": "科研报道与会议动态",
+  "newsPage.copy": "以日期和公开来源为基础，简明记录外部报道与专业活动。",
+  "newsPage.timeline.kicker": "日期记录",
+  "newsPage.timeline.title": "最新公开动态",
+  "newsPage.timeline.copy": "内容按日期倒序排列，并直接链接至公开来源。",
+  "newsPage.channels.kicker": "公开渠道",
+  "newsPage.channels.title": "查看完整记录",
+  "newsPage.channels.copy": "科研目录和公司动态与新闻日期记录分开维护。",
+  "newsPage.channels.research": "浏览科研成果目录",
+  "newsPage.channels.linkedin": "关注公司动态"
+});
+
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
@@ -1713,7 +1829,8 @@ engagementForm?.addEventListener("submit", async (event) => {
   const status = engagementForm.querySelector("[data-form-status]");
   engagementForm.classList.add("was-validated");
   if (!engagementForm.checkValidity()) {
-    if (status) status.textContent = translations[activeLanguage]["form.invalid"];
+    const invalidKey = engagementForm.dataset.invalidKey || "form.invalid";
+    if (status) status.textContent = translations[activeLanguage][invalidKey];
     engagementForm.querySelector(":invalid")?.focus();
     return;
   }
@@ -1725,7 +1842,8 @@ engagementForm?.addEventListener("submit", async (event) => {
   }
   const formData = new FormData(engagementForm);
   try {
-    const response = await fetch("https://formsubmit.co/ajax/enquires@enerstaysustainability.com", {
+    const endpoint = engagementForm.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+    const response = await fetch(endpoint, {
       method: "POST",
       headers: { Accept: "application/json" },
       body: formData
@@ -1733,7 +1851,8 @@ engagementForm?.addEventListener("submit", async (event) => {
     if (!response.ok) throw new Error("Submission failed");
     engagementForm.reset();
     engagementForm.classList.remove("was-validated");
-    if (status) status.textContent = translations[activeLanguage]["form.success"];
+    const successKey = engagementForm.dataset.successKey || "form.success";
+    if (status) status.textContent = translations[activeLanguage][successKey];
   } catch (error) {
     if (status) status.textContent = translations[activeLanguage]["form.error"];
   } finally {
