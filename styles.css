@@ -3698,6 +3698,72 @@ textarea {
   }
 }
 
+/* Unified full-bleed heroes for specialist pages. */
+.page-catalog-hero {
+  scroll-margin-top: 92px;
+}
+
+.page-catalog-hero .catalog-hero-content {
+  width: min(1120px, calc(100% - clamp(54px, 8vw, 152px)));
+}
+
+.page-catalog-hero h1 {
+  max-width: 1040px;
+}
+
+.standards-catalog-hero h1 {
+  max-width: 980px;
+}
+
+.trustmark-catalog-hero h1 {
+  max-width: 820px;
+}
+
+.standards-catalog-hero .catalog-hero-media img,
+.experience-catalog-hero .catalog-hero-media img,
+.trustmark-catalog-hero .catalog-hero-media img {
+  object-position: center;
+}
+
+.page-catalog-hero .hero-stats {
+  width: min(920px, 100%);
+}
+
+.trustmark-catalog-hero .hero-copy {
+  margin-bottom: 18px;
+}
+
+.trustmark-catalog-hero .trustmark-pilot-status {
+  width: min(760px, 100%);
+  margin: 0 0 18px;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 640px) {
+  .page-catalog-hero .catalog-hero-content {
+    width: min(1120px, calc(100% - 54px));
+    margin-right: clamp(18px, 6vw, 76px);
+    margin-left: clamp(18px, 6vw, 76px);
+  }
+
+  .page-catalog-hero h1,
+  html[lang="zh-CN"] .page-catalog-hero h1 {
+    max-width: none;
+  }
+
+  .standards-catalog-hero .catalog-hero-media img,
+  .experience-catalog-hero .catalog-hero-media img,
+  .trustmark-catalog-hero .catalog-hero-media img {
+    object-position: 62% center;
+  }
+
+  .trustmark-catalog-hero .trustmark-pilot-status {
+    padding: 13px 15px;
+  }
+}
+
 /* 2026 information-architecture and responsive consolidation. */
 .research-text-only {
   width: min(1180px, calc(100% - 36px));

@@ -1776,6 +1776,34 @@ Object.assign(translations.zh, {
   "newsPage.channels.linkedin": "关注公司动态"
 });
 
+Object.assign(translations.en, {
+  "standardsPage.heroCta": "Explore the reference map",
+  "standardsPage.stat.references": "standards and framework references",
+  "standardsPage.stat.roles": "defined assignment roles",
+  "standardsPage.stat.boundaries": "criteria, reporting and guidance boundaries",
+  "cases.heroCta": "View case summaries",
+  "cases.stat.clusters": "experience clusters",
+  "cases.stat.evidence": "emission-source and evidence types",
+  "cases.stat.outputs": "research and collaboration outputs",
+  "trustmarkPage.stat.pathways": "defined assessment pathways",
+  "trustmarkPage.stat.steps": "controlled lifecycle steps",
+  "trustmarkPage.stat.themes": "proposed subject areas"
+});
+
+Object.assign(translations.zh, {
+  "standardsPage.heroCta": "查看参考图谱",
+  "standardsPage.stat.references": "项标准与框架参考",
+  "standardsPage.stat.roles": "类明确的任务角色",
+  "standardsPage.stat.boundaries": "类准则、报告与指南边界",
+  "cases.heroCta": "查看案例摘要",
+  "cases.stat.clusters": "类项目经验",
+  "cases.stat.evidence": "类排放源与证据资料",
+  "cases.stat.outputs": "项科研与合作成果",
+  "trustmarkPage.stat.pathways": "条明确评估路径",
+  "trustmarkPage.stat.steps": "个受控流程步骤",
+  "trustmarkPage.stat.themes": "个拟定主题领域"
+});
+
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
