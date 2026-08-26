@@ -3426,6 +3426,21 @@ textarea {
   max-height: 62px;
 }
 
+.partner-logo-stage img[src$="/siso.png"],
+.partner-logo-stage img[src$="/bedok-safety-group.png"] {
+  max-width: 76px;
+  max-height: 76px;
+}
+
+.partner-logo-grid--compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 920px;
+}
+
+.partner-logo-grid--compact .partner-card {
+  min-height: 300px;
+}
+
 .partner-official-name {
   display: grid;
   width: 100%;
@@ -3641,6 +3656,10 @@ textarea {
   .partner-card {
     min-height: 0;
     padding: 20px;
+  }
+
+  .partner-logo-grid--compact {
+    grid-template-columns: 1fr;
   }
 
   .publication-card {
