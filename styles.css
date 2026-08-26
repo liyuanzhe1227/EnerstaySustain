@@ -3413,13 +3413,20 @@ textarea {
   object-position: center;
 }
 
+.partner-logo-stage img[src$="/iase.svg"] {
+  width: min(100%, 260px);
+  max-width: 260px;
+}
+
 .partner-logo-stage img[src$="/asia-education-institution.jpg"],
 .partner-logo-stage img[src$="/huaxin.png"] {
   max-height: 78px;
 }
 
-.partner-logo-stage img[src$="/apex-nexus.jpg"] {
-  max-height: 58px;
+.partner-logo-stage img[src$="/apex-nexus.png"] {
+  width: min(100%, 250px);
+  max-width: 250px;
+  max-height: 64px;
 }
 
 .partner-logo-stage img[src$="/sleb-black.png"] {
