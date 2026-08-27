@@ -5654,6 +5654,29 @@ html[lang="zh-CN"] .trustmark-hero h1 {
   object-position: center;
 }
 
+/* The official IASE SVG uses a compact 20 x 6.49 intrinsic canvas. Give the
+   unmodified source an explicit display width so browsers do not render it at
+   its metadata size. */
+.partner-logo-stage img[src*="/iase.svg"] {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+.partner-logo-stage--feature img[src*="/iase.svg"] {
+  width: 280px;
+}
+
+.partner-logo-stage img[src*="/apex-nexus.png"] {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.partner-logo-stage--feature img[src*="/apex-nexus.png"] {
+  width: 300px;
+}
+
 .checklist-note > p {
   max-width: 920px;
   padding: 18px 20px;
