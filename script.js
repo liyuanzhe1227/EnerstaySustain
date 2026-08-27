@@ -2100,7 +2100,7 @@ Object.assign(translations.zh, {
 
 Object.assign(translations.en, {
   "partner.cumt.name": "CUMT Carbon Neutrality Institute",
-  "partner.scu.name": "Sichuan University · Polymer Science and Engineering",
+  "partner.scu.name": "College of Polymer Science and Engineering",
   "network.status.digitalLearning": "Digital learning partnership",
   "network.status.signed": "Signed programme collaboration",
   "network.status.trainingRecord": "Training collaboration record",
@@ -2148,7 +2148,7 @@ Object.assign(translations.en, {
   "catalog.certificate.caption": "Sample only. It is not a valid credential and cannot be used as evidence of course completion.",
   "researchPage.network.cumt.title": "CUMT Carbon Neutrality Institute",
   "researchPage.network.cumt.copy": "Carbon-neutrality, CCUS, building-energy, environmental engineering and research-to-practice knowledge development.",
-  "researchPage.network.scu.title": "Sichuan University · Polymer Science and Engineering",
+  "researchPage.network.scu.title": "College of Polymer Science and Engineering",
   "researchPage.network.scu.copy": "Sustainability, research literacy and China-Singapore study-programme development for approved cohorts.",
   "researchPage.network.wuhan.copy": "Signed programme collaboration for SDG learning, university exposure and applied research literacy.",
   "researchPage.network.apex.copy": "Digital course access, learner records and selected research-training workflows. Learning technology remains outside VVB judgement and accreditation decisions.",
@@ -2184,7 +2184,7 @@ Object.assign(translations.en, {
 
 Object.assign(translations.zh, {
   "partner.cumt.name": "中国矿业大学碳中和研究院",
-  "partner.scu.name": "四川大学高分子科学与工程学院",
+  "partner.scu.name": "高分子学院",
   "network.status.digitalLearning": "数字学习合作",
   "network.status.signed": "已签署项目合作",
   "network.status.trainingRecord": "培训合作记录",
@@ -2232,7 +2232,7 @@ Object.assign(translations.zh, {
   "catalog.certificate.caption": "仅为样例，不是有效证书，也不能作为完成课程的证明。",
   "researchPage.network.cumt.title": "中国矿业大学碳中和研究院",
   "researchPage.network.cumt.copy": "围绕碳中和、CCUS、建筑能源、环境工程与科研成果转化开展研究。",
-  "researchPage.network.scu.title": "四川大学高分子科学与工程学院",
+  "researchPage.network.scu.title": "高分子学院",
   "researchPage.network.scu.copy": "面向获批准专班开发可持续发展、科研素养与中新研学项目。",
   "researchPage.network.wuhan.copy": "围绕 SDG 学习、高校接触与应用科研素养开展已签署项目合作。",
   "researchPage.network.apex.copy": "合作搭建数字课程访问、学习记录与部分科研培训流程；学习技术不参与 VVB 判断与认可决定。",
