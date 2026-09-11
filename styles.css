@@ -6162,3 +6162,191 @@ html[lang="zh-CN"] .industry-card-head p {
     margin-left: 0;
   }
 }
+
+/* 2026-09 SEC partnership and ONE NEXUS collaboration update. */
+.sec-partnership {
+  scroll-margin-top: 92px;
+  border-top: 1px solid var(--line);
+  background: #f1f0ec;
+}
+
+.sec-partnership-brand-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sec-brand-card {
+  display: grid;
+  grid-template-rows: 158px auto auto 1fr auto;
+  min-width: 0;
+  min-height: 410px;
+  padding: clamp(24px, 4vw, 38px);
+  color: var(--ink);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-top: 5px solid #26735e;
+  border-radius: 8px;
+  background: var(--paper);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.sec-brand-card:nth-child(2) {
+  border-top-color: #66a345;
+}
+
+.sec-brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.sec-brand-stage {
+  display: flex;
+  min-width: 0;
+  height: 142px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+  border: 1px solid #dde2dd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.sec-brand-stage img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 360px);
+  max-height: 102px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.sec-brand-stage--mark img {
+  max-width: 118px;
+  max-height: 118px;
+}
+
+.sec-brand-card small {
+  justify-self: start;
+  margin-bottom: 16px;
+  padding: 6px 9px;
+  color: #315145;
+  border-radius: 999px;
+  background: #e5f0e9;
+  font-size: 11px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.sec-brand-card h3 {
+  margin: 0 0 12px;
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.12;
+}
+
+.sec-brand-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.sec-brand-card .text-link {
+  align-self: end;
+  justify-self: start;
+  margin-top: 24px;
+}
+
+.sec-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.sec-role-grid article {
+  min-width: 0;
+  min-height: 244px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fafaf7;
+}
+
+.sec-role-grid article > span {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.sec-role-grid h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.sec-role-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.sec-boundary-note {
+  background: #fff;
+}
+
+.partner-logo-stage img[src*="/one-nexus.png"] {
+  width: min(100%, 270px);
+  height: auto;
+  max-height: 66px;
+}
+
+.study-programme-logo {
+  display: block;
+  width: min(100%, 260px);
+  height: 56px;
+  margin-bottom: 22px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+#one-nexus-collaboration {
+  scroll-margin-top: 104px;
+}
+
+@media (max-width: 820px) {
+  .sec-partnership-brand-grid,
+  .sec-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sec-brand-card,
+  .sec-role-grid article {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .sec-brand-card {
+    grid-template-rows: 132px auto auto 1fr auto;
+    padding: 22px;
+  }
+
+  .sec-brand-stage {
+    height: 118px;
+    padding: 14px;
+  }
+
+  .sec-brand-stage img {
+    max-height: 82px;
+  }
+
+  .sec-brand-stage--mark img {
+    max-width: 92px;
+    max-height: 92px;
+  }
+
+  .sec-role-grid article {
+    padding: 22px;
+  }
+}
