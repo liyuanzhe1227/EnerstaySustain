@@ -992,9 +992,10 @@ a.partner-card:hover {
 
 .study-programme-grid article,
 .study-programme-grid > a {
-  display: block;
+  display: grid;
+  grid-template-rows: 104px 26px minmax(64px, auto) 1fr auto;
   min-width: 0;
-  min-height: 220px;
+  min-height: 430px;
   padding: 24px;
   color: var(--ink);
   text-decoration: none;
@@ -1013,13 +1014,32 @@ a.partner-card:hover {
 }
 
 .study-programme-grid h3 {
-  margin: 0 0 12px;
+  align-self: start;
+  margin: 0 0 14px;
   font-size: 22px;
+  line-height: 1.24;
 }
 
 .study-programme-grid p {
-  margin: 0;
+  margin: 0 0 18px;
   color: var(--muted);
+}
+
+.study-programme-logo-stage {
+  display: flex;
+  width: 100%;
+  height: 88px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.study-programme-region {
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .quantified-cases {
@@ -6304,8 +6324,9 @@ html[lang="zh-CN"] .industry-card-head p {
 .study-programme-logo {
   display: block;
   width: min(100%, 260px);
-  height: 56px;
-  margin-bottom: 22px;
+  height: auto;
+  max-height: 72px;
+  margin: 0;
   object-fit: contain;
   object-position: left center;
 }
@@ -6802,6 +6823,11 @@ html[lang="zh-CN"] .industry-card-head p {
   background: var(--line);
 }
 
+.section > .course-enrolment-rules {
+  width: 100%;
+  margin-top: 18px;
+}
+
 .course-enrolment-rules strong,
 .course-enrolment-rules span {
   display: flex;
@@ -6906,30 +6932,162 @@ html[lang="zh-CN"] .industry-card-head p {
   background: var(--soft);
 }
 
-.study-partner-card {
-  display: flex !important;
-  flex-direction: column;
-}
-
 .study-programme-logo--wide {
   width: 100%;
-  height: 74px;
   max-width: 340px;
+  max-height: 74px;
 }
 
 .study-programme-logo--aei {
-  width: 88px;
-  height: 88px;
+  width: 78px;
+  height: 78px;
   object-fit: contain;
 }
 
 .study-partner-card small {
   display: inline-flex;
+  justify-self: start;
   align-self: flex-start;
-  margin-top: auto;
-  padding-top: 16px;
+  margin-top: 4px;
   color: var(--muted);
+  font-size: 12px;
   font-weight: 850;
+}
+
+/* One visual rhythm for every Academy price panel and compact course card. */
+.course-fee-row > span,
+.iase-market-fee,
+.cpa-course-fee,
+.cpa-pathway-note > div:last-child,
+.standards-course-fee > div,
+.custom-course-price,
+.immersion-options > div {
+  padding: 14px 16px;
+  border: 1px solid #dedad2;
+  border-radius: 8px;
+  background: #eeeae2;
+}
+
+.course-fee-row small,
+.course-fee-row em,
+.iase-market-fee small,
+.iase-market-fee em,
+.cpa-course-fee small,
+.cpa-course-fee em,
+.cpa-pathway-note small,
+.cpa-pathway-note em,
+.standards-course-fee small,
+.standards-course-fee em,
+.custom-course-price small,
+.custom-course-price em,
+.immersion-options small,
+.immersion-options em {
+  color: var(--muted);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.course-fee-row strong,
+.iase-market-fee strong,
+.cpa-course-fee strong,
+.cpa-pathway-note > div:last-child strong,
+.standards-course-fee strong,
+.custom-course-price strong,
+.immersion-options strong {
+  margin: 3px 0;
+  font-size: clamp(23px, 2.1vw, 29px);
+  line-height: 1.15;
+}
+
+.apex-price-note,
+.course-pricing-note,
+.iase-price-note {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border: 0;
+  border-left: 4px solid var(--ink);
+  background: var(--paper);
+}
+
+.course-card {
+  min-height: 0;
+}
+
+.course-card h3 {
+  min-height: 0;
+  margin: 0 0 10px;
+}
+
+.course-card > p {
+  margin: 0;
+}
+
+.course-card .course-tags {
+  margin-top: 0;
+  padding: 14px 0 10px;
+}
+
+.custom-course-grid .course-card h3 {
+  min-height: 0;
+}
+
+.custom-course-grid .course-card > p {
+  min-height: 0;
+}
+
+.custom-course-grid .course-card > small {
+  min-height: 0;
+  margin-bottom: 16px;
+}
+
+.custom-course-grid .custom-course-price,
+.market-course-card .custom-course-price {
+  margin-top: 0;
+}
+
+.immersion-course-grid .course-card h3 {
+  min-height: 0;
+}
+
+.immersion-course-grid .course-card > p {
+  min-height: 0;
+}
+
+.immersion-course-grid .course-card > small {
+  min-height: 0;
+  margin: 0 0 12px;
+}
+
+.immersion-options {
+  margin: 0;
+}
+
+@media (min-width: 1321px) {
+  .custom-course-grid .course-card h3 {
+    min-height: 54px;
+  }
+
+  .custom-course-grid .course-card > p {
+    min-height: 72px;
+  }
+
+  .custom-course-grid .course-card > small {
+    min-height: 44px;
+  }
+
+  .immersion-course-grid .course-card h3 {
+    min-height: 32px;
+  }
+
+  .immersion-course-grid .course-card > p {
+    min-height: 76px;
+  }
+
+  .immersion-course-grid .course-card > small {
+    min-height: 42px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -6940,6 +7098,18 @@ html[lang="zh-CN"] .industry-card-head p {
   }
 
   .custom-course-grid .course-card {
+    min-height: 0;
+  }
+
+  .custom-course-grid .course-card > small {
+    min-height: 0;
+  }
+
+  .custom-course-grid .course-card h3,
+  .custom-course-grid .course-card > p,
+  .immersion-course-grid .course-card h3,
+  .immersion-course-grid .course-card > p,
+  .immersion-course-grid .course-card > small {
     min-height: 0;
   }
 }
