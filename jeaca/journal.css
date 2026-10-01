@@ -42,9 +42,11 @@ button, input, select, textarea { font: inherit; }
   backdrop-filter: blur(12px);
 }
 .journal-header-inner { min-height: 82px; display: flex; align-items: center; gap: 28px; }
-.journal-lockup { display: inline-flex; align-items: center; gap: 13px; text-decoration: none; flex: 0 0 auto; }
-.journal-lockup-mark { color: var(--journal-green); font-family: var(--journal-serif); font-size: 34px; font-weight: 600; letter-spacing: -.045em; line-height: 1; }
-.journal-lockup-copy { padding-left: 13px; border-left: 1px solid var(--journal-line); font-size: 10px; font-weight: 700; letter-spacing: .04em; line-height: 1.15; text-transform: uppercase; }
+.journal-lockup { display: inline-flex; align-items: center; gap: 17px; text-decoration: none; flex: 0 0 auto; }
+.journal-lockup-mark { color: var(--journal-green); font-family: var(--journal-sans); font-size: 38px; font-weight: 800; letter-spacing: -.055em; line-height: .9; }
+.journal-lockup-copy { display: grid; gap: 1px; color: var(--journal-green); font-size: 11px; letter-spacing: -.02em; line-height: 1.05; }
+.journal-lockup-copy strong { font-weight: 800; }
+.journal-lockup-copy span { color: var(--journal-muted); font-weight: 500; }
 .journal-nav { margin-left: auto; display: flex; align-items: center; gap: 22px; }
 .journal-nav a { color: var(--journal-muted); font-size: 13px; font-weight: 600; text-decoration: none; }
 .journal-nav a:hover, .journal-nav a[aria-current='page'] { color: var(--journal-green); }

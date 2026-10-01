@@ -55,7 +55,7 @@ function header(depth, current = '') {
   ];
   return `<header class="journal-header">
     <div class="journal-container journal-header-inner">
-      <a class="journal-lockup" href="${home}" aria-label="JEACA home"><span class="journal-lockup-mark">JEACA</span><span class="journal-lockup-copy">engineering assurance<br>+ conformity assessment</span></a>
+      <a class="journal-lockup" href="${home}" aria-label="JEACA home"><span class="journal-lockup-mark">JEACA</span><span class="journal-lockup-copy"><strong>engineering assurance</strong><span>+ conformity assessment</span></span></a>
       <button class="journal-menu" type="button" aria-label="Open journal navigation" aria-expanded="false" data-journal-menu><span></span><span></span><span></span></button>
       <nav class="journal-nav" aria-label="Journal navigation" data-journal-nav>${nav.map(([id,en,zh]) => `<a href="${home}#${id}"${current === id ? ' aria-current="page"' : ''} ${enZh(en,zh)}>${en}</a>`).join('')}<a class="journal-nav-cta" href="${home}#interest" ${enZh('Register interest','登记意向')}>Register interest</a><span class="journal-mobile-language"><button type="button" data-journal-language="en" aria-pressed="true">EN</button><button type="button" data-journal-language="zh" aria-pressed="false">中</button></span></nav>
       <div class="journal-language" aria-label="Language"><button type="button" data-journal-language="en" aria-pressed="true">EN</button><button type="button" data-journal-language="zh" aria-pressed="false">中</button></div>
@@ -73,8 +73,8 @@ function documentShell({ title, description, canonical, image, depth, body, extr
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="index,follow">
   <link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${image}"><meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" type="image/png" href="${asset(depth + 1, 'assets/logo-mark.png')}"><link rel="stylesheet" href="${asset(depth, 'journal.css')}?v=release-20261001h">${extraHead}
-</head><body>${body}<script src="${asset(depth, 'journal.js')}?v=release-20261001h"></script></body></html>`;
+  <link rel="icon" type="image/png" href="${asset(depth + 1, 'assets/logo-mark.png')}"><link rel="stylesheet" href="${asset(depth, 'journal.css')}?v=release-20261001i">${extraHead}
+</head><body>${body}<script src="${asset(depth, 'journal.js')}?v=release-20261001i"></script></body></html>`;
 }
 
 function articleCard(article) {
@@ -139,7 +139,7 @@ function socialImage(label, title) {
 
 function buildLegacyRedirect() {
   const mapping = Object.fromEntries(articles.map((article) => [article.id, `./vol-1/no-1/${article.slug}/`]));
-  fs.writeFileSync(path.join(base, 'article.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Article moved | JEACA</title><link rel="stylesheet" href="./journal.css?v=release-20261001h"></head><body><main class="journal-form-page"><div class="journal-container"><h1>Article page moved</h1><p>This article now has a permanent, readable web address.</p><p><a id="legacy-target" class="journal-button journal-button-primary" href="./#current-issue">Open the current issue</a></p></div></main><script>const m=${JSON.stringify(mapping)};const id=new URLSearchParams(location.search).get('id')?.toUpperCase();if(m[id]){document.getElementById('legacy-target').href=m[id];location.replace(m[id]);}</script></body></html>`);
+  fs.writeFileSync(path.join(base, 'article.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Article moved | JEACA</title><link rel="stylesheet" href="./journal.css?v=release-20261001i"></head><body><main class="journal-form-page"><div class="journal-container"><h1>Article page moved</h1><p>This article now has a permanent, readable web address.</p><p><a id="legacy-target" class="journal-button journal-button-primary" href="./#current-issue">Open the current issue</a></p></div></main><script>const m=${JSON.stringify(mapping)};const id=new URLSearchParams(location.search).get('id')?.toUpperCase();if(m[id]){document.getElementById('legacy-target').href=m[id];location.replace(m[id]);}</script></body></html>`);
 }
 
 buildHomepage();
