@@ -1088,7 +1088,7 @@ a.partner-card:hover {
 /* JEACA journal development portal. */
 .journal-site-entry {
   display: grid;
-  grid-template-columns: 140px minmax(360px, 1fr) auto;
+  grid-template-columns: minmax(300px, 0.72fr) minmax(320px, 1fr) auto;
   column-gap: 28px;
   row-gap: 8px;
   align-items: center;
@@ -1099,24 +1099,41 @@ a.partner-card:hover {
   background: var(--paper);
 }
 
-.journal-site-entry > div {
+.journal-site-entry > .journal-entry-lockup {
   grid-row: 1 / 3;
 }
 
-.journal-site-entry > div > span {
-  display: block;
-  font-size: 34px;
-  font-weight: 950;
-  letter-spacing: -.055em;
-  line-height: 1;
+.journal-entry-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+  padding-right: 24px;
+  border-right: 1px solid var(--line);
 }
 
-.journal-site-entry > div > p {
-  margin: 5px 0 0;
-  color: var(--muted);
-  font-size: 11px;
+.journal-entry-mark {
+  flex: 0 0 auto;
+  font-size: 42px;
   font-weight: 900;
-  text-transform: uppercase;
+  letter-spacing: -.055em;
+  line-height: .92;
+}
+
+.journal-entry-copy {
+  display: grid;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.05;
+}
+
+.journal-entry-copy strong {
+  font-weight: 850;
+}
+
+.journal-entry-copy > span {
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .journal-site-entry h2,
@@ -1126,13 +1143,20 @@ a.partner-card:hover {
 }
 
 .journal-site-entry h2 {
-  font-size: 21px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.32;
+}
+
+html[lang="en"] .journal-site-entry h2,
+html[lang="zh-CN"] .journal-site-entry h2 {
+  font-size: 16px;
+  line-height: 1.32;
 }
 
 .journal-site-entry > p {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .journal-site-entry > .button {
@@ -1624,7 +1648,7 @@ a.partner-card:hover {
 
 @media (max-width: 1080px) {
   .journal-site-entry {
-    grid-template-columns: 120px 1fr auto;
+    grid-template-columns: minmax(270px, .8fr) 1fr auto;
   }
 
   .journal-hero {
@@ -1691,6 +1715,12 @@ a.partner-card:hover {
 
   .journal-site-entry .button {
     width: 100%;
+  }
+
+  .journal-entry-lockup {
+    padding: 0 0 20px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .journal-hero {
@@ -1844,10 +1874,11 @@ html[lang="zh-CN"] .hero-stats dd {
   align-items: center;
   margin: 24px clamp(18px, 4vw, 56px) 0;
   padding: 28px 30px;
-  border: 1px solid var(--line);
-  border-left: 6px solid var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 6px solid #ffffff;
   border-radius: 8px;
-  background: var(--paper);
+  background: #173d34;
+  color: #ffffff;
 }
 
 .press-entry-banner h2 {
@@ -1859,7 +1890,23 @@ html[lang="zh-CN"] .hero-stats dd {
 .press-entry-banner p:last-child {
   max-width: 760px;
   margin: 0;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.press-entry-banner .section-kicker {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.press-entry-banner .button.primary {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #111111;
+}
+
+.press-entry-banner .button.secondary {
+  border-color: rgba(255, 255, 255, 0.72);
+  background: transparent;
+  color: #ffffff;
 }
 
 .press-entry-actions {

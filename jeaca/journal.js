@@ -1,36 +1,16 @@
 (() => {
   const root = document.documentElement;
-  const menuButton = document.querySelector('[data-journal-menu]');
-  const navigation = document.querySelector('[data-journal-nav]');
 
   const setLanguage = (language) => {
     const selected = language === 'zh' ? 'zh' : 'en';
-    root.lang = selected === 'zh' ? 'zh-CN' : 'en';
     document.querySelectorAll('[data-en][data-zh]').forEach((element) => {
       element.textContent = element.dataset[selected];
     });
-    document.querySelectorAll('[data-journal-language]').forEach((button) => {
-      button.setAttribute('aria-pressed', String(button.dataset.journalLanguage === selected));
-    });
-    localStorage.setItem('jeaca-language', selected);
   };
 
-  menuButton?.addEventListener('click', () => {
-    const open = navigation?.dataset.open !== 'true';
-    if (navigation) navigation.dataset.open = String(open);
-    menuButton.setAttribute('aria-expanded', String(open));
-  });
-
-  navigation?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navigation.dataset.open = 'false';
-      menuButton?.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  document.querySelectorAll('[data-journal-language]').forEach((button) => {
-    button.addEventListener('click', () => setLanguage(button.dataset.journalLanguage));
-  });
+  const syncLanguage = () => setLanguage(root.lang.toLowerCase().startsWith('zh') ? 'zh' : 'en');
+  syncLanguage();
+  new MutationObserver(syncLanguage).observe(root, { attributes: true, attributeFilter: ['lang'] });
 
   document.querySelectorAll('[data-share-article]').forEach((button) => {
     button.addEventListener('click', async () => {
@@ -55,5 +35,4 @@
     }
   }
 
-  setLanguage(localStorage.getItem('jeaca-language') || 'en');
 })();
