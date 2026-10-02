@@ -6218,6 +6218,10 @@ html[lang="zh-CN"] .trustmark-hero h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.entry-card-grid--core > a:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .resource-strip {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

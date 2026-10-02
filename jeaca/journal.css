@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
 
 :root {
-  --journal-green: #183028;
-  --journal-green-2: #2f6b57;
-  --journal-mint: #e8f0ec;
-  --journal-paper: #f6f8f7;
-  --journal-orange: #e07a3f;
-  --journal-ink: #1b2421;
-  --journal-muted: #5b6a64;
-  --journal-line: #d9e1dd;
+  --journal-green: #244c40;
+  --journal-green-2: #26735e;
+  --journal-mint: #eff6f3;
+  --journal-paper: #f5f3ef;
+  --journal-orange: #fd6925;
+  --journal-ink: #0c0c0c;
+  --journal-muted: #5f5f5f;
+  --journal-line: #dddddd;
   --journal-white: #fff;
   --journal-sans: Inter, Arial, Helvetica, sans-serif;
   --journal-serif: 'Source Serif 4', Georgia, serif;
@@ -33,6 +33,10 @@ button, input, select, textarea { font: inherit; }
 .journal-container { width: min(calc(100% - 48px), var(--journal-max)); margin-inline: auto; }
 .journal-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
+.journal-company-bar { border-bottom: 1px solid var(--journal-line); background: #fff; }
+.journal-company-bar a { min-height: 54px; display: inline-flex; align-items: center; gap: 14px; color: var(--journal-muted); font-size: 12px; font-weight: 650; text-decoration: none; }
+.journal-company-bar img { width: 160px; height: auto; }
+
 .journal-header {
   position: sticky;
   top: 0;
@@ -43,8 +47,8 @@ button, input, select, textarea { font: inherit; }
 }
 .journal-header-inner { min-height: 82px; display: flex; align-items: center; gap: 28px; }
 .journal-lockup { display: inline-flex; align-items: center; gap: 17px; text-decoration: none; flex: 0 0 auto; }
-.journal-lockup-mark { color: var(--journal-green); font-family: var(--journal-sans); font-size: 38px; font-weight: 800; letter-spacing: -.055em; line-height: .9; }
-.journal-lockup-copy { display: grid; gap: 1px; color: var(--journal-green); font-size: 11px; letter-spacing: -.02em; line-height: 1.05; }
+.journal-lockup-mark { color: var(--journal-green); font-family: var(--journal-sans); font-size: 42px; font-weight: 800; letter-spacing: -.055em; line-height: .9; }
+.journal-lockup-copy { display: grid; gap: 1px; color: var(--journal-green); font-size: 13px; letter-spacing: -.02em; line-height: 1.05; }
 .journal-lockup-copy strong { font-weight: 800; }
 .journal-lockup-copy span { color: var(--journal-muted); font-weight: 500; }
 .journal-nav { margin-left: auto; display: flex; align-items: center; gap: 22px; }
@@ -109,7 +113,7 @@ button, input, select, textarea { font: inherit; }
 
 .journal-editor-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .journal-editor { display: grid; grid-template-columns: 76px 1fr; gap: 22px; padding: 28px; border: 1px solid var(--journal-line); background: #fff; }
-.journal-editor-avatar { width: 76px; height: 76px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--journal-green); font-family: var(--journal-serif); font-size: 26px; font-weight: 600; }
+.journal-editor-avatar { width: 76px; height: 76px; display: grid; place-items: center; border-radius: 50%; color: #fff; background: var(--journal-green); font-family: var(--journal-sans); font-size: 24px; font-weight: 800; }
 .journal-editor > div:last-child { min-width: 0; }
 .journal-editor small { color: var(--journal-green-2); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .journal-editor h3 { margin: 3px 0 6px; font-size: 23px; }
@@ -190,7 +194,10 @@ button, input, select, textarea { font: inherit; }
 
 @media (max-width: 780px) {
   .journal-container { width: min(calc(100% - 36px), var(--journal-max)); }
-  .journal-lockup-copy { display: none; }
+  .journal-lockup-copy { display: grid; font-size: 11px; }
+  .journal-company-bar a { min-height: 48px; }
+  .journal-company-bar img { width: 142px; }
+  .journal-company-bar span { display: none; }
   .journal-section { padding-block: 56px; }
   .journal-section-head { display: block; margin-bottom: 30px; }
   .journal-section-head > p { margin-top: 14px; }
@@ -208,6 +215,9 @@ button, input, select, textarea { font: inherit; }
 
 @media (max-width: 480px) {
   .journal-header-inner { min-height: 72px; }
+  .journal-lockup { gap: 10px; }
+  .journal-lockup-mark { font-size: 29px; }
+  .journal-lockup-copy { font-size: 9px; }
   .journal-nav { top: 72px; }
   .journal-lockup-mark { font-size: 29px; }
   .journal-hero-inner { min-height: 330px; padding-block: 56px 70px; }
