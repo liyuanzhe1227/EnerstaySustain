@@ -1837,6 +1837,49 @@ html[lang="zh-CN"] .hero-stats dd {
   font-weight: 750;
 }
 
+.press-entry-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 36px;
+  align-items: center;
+  margin: 24px clamp(18px, 4vw, 56px) 0;
+  padding: 28px 30px;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--ink);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.press-entry-banner h2 {
+  margin: 0 0 7px;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.08;
+}
+
+.press-entry-banner p:last-child {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.press-entry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .press-entry-banner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .press-entry-actions .button {
+    width: 100%;
+  }
+}
+
 .section {
   width: min(1180px, calc(100% - 36px));
   margin: 0 auto;

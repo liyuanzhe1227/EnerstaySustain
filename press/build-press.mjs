@@ -108,7 +108,7 @@ function header(current = 'press') {
     ['../index.html#home','Home','首页','home'],
     ['../services.html','Services','服务','services'],
     ['../team.html','Team','团队','team'],
-    ['../experience.html','Experience','经验','experience'],
+    ['../experience.html','Experience','经验','cases'],
     ['../standards.html','Standards','标准','standards'],
     ['../training.html','Training','培训','training'],
     ['../research.html','Research','研究','research'],
@@ -117,7 +117,7 @@ function header(current = 'press') {
     ['../trustmark.html','Trustmark','信任标识','trustmark'],
     ['../index.html#contact','Contact','联系','contact']
   ];
-  return `<header class="press-header"><div class="press-container press-header-inner"><a href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="press-brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><button class="press-menu" type="button" aria-label="Open navigation" aria-expanded="false" data-press-menu><span></span><span></span><span></span></button><nav class="press-nav" aria-label="Primary navigation" data-press-nav>${nav.map(([href,en,zh,id]) => `<a href="${href}"${id === current ? ' aria-current="page" class="press-nav-current"' : ''} ${enZh(en,zh)}>${en}</a>`).join('')}<span class="press-mobile-language"><button type="button" data-press-language="en" aria-pressed="true">EN</button><button type="button" data-press-language="zh" aria-pressed="false">中</button></span></nav><div class="press-language" aria-label="Language"><button type="button" data-press-language="en" aria-pressed="true">EN</button><button type="button" data-press-language="zh" aria-pressed="false">中</button></div></div></header>`;
+  return `<header class="site-header"><a class="brand" href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><nav class="nav" aria-label="Primary navigation">${nav.map(([href,en,zh,id]) => `<a href="${href}"${id === current ? ' aria-current="page"' : ''} data-i18n="nav.${id}">${en}</a>`).join('')}</nav><button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">中</span></button></header>`;
 }
 
 function footer() {
@@ -125,7 +125,7 @@ function footer() {
 }
 
 function shell({ title, description, canonical, image, body, robots = 'index,follow' }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${robots}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${image}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="../assets/logo-mark.png"><link rel="stylesheet" href="../styles.css?v=release-20261002"><link rel="stylesheet" href="press.css?v=release-20261002b"></head><body>${body}<script src="press.js?v=release-20261002b"></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${robots}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${image}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="../assets/logo-mark.png"><link rel="stylesheet" href="../styles.css?v=release-20261002d"><link rel="stylesheet" href="press.css?v=release-20261002d"></head><body>${body}<script src="../script.js?v=release-20261002d"></script><script src="press.js?v=release-20261002d"></script></body></html>`;
 }
 
 function card(book) {
