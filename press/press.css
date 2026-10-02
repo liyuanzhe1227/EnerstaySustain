@@ -45,8 +45,8 @@ body { background: var(--press-surface); }
 .press-section-head { display: flex; justify-content: space-between; gap: 40px; align-items: end; margin-bottom: 36px; }
 .press-section-head h2 { margin: 0; font-size: clamp(30px, 4vw, 46px); letter-spacing: 0; line-height: 1.08; }
 .press-section-head > p { max-width: 470px; margin: 0; color: var(--press-muted); }
-.press-book-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px 28px; }
-.press-book-card { min-width: 0; padding: 18px 18px 22px; border: 1px solid var(--press-line); border-radius: 8px; background: var(--press-paper); box-shadow: 0 10px 30px rgba(12,12,12,.04); }
+.press-book-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: stretch; gap: 44px 24px; }
+.press-book-card { min-width: 0; height: 100%; display: flex; flex-direction: column; padding: 18px 18px 22px; border: 1px solid var(--press-line); border-radius: 8px; background: var(--press-paper); box-shadow: 0 10px 30px rgba(12,12,12,.04); }
 .press-cover-link { display: block; overflow: hidden; aspect-ratio: 900 / 1272; background: #dcdad4; }
 .press-cover-link img { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
 .press-cover-link:hover img { transform: scale(1.012); }
@@ -54,8 +54,15 @@ body { background: var(--press-surface); }
 .press-book-card h3 { margin: 10px 0 0; font-size: 22px; letter-spacing: 0; line-height: 1.22; }
 .press-book-card h3 a { text-decoration: none; }
 .press-book-card p { margin: 12px 0 0; color: var(--press-muted); font-size: 14px; }
-.press-book-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.press-book-card .press-book-isbn { margin-top: 15px; color: var(--press-ink); font-size: 13px; letter-spacing: .015em; }
+.press-book-card .press-book-isbn strong { margin-right: 6px; font-size: 11px; letter-spacing: .08em; }
+.press-book-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 20px; }
 .press-price { color: var(--press-green); font-weight: 850; }
+.press-registration { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: 32px; align-items: center; margin-top: 44px; padding: 28px 30px; border: 1px solid var(--press-line); background: var(--press-paper); }
+.press-registration .press-eyebrow { margin-bottom: 8px; }
+.press-registration h3 { margin: 0; font-size: 22px; line-height: 1.25; }
+.press-registration strong { color: var(--press-green); font-size: 18px; }
+.press-registration p { margin: 7px 0 0; color: var(--press-muted); font-size: 13px; }
 
 .press-detail { padding-block: 64px 92px; background: #fff; }
 .press-breadcrumb { display: flex; gap: 8px; margin-bottom: 34px; color: var(--press-muted); font-size: 12px; }
@@ -121,6 +128,7 @@ body { background: var(--press-surface); }
   .press-section-head > p { margin-top: 14px; }
   .press-book-grid { grid-template-columns: 1fr; gap: 42px; }
   .press-book-card { max-width: 460px; }
+  .press-registration { grid-template-columns: 1fr; padding: 24px; }
   .press-detail-grid { gap: 42px; }
   .press-detail-cover { position: static; max-width: 410px; }
   .press-buy-box { align-items: stretch; flex-direction: column; }
