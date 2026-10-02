@@ -6191,7 +6191,7 @@ html[lang="zh-CN"] .trustmark-hero h1 {
   grid-column: span 2;
 }
 
-.team-directory .team-grid article:nth-last-child(-n + 2) {
+.team-directory .team-grid:has(> article:nth-child(5):last-child) article:nth-last-child(-n + 2) {
   grid-column: span 3;
 }
 

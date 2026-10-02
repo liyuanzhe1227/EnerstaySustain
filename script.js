@@ -1818,10 +1818,12 @@ Object.assign(translations.zh, {
 
 Object.assign(translations.en, {
   "team.copy": "Compliance leadership, technical judgement, training delivery, audit coordination and Trustmark governance are assigned to named leads for clear ownership.",
+  "team.micue.role": "Technical Expert",
+  "team.micue": "Advises on regulatory compliance, management-system and product certification, industrial testing, GHG verification, supply-chain assurance and responsible mineral due diligence, drawing on 14 years across the TIC industry.",
   "team.philip.role": "Trustmark Governance Lead",
   "team.philip": "Leads scheme-governance coordination, application-flow control, evidence administration and liaison across assessment, technical review and approval roles for the ENERSTAY TRUSTMARK pilot.",
   "team.heroCta": "Meet the named leads",
-  "team.stat.leads": "functional leads",
+  "team.stat.leads": "named specialists",
   "team.stat.roles": "defined responsibilities",
   "team.stat.network": "regional and cross-border coordination",
   "newsPage.heroCta": "View dated updates",
@@ -1832,10 +1834,12 @@ Object.assign(translations.en, {
 
 Object.assign(translations.zh, {
   "team.copy": "合规把控、技术判断、课程交付、审核协调与 Trustmark 治理分别由具名负责人承担，确保职责和对接清晰。",
+  "team.micue.role": "技术专家",
+  "team.micue": "拥有 14 年 TIC 行业经验，为法规合规、管理体系与产品认证、工业测试、温室气体核查、供应链保证及负责任矿产尽职调查提供专业支持。",
   "team.philip.role": "Trustmark 治理负责人",
   "team.philip": "负责 ENERSTAY TRUSTMARK 试点的体系治理协调、申请流程控制、证据管理，以及评估、技术复核与批准角色之间的衔接。",
   "team.heroCta": "查看具名负责人",
-  "team.stat.leads": "位职能负责人",
+  "team.stat.leads": "位具名专业成员",
   "team.stat.roles": "类明确职责",
   "team.stat.network": "区域与跨境协同",
   "newsPage.heroCta": "查看日期记录",
