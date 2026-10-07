@@ -133,7 +133,15 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7
 .journal-editor small { color: var(--journal-green-2); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .journal-editor h3 { margin: 3px 0 6px; font-size: 23px; }
 .journal-editor p { margin: 0 0 12px; color: var(--journal-muted); }
+.journal-editor .journal-editor-affiliation { margin: 14px 0 12px; padding-top: 12px; border-top: 1px solid var(--journal-line); color: #303b37; font-size: 12px; line-height: 1.55; }
+.journal-editor-affiliation strong { color: var(--journal-green); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
 .journal-editor a { color: var(--journal-green-2); font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
+
+.journal-publisher-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 40px 0 0; border-top: 1px solid var(--journal-line); border-left: 1px solid var(--journal-line); }
+.journal-publisher-details div { padding: 22px 24px; border-right: 1px solid var(--journal-line); border-bottom: 1px solid var(--journal-line); background: #fff; }
+.journal-publisher-details dt { margin-bottom: 7px; color: var(--journal-green-2); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.journal-publisher-details dd { margin: 0; color: var(--journal-ink); font-size: 14px; line-height: 1.55; }
+.journal-publisher-details a { color: var(--journal-green-2); overflow-wrap: anywhere; }
 
 .journal-policy-links { display: flex; flex-wrap: wrap; gap: 0; margin-top: 30px; border-block: 1px solid var(--journal-line); }
 .journal-policy-links a { padding: 18px 20px 18px 0; color: var(--journal-green); font-size: 14px; font-weight: 600; text-decoration: none; }
@@ -235,6 +243,7 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7
   .journal-author-grid { grid-template-columns: 1fr; }
   .journal-author-grid article, .journal-author-grid article + article { padding: 24px 0; border-left: 0; border-bottom: 1px solid var(--journal-line); }
   .journal-editor-grid, .journal-footer-inner, .journal-form-shell { grid-template-columns: 1fr; }
+  .journal-publisher-details { grid-template-columns: 1fr; }
   .journal-footer nav { justify-content: flex-start; }
   .journal-article-layout { grid-template-columns: 1fr; padding-block: 54px; }
   .journal-article-sidebar { position: static; }
