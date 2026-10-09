@@ -95,7 +95,7 @@ const books = [
     title: 'An Introduction to ESG Management and Evaluation for Medical Device Companies',
     subtitle: 'From Industry Responsibility to Management Practice · From Evidence Quality to Evaluation and Certification',
     language: 'English', pages: '225', year: '2026',
-    isbnStatus: 'Application in progress',
+    isbn: '978-981-94-8087-6',
     price: 58,
     authors: 'Prof. Yuanzhe Li · Haizhou Wang · Yun Bai',
     editors: 'Jiahui Wu · Zeean Tay',
@@ -114,7 +114,7 @@ const books = [
     title: 'Fundamentals of Corporate ESG and Sustainable Development Management',
     subtitle: 'Corporate ESG, Carbon Management and Sustainable Finance Practical Series · Volume 1',
     language: 'English', pages: '296', year: '2026',
-    isbnStatus: 'Application in progress',
+    isbn: '978-981-94-8086-9',
     price: 46,
     authorLabel: 'Authors',
     authorLabelZh: '作者',
@@ -159,7 +159,7 @@ function footer() {
 }
 
 function shell({ title, description, canonical, image, body, robots = 'index,follow' }) {
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${robots}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${image}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="../assets/logo-mark.png"><link rel="stylesheet" href="../styles.css?v=release-20261003a"><link rel="stylesheet" href="press.css?v=release-20261003a"></head><body>${body}<script src="../script.js?v=release-20261003a"></script><script src="press.js?v=release-20261003a"></script></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(title)}</title><meta name="description" content="${escapeHtml(description)}"><meta name="robots" content="${robots}"><link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(title)}"><meta property="og:description" content="${escapeHtml(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${image}"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/png" href="../assets/logo-mark.png"><link rel="stylesheet" href="../styles.css?v=release-20261009a"><link rel="stylesheet" href="press.css?v=release-20261009a"></head><body>${body}<script src="../script.js?v=release-20261009a"></script><script src="press.js?v=release-20261009a"></script></body></html>`;
 }
 
 function card(book) {
