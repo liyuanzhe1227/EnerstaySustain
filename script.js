@@ -3388,6 +3388,72 @@ Object.assign(translations.zh, {
   "jeaca.form.invalid": "请完成所有必填项并确认声明。"
 });
 
+Object.assign(translations.en, {
+  "nav.news": "News",
+  "footer.news": "News Centre",
+  "mediaCentre.kicker": "Official Channels",
+  "mediaCentre.title": "News and video from Enerstay Sustainability",
+  "mediaCentre.home.copy": "Follow current company updates without maintaining a second news list on this website. The X timeline refreshes automatically; YouTube and LinkedIn lead to their live official channels.",
+  "mediaCentre.copy": "Use our official X news centre for timely company announcements and our YouTube video centre for briefings, project insights and professional learning content.",
+  "mediaCentre.cta": "Open official channels",
+  "mediaCentre.stat.news": "company news centre",
+  "mediaCentre.stat.video": "company video centre",
+  "mediaCentre.stat.source": "source-linked communications",
+  "mediaCentre.channels.kicker": "Company Channels",
+  "mediaCentre.channels.title": "Choose the format that suits you",
+  "mediaCentre.channels.copy": "Both destinations are maintained as official Enerstay Sustainability channels. External platforms open in a new browser tab.",
+  "mediaCentre.x.kicker": "News Centre",
+  "mediaCentre.x.title": "Latest company news on X",
+  "mediaCentre.x.copy": "Follow announcements, publication releases, research updates, events and selected industry observations from Enerstay Sustainability.",
+  "mediaCentre.x.cta": "Open X News Centre",
+  "mediaCentre.x.fallback": "Current posts load here when X permits embedded timelines.",
+  "mediaCentre.youtube.kicker": "Video Centre",
+  "mediaCentre.youtube.title": "Watch Enerstay on YouTube",
+  "mediaCentre.youtube.copy": "Access company briefings, sustainability and assurance explainers, project perspectives and selected training-oriented video content.",
+  "mediaCentre.youtube.cta": "Open YouTube Video Centre",
+  "mediaCentre.linkedin.title": "Professional updates on LinkedIn",
+  "mediaCentre.linkedin.cardTitle": "Company and professional network updates",
+  "mediaCentre.linkedin.copy": "View current company posts, professional announcements and network activity directly on Enerstay Sustainability's official LinkedIn page.",
+  "mediaCentre.linkedin.cta": "Open LinkedIn",
+  "mediaCentre.platformNote": "The X timeline is supplied by X. YouTube and LinkedIn open their official live pages; platform cookies or sign-in may be required.",
+  "mediaCentre.context.kicker": "More from Enerstay",
+  "mediaCentre.context.title": "Research, books and journal content",
+  "mediaCentre.context.copy": "For formal publication records and structured technical content, continue to the Research, Press and JEACA sections of this website."
+});
+
+Object.assign(translations.zh, {
+  "nav.news": "新闻",
+  "footer.news": "新闻中心",
+  "mediaCentre.kicker": "官方渠道",
+  "mediaCentre.title": "Enerstay Sustainability 新闻与视频",
+  "mediaCentre.home.copy": "无需在官网重复维护新闻列表：X 时间线会自动刷新，YouTube 与 LinkedIn 连接至各自实时更新的官方频道。",
+  "mediaCentre.copy": "通过官方 X 新闻中心获取公司动态，通过 YouTube 视频中心查看专题解读、项目观点与专业学习内容。",
+  "mediaCentre.cta": "打开官方渠道",
+  "mediaCentre.stat.news": "公司新闻中心",
+  "mediaCentre.stat.video": "公司视频中心",
+  "mediaCentre.stat.source": "来源可追溯的官方信息",
+  "mediaCentre.channels.kicker": "公司渠道",
+  "mediaCentre.channels.title": "选择你需要的内容形式",
+  "mediaCentre.channels.copy": "两个入口均为 Enerstay Sustainability 官方渠道，点击后将在新标签页打开外部平台。",
+  "mediaCentre.x.kicker": "新闻中心",
+  "mediaCentre.x.title": "在 X 查看最新公司动态",
+  "mediaCentre.x.copy": "获取公司公告、出版上新、科研动态、活动信息与精选行业观点。",
+  "mediaCentre.x.cta": "打开 X 新闻中心",
+  "mediaCentre.x.fallback": "当 X 允许嵌入时间线时，最新帖子会在此自动显示。",
+  "mediaCentre.youtube.kicker": "视频中心",
+  "mediaCentre.youtube.title": "在 YouTube 观看 Enerstay 视频",
+  "mediaCentre.youtube.copy": "查看公司简报、可持续发展与鉴证解读、项目观点及精选培训视频。",
+  "mediaCentre.youtube.cta": "打开 YouTube 视频中心",
+  "mediaCentre.linkedin.title": "LinkedIn 专业动态",
+  "mediaCentre.linkedin.cardTitle": "公司与专业网络更新",
+  "mediaCentre.linkedin.copy": "前往 Enerstay Sustainability 官方 LinkedIn 页面查看最新公司帖子、专业公告与网络动态。",
+  "mediaCentre.linkedin.cta": "打开 LinkedIn",
+  "mediaCentre.platformNote": "X 时间线由 X 平台提供；YouTube 与 LinkedIn 将打开实时官方页面，查看时可能需要同意平台 Cookie 或登录。",
+  "mediaCentre.context.kicker": "更多 Enerstay 内容",
+  "mediaCentre.context.title": "科研、专业书籍与期刊内容",
+  "mediaCentre.context.copy": "正式出版记录与结构化技术内容请继续访问本站的 Research、Press 和 JEACA 栏目。"
+});
+
 let activeLanguage = "en";
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");

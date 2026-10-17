@@ -149,13 +149,14 @@ function header(current = 'press') {
     ['./','Press','出版','press'],
     ['../jeaca/','Journal','期刊','journal'],
     ['../trustmark.html','Trustmark','信任标识','trustmark'],
+    ['../index.html#news-centre','News','新闻','news'],
     ['../index.html#contact','Contact','联系','contact']
   ];
   return `<header class="site-header"><a class="brand" href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><nav class="nav" aria-label="Primary navigation">${nav.map(([href,en,zh,id]) => `<a href="${href}"${id === current ? ' aria-current="page"' : ''} data-i18n="nav.${id}">${en}</a>`).join('')}</nav><button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">中</span></button></header>`;
 }
 
 function footer() {
-  return `<footer class="site-footer press-site-footer"><a class="brand footer-brand" href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><p><strong>Enerstay Sustainability Press</strong><br><span ${enZh('Published by Enerstay Sustainability Pte. Ltd.','由 Enerstay Sustainability Pte. Ltd. 出版')}>Published by Enerstay Sustainability Pte. Ltd.</span><br>3791 Jalan Bukit Merah, #03-05, E-Centre @ Redhill, Singapore 159471</p><nav class="footer-links" aria-label="Publishing links"><a href="./" ${enZh('Books','书目')}>Books</a><a href="../jeaca/" ${enZh('Journal','期刊')}>Journal</a><a href="../research.html" ${enZh('Research','科研')}>Research</a><a href="../privacy.html" ${enZh('Privacy','隐私')}>Privacy</a><a href="../index.html#home" ${enZh('Enerstay website','Enerstay 官网')}>Enerstay website</a></nav></footer>`;
+  return `<footer class="site-footer press-site-footer"><a class="brand footer-brand" href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><p><strong>Enerstay Sustainability Press</strong><br><span ${enZh('Published by Enerstay Sustainability Pte. Ltd.','由 Enerstay Sustainability Pte. Ltd. 出版')}>Published by Enerstay Sustainability Pte. Ltd.</span><br>3791 Jalan Bukit Merah, #03-05, E-Centre @ Redhill, Singapore 159471</p><nav class="footer-links" aria-label="Publishing links"><a href="./" ${enZh('Books','书目')}>Books</a><a href="../jeaca/" ${enZh('Journal','期刊')}>Journal</a><a href="../research.html" ${enZh('Research','科研')}>Research</a><a href="../index.html#news-centre" ${enZh('News Centre','新闻中心')}>News Centre</a><a href="../privacy.html" ${enZh('Privacy','隐私')}>Privacy</a><a href="../index.html#home" ${enZh('Enerstay website','Enerstay 官网')}>Enerstay website</a></nav></footer>`;
 }
 
 function shell({ title, description, canonical, image, body, robots = 'index,follow' }) {
