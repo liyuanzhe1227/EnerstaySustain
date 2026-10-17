@@ -9179,3 +9179,36 @@ html[lang="zh-CN"] .industry-card-head p {
     position: static;
   }
 }
+
+/* Homepage partner network: three cards in view, with the remaining
+   institutions available through the same horizontal browsing pattern as the
+   official-channel strip. */
+.collaboration-overview .partner-logo-grid--overview {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: none;
+  grid-auto-columns: calc((100% - 28px) / 3);
+  gap: 14px;
+  padding: 2px 2px 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline proximity;
+  scrollbar-color: var(--green) #dedcd5;
+}
+
+.collaboration-overview .partner-logo-grid--overview .partner-card {
+  min-height: 292px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 820px) {
+  .collaboration-overview .partner-logo-grid--overview {
+    grid-auto-columns: min(72vw, 320px);
+  }
+}
+
+@media (max-width: 520px) {
+  .collaboration-overview .partner-logo-grid--overview {
+    grid-auto-columns: min(86vw, 310px);
+  }
+}

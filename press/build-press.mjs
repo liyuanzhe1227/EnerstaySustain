@@ -149,7 +149,6 @@ function header(current = 'press') {
     ['./','Press','出版','press'],
     ['../jeaca/','Journal','期刊','journal'],
     ['../trustmark.html','Trustmark','信任标识','trustmark'],
-    ['../index.html#news-centre','News','新闻','news'],
     ['../index.html#contact','Contact','联系','contact']
   ];
   return `<header class="site-header"><a class="brand" href="../index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="../assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><nav class="nav" aria-label="Primary navigation">${nav.map(([href,en,zh,id]) => `<a href="${href}"${id === current ? ' aria-current="page"' : ''} data-i18n="nav.${id}">${en}</a>`).join('')}</nav><button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">中</span></button></header>`;

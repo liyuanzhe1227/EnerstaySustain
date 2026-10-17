@@ -74,7 +74,6 @@ function header(depth, current = '') {
     [asset(depth + 1, 'press/'), 'Press', 'press'],
     [home, 'Journal', 'journal'],
     [asset(depth + 1, 'trustmark.html'), 'Trustmark', 'trustmark'],
-    [`${asset(depth + 1, 'index.html')}#news-centre`, 'News', 'news'],
     [asset(depth + 1, 'index.html#contact'), 'Contact', 'contact']
   ];
   const siteHeader = `<header class="site-header journal-site-header"><a class="brand" href="${asset(depth + 1, 'index.html#home')}" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="${asset(depth + 1, 'assets/logo.png')}" width="1120" height="340" alt="Enerstay Sustainability"></a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button><nav class="nav" aria-label="Primary navigation">${siteNav.map(([href,label,id]) => `<a href="${href}"${id === 'journal' ? ' aria-current="page"' : ''} data-i18n="nav.${id}">${label}</a>`).join('')}</nav><button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">中</span></button></header>`;
