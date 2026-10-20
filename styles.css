@@ -9212,3 +9212,12 @@ html[lang="zh-CN"] .industry-card-head p {
     grid-auto-columns: min(86vw, 310px);
   }
 }
+
+	
+
+/* Research paper carousel: three cards at a time on desktop, swipe to browse the rest. */
+.research-catalog .research-paper-grid.research-paper-strip { display:flex; flex-flow:row nowrap; gap:14px; align-items:stretch; width:100%; padding:2px 2px 18px; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:x mandatory; scrollbar-color:var(--green) #dedcd5; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
+.research-catalog .research-paper-strip > .research-paper-card { flex:0 0 calc((100% - 28px) / 3); min-width:0; scroll-snap-align:start; }
+.research-catalog .research-paper-strip:has(> .research-paper-card:nth-child(2):last-child) > .research-paper-card { flex-basis:calc((100% - 14px) / 2); }
+@media (max-width:820px) { .research-catalog .research-paper-strip > .research-paper-card, .research-catalog .research-paper-strip:has(> .research-paper-card:nth-child(2):last-child) > .research-paper-card { flex-basis:min(72vw,360px); } }
+@media (max-width:520px) { .research-catalog .research-paper-strip > .research-paper-card, .research-catalog .research-paper-strip:has(> .research-paper-card:nth-child(2):last-child) > .research-paper-card { flex-basis:min(86vw,340px); } }
