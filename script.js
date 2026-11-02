@@ -2512,7 +2512,17 @@ Object.assign(translations.en, {
   "servicesPage.boundary.title": "The service route is confirmed before delivery",
   "servicesPage.boundary.copy": "Training and research are governed separately from formal verification, validation and audit conclusions. Any laboratory, certification-body or programme partner is named only when it has a defined role in the assignment.",
   "servicesPage.contactCta": "Discuss an assignment",
-  "servicesPage.boundaryCta": "Read service boundaries"
+  "servicesPage.boundaryCta": "Read service boundaries",
+  "servicesPage.governance.kicker": "Governance & Due Process",
+  "servicesPage.governance.title": "Impartiality, appeals and complaints",
+  "servicesPage.governance.copy": "Enerstay maintains and applies documented internal SOPs for impartiality, appeals and complaints in validation and verification (V/V) activities, protecting objectivity and ensuring fair, confidential handling.",
+  "servicesPage.impartiality.title": "Impartiality and conflicts of interest",
+  "servicesPage.impartiality.copy": "Our SOP requires risks to objectivity and relevant interests to be declared and assessed. Conflicts are managed through safeguards such as role separation, reassignment or withdrawal; conclusions are based on objective evidence and applicable criteria, without undue influence.",
+  "servicesPage.appeals.title": "Appeals",
+  "servicesPage.appeals.copy": "A client may submit a written appeal requesting reconsideration of a V/V decision or opinion. It is recorded and reviewed by personnel independent of the challenged activity; its status and outcome are communicated, and resulting actions are recorded.",
+  "servicesPage.complaints.title": "Complaints",
+  "servicesPage.complaints.copy": "Any interested party may complain about Enerstay's V/V activities. A complaint is distinct from an appeal seeking reconsideration of a V/V decision. It is investigated impartially by personnel independent of the subject activity, with confidentiality protected and outcomes communicated.",
+  "servicesPage.governance.public": "These process descriptions are publicly available to any interested party. To submit an appeal or complaint, email"
 });
 
 Object.assign(translations.zh, {
@@ -2597,7 +2607,17 @@ Object.assign(translations.zh, {
   "servicesPage.boundary.title": "交付前明确服务路径",
   "servicesPage.boundary.copy": "培训和科研与正式核查、验证和审核结论分开管理。实验室、认证机构或课程合作方仅在其对具体任务具有明确角色时展示。",
   "servicesPage.contactCta": "沟通具体任务",
-  "servicesPage.boundaryCta": "查看服务边界"
+  "servicesPage.boundaryCta": "查看服务边界",
+  "servicesPage.governance.kicker": "治理与程序保障",
+  "servicesPage.governance.title": "无偏性、申诉与投诉",
+  "servicesPage.governance.copy": "Enerstay 针对验证与核查（V/V）活动的无偏性、申诉和投诉建立并执行内部标准操作程序（SOP），以维护客观性，并确保程序公正、信息保密。",
+  "servicesPage.impartiality.title": "无偏性与利益冲突",
+  "servicesPage.impartiality.copy": "SOP 要求识别并评估影响客观性的风险及相关利益关系。通过职责分离、重新指派或退出任务等措施管理冲突；结论依据客观证据和适用准则作出，不受不当影响。",
+  "servicesPage.appeals.title": "申诉",
+  "servicesPage.appeals.copy": "客户可书面提出申诉，请求重新考虑某项 V/V 决定或意见。申诉将予以记录，并由未参与相关活动的人员独立复核；申诉进度和结果会反馈，后续措施也会留档。",
+  "servicesPage.complaints.title": "投诉",
+  "servicesPage.complaints.copy": "任何利益相关方均可就 Enerstay 的 V/V 活动提出投诉。投诉不同于要求重新考虑 V/V 决定的申诉；投诉由未参与相关活动的人员公正调查，并保护投诉人及投诉内容的保密性，反馈处理结果。",
+  "servicesPage.governance.public": "以上流程说明向所有利益相关方公开。如需提出申诉或投诉，请发送邮件至"
 });
 
 Object.assign(translations.en, {
