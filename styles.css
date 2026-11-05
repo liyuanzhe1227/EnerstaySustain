@@ -6781,7 +6781,7 @@ html[lang="zh-CN"] .trustmark-hero h1 {
   gap: 14px;
 }
 
-.service-family-grid--delivery {
+.service-capability-system .service-family-grid--delivery {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -7026,6 +7026,10 @@ html[lang="zh-CN"] .industry-card-head p {
 
 @media (max-width: 980px) {
   .service-family-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-capability-system .service-family-grid--delivery {
     grid-template-columns: 1fr;
   }
 
