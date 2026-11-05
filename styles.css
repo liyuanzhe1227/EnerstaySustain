@@ -3213,7 +3213,8 @@ textarea {
 .split-head {
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(320px, 1.1fr);
-  gap: clamp(24px, 5vw, 64px);
+  column-gap: clamp(24px, 5vw, 64px);
+  row-gap: 20px;
   align-items: end;
 }
 
