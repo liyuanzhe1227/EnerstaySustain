@@ -6781,6 +6781,10 @@ html[lang="zh-CN"] .trustmark-hero h1 {
   gap: 14px;
 }
 
+.service-family-grid--delivery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .service-family-grid > article {
   min-width: 0;
   padding: 28px;
