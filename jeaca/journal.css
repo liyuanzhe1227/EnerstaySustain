@@ -73,9 +73,9 @@ button, input, select, textarea { font: inherit; }
 .journal-cover-copy strong { font-weight: 800; }
 .journal-cover-copy span { color: rgba(255,255,255,.8); font-weight: 550; }
 .journal-kicker { margin: 0 0 20px; color: rgba(255,255,255,.72); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-.journal-hero h1 { max-width: 900px; margin: 0; font-family: var(--journal-sans); font-size: clamp(46px, 7vw, 68px); font-weight: 800; letter-spacing: -.045em; line-height: .98; }
+.journal-hero h1 { max-width: 820px; margin: 0; font-family: var(--journal-sans); font-size: clamp(42px, 5.2vw, 58px); font-weight: 800; letter-spacing: -.045em; line-height: 1.02; }
 html[lang="en"] .journal-hero h1,
-html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7vw, 68px); letter-spacing: -.045em; line-height: .98; }
+html[lang="zh-CN"] .journal-hero h1 { max-width: 820px; font-size: clamp(42px, 5.2vw, 58px); letter-spacing: -.045em; line-height: 1.02; }
 .journal-hero-deck { max-width: 760px; margin: 24px 0 0; color: rgba(255,255,255,.82); font-size: 18px; line-height: 1.65; }
 .journal-hero-note { max-width: 760px; margin: 12px 0 0; color: rgba(255,255,255,.7); font-size: 15px; line-height: 1.6; }
 .journal-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -83,6 +83,8 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7
 .journal-button-primary { color: #fff; background: var(--journal-orange); }
 .journal-button-secondary { border-color: currentColor; color: var(--journal-green); background: transparent; }
 .journal-hero .journal-button-secondary { color: #fff; }
+.journal-hero .journal-actions { margin-top: 20px; }
+.journal-hero .journal-button { min-height: 42px; padding: 9px 16px; font-size: 12px; }
 .journal-button:hover { filter: brightness(.95); }
 .journal-scale { display: none; }
 
@@ -230,9 +232,17 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7
   .journal-lockup-copy { display: grid; font-size: 11px; }
   .journal-company-bar { min-height: 76px; padding-inline: 18px; }
   .journal-company-bar img { width: 190px; }
-  .journal-cover-lockup { min-width: 0; width: 100%; gap: 15px; margin-bottom: 58px; }
-  .journal-cover-mark { font-size: 44px; }
+  .journal-cover-lockup { min-width: 0; width: 100%; gap: 15px; margin-bottom: 32px; padding-bottom: 18px; }
+  .journal-cover-mark { font-size: 38px; }
   .journal-cover-copy { font-size: 12px; }
+  .journal-hero h1,
+  html[lang="en"] .journal-hero h1,
+  html[lang="zh-CN"] .journal-hero h1 { max-width: 20ch; font-size: clamp(32px, 8vw, 36px); line-height: 1.06; letter-spacing: -.04em; }
+  .journal-kicker { margin-bottom: 14px; font-size: 10px; letter-spacing: .1em; }
+  .journal-hero-deck { margin-top: 16px; font-size: 16px; line-height: 1.5; }
+  .journal-hero-note { margin-top: 10px; font-size: 13px; line-height: 1.5; }
+  .journal-hero .journal-actions { margin-top: 16px; }
+  .journal-hero .journal-button { min-height: 40px; padding: 8px 13px; font-size: 11px; }
   .journal-home-nav .journal-language { display: inline-flex; flex: 0 0 auto; }
   .journal-home-nav { top: 66px; }
   .journal-section { padding-block: 56px; }
@@ -259,10 +269,10 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 900px; font-size: clamp(46px, 7
   .journal-nav { top: 72px; }
   .journal-lockup-mark { font-size: 29px; }
   .journal-hero, .journal-hero-inner { min-height: calc(100svh - 66px); }
-  .journal-hero-inner { width: min(1120px, calc(100% - 54px)); margin-right: clamp(18px, 6vw, 76px); margin-left: clamp(18px, 6vw, 76px); padding: 0; }
-  .journal-hero h1 { font-size: 39px; }
+  .journal-hero-inner { width: min(1120px, calc(100% - 54px)); margin-right: clamp(18px, 6vw, 76px); margin-left: clamp(18px, 6vw, 76px); padding: 0 0 28px; }
+  .journal-hero h1 { font-size: clamp(32px, 8vw, 35px); }
   .journal-hero-deck { font-size: 16px; }
-  .journal-actions .journal-button { width: 100%; }
+  .journal-hero .journal-actions .journal-button { width: auto; }
   .journal-card-actions { grid-template-columns: 1fr; }
   .journal-editor { grid-template-columns: 58px 1fr; padding: 22px; }
   .journal-editor-avatar { width: 58px; height: 58px; font-size: 21px; }
