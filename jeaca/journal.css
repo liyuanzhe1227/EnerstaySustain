@@ -83,7 +83,8 @@ html[lang="zh-CN"] .journal-hero h1 { max-width: 820px; font-size: clamp(42px, 5
 .journal-button-primary { color: #fff; background: var(--journal-orange); }
 .journal-button-secondary { border-color: currentColor; color: var(--journal-green); background: transparent; }
 .journal-hero .journal-button-secondary { color: #fff; }
-.journal-hero .journal-actions { margin-top: 20px; }
+.journal-hero .journal-actions { width: fit-content; display: flex; margin-top: 20px; }
+.journal-hero .journal-actions .journal-button { width: auto; flex: 0 0 auto; }
 .journal-hero .journal-button { min-height: 42px; padding: 9px 16px; font-size: 12px; }
 .journal-button:hover { filter: brightness(.95); }
 .journal-scale { display: none; }
