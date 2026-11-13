@@ -3565,6 +3565,19 @@ Object.assign(translations.zh, {
 });
 
 let activeLanguage = "en";
+Object.assign(translations.en, {
+  "resource.backServices": "Back to Services",
+  "resource.backContact": "Back to Contact",
+  "resource.backPress": "Back to Press",
+  "resource.viewItems": "View checklist",
+});
+Object.assign(translations.zh, {
+  "resource.backServices": "返回服务页面",
+  "resource.backContact": "返回联系页面",
+  "resource.backPress": "返回出版社",
+  "resource.viewItems": "查看清单",
+});
+
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
 const langOptions = document.querySelectorAll("[data-lang-option]");
