@@ -10,10 +10,15 @@
 .enquiry h1 { font-size:clamp(32px,5vw,54px); }
 .enquiry fieldset { border:1px solid #d8dedb; background:#fff; border-radius:8px; margin:22px 0; padding:20px; min-width:0; }
 .enquiry legend { font-weight:750; padding:0 8px; }
-.enquiry-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr)); gap:16px; }
-.enquiry label { display:grid; gap:5px; font-weight:600; }
+.enquiry-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px 16px; }
+@media (max-width: 760px) { .enquiry-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width: 500px) { .enquiry-grid { grid-template-columns:minmax(0,1fr); } }
+.enquiry label { display:flex; flex-direction:column; gap:6px; min-width:0; font-weight:600; }
+.enquiry label > span { line-height:1.35; }
+.enquiry label > input { height:44px; margin-top:auto; box-sizing:border-box; }
+.enquiry label.enquiry-long-field { grid-column:1 / -1; }
 .enquiry input,.enquiry textarea,.enquiry select { width:100%; padding:10px; border:1px solid #89948e; border-radius:4px; font:inherit; color:#14241d; background:white; }
-.enquiry textarea { min-height:84px; }
+.enquiry textarea { min-height:88px; box-sizing:border-box; resize:vertical; }
 .enquiry-actions { display:flex; gap:10px; flex-wrap:wrap; }
 .enquiry button { cursor:pointer; }
 .enquiry-top { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
@@ -76,7 +81,9 @@ const languageButton = document.querySelector('[data-lang-toggle]');
 const languageKey = 'enerstay-language-v3';
 let language = 'en';
 try { if (localStorage.getItem(languageKey) === 'zh') language = 'zh'; } catch {}
-for (const [index,[name,en,zh,type,required]] of fields.entries()) {
+// Keep multiline fields below the aligned rows of single-line inputs.
+const displayFields = [...fields.filter(field => field[3] !== 'textarea'), ...fields.filter(field => field[3] === 'textarea')];
+for (const [index,[name,en,zh,type,required]] of displayFields.entries()) {
   const label = document.createElement('label');
   const text = document.createElement('span');
   text.dataset.en = en + (required ? ' *' : '');
@@ -86,6 +93,7 @@ for (const [index,[name,en,zh,type,required]] of fields.entries()) {
   input.name = name;
   input.required = Boolean(required);
   input.maxLength = type === 'textarea' ? 3000 : 300;
+  if (type === 'textarea') label.classList.add('enquiry-long-field');
   label.append(text,input);
   document.querySelector(index < 5 ? '#contact-fields' : '#engagement-fields').append(label);
 }
