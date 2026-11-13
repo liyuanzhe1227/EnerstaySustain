@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RF-60 Service Enquiry | Enerstay Sustainability</title>
+<link rel="stylesheet" href="styles.css?v=release-20261105-site-rmc1">
+<style>
+.enquiry { width:min(92%, 880px); margin: 42px auto 70px; }
+.enquiry h1 { font-size:clamp(32px,5vw,54px); }
+.enquiry fieldset { border:1px solid #d8dedb; background:#fff; border-radius:8px; margin:22px 0; padding:20px; min-width:0; }
+.enquiry legend { font-weight:750; padding:0 8px; }
+.enquiry-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr)); gap:16px; }
+.enquiry label { display:grid; gap:5px; font-weight:600; }
+.enquiry input,.enquiry textarea,.enquiry select { width:100%; padding:10px; border:1px solid #89948e; border-radius:4px; font:inherit; color:#14241d; background:white; }
+.enquiry textarea { min-height:84px; }
+.enquiry-actions { display:flex; gap:10px; flex-wrap:wrap; }
+.enquiry button { cursor:pointer; }
+.enquiry-top { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.enquiry-top img { width:190px; height:auto; }
+</style>
+</head>
+<body>
+<main class="enquiry">
+  <div class="enquiry-top"><a href="index.html#home"><img src="assets/logo.png" alt="Enerstay Sustainability"></a><button id="language" type="button" class="button">中文</button></div>
+  <p><a href="services.html" data-en="Back to Services" data-zh="返回服务页面">Back to Services</a></p>
+  <h1 data-en="Service enquiry" data-zh="服务咨询">Service enquiry</h1>
+  <p data-en="Provide the information you know. Your answers are arranged in the order used in Part A of ES-RF-60. Required fields are marked *." data-zh="请填写目前已知的信息。导出资料按 ES-RF-60 A 部分整理。带 * 为必填项。"></p>
+  <form id="enquiry-form">
+    <fieldset><legend data-en="Organisation and contact" data-zh="机构与联系人"></legend><div class="enquiry-grid" id="contact-fields"></div></fieldset>
+    <fieldset><legend data-en="Proposed engagement" data-zh="拟议服务"></legend><div class="enquiry-grid" id="engagement-fields"></div></fieldset>
+    <p data-en="Download the enquiry record, then attach it to your email. The download is a preliminary enquiry. Enerstay confirms scope, fees and the formal agreement reference after review." data-zh="请下载咨询记录并作为邮件附件发送。导出文件为初步咨询资料。Enerstay 审阅后确认范围、费用和正式协议编号。"></p>
+    <div class="enquiry-actions">
+      <button class="button primary" type="submit" value="download" data-en="Download RF-60 enquiry record" data-zh="下载 RF-60 咨询记录"></button>
+      <button class="button" type="submit" value="email" data-en="Open enquiry email" data-zh="打开咨询邮件"></button>
+    </div>
+    <p id="enquiry-status" role="status"></p>
+  </form>
+  <noscript>Contact enquiries@enerstaysustainability.com for assistance.</noscript>
+</main>
+<script>
+const fields = [
+  ['organisation','Organisation legal name','机构法定名称','text',true],
+  ['registration','Registration number and address','注册号与地址','text'],
+  ['contact','Contact name and role','联系人姓名与职务','text',true],
+  ['email','Contact email','联系人邮箱','email',true],
+  ['responsible','Responsible party, if different','责任方（如与申请机构不同）','text'],
+  ['service','Service requested','所需服务','text',true],
+  ['programme','Programme and criteria','适用方案与准则','text'],
+  ['claim','Subject matter and claim title or revision','对象与声明名称或版本','text'],
+  ['objectives','Objectives and intended users','目标与预期使用者','textarea'],
+  ['scope','Scope, boundary, sites and reporting period','范围、边界、场所及报告期','textarea'],
+  ['assurance','Assurance level and materiality, if known','保证等级与重要性（如已知）','text'],
+  ['timing','Expected deliverables and timeline','预期交付与时间安排','text'],
+  ['evidence','Available evidence and access constraints','现有证据与访问限制','textarea']
+];
+const form = document.querySelector('#enquiry-form');
+const status = document.querySelector('#enquiry-status');
+const languageButton = document.querySelector('#language');
+const languageKey = 'enerstay-language-v3';
+let language = 'en';
+try { if (localStorage.getItem(languageKey) === 'zh') language = 'zh'; } catch {}
+for (const [index,[name,en,zh,type,required]] of fields.entries()) {
+  const label = document.createElement('label');
+  const text = document.createElement('span');
+  text.dataset.en = en + (required ? ' *' : '');
+  text.dataset.zh = zh + (required ? ' *' : '');
+  const input = document.createElement(type === 'textarea' ? 'textarea' : 'input');
+  if (type !== 'textarea') input.type = type;
+  input.name = name;
+  input.required = Boolean(required);
+  input.maxLength = type === 'textarea' ? 3000 : 300;
+  label.append(text,input);
+  document.querySelector(index < 5 ? '#contact-fields' : '#engagement-fields').append(label);
+}
+function renderLanguage() {
+  document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-en]').forEach(element => {
+    element.textContent = element.dataset[language];
+  });
+  languageButton.textContent = language === 'en' ? '中文' : 'English';
+  status.textContent = '';
+}
+languageButton.addEventListener('click', () => {
+  language = language === 'en' ? 'zh' : 'en';
+  try { localStorage.setItem(languageKey,language); } catch {}
+  renderLanguage();
+});
+renderLanguage();
+let reference;
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const data = new FormData(form);
+  reference ??= 'ES-RF-60-ENQ-' + new Date().toISOString().slice(0,10).replaceAll('-','') + '-' + crypto.randomUUID().slice(0,8).toUpperCase();
+  if (event.submitter?.value === 'email') {
+    const subject = encodeURIComponent('Service enquiry | ' + reference);
+    const body = encodeURIComponent('Hello Enerstay,\n\nPlease see the attached enquiry record ' + reference + '.\n');
+    status.textContent = language === 'zh' ? '请在邮件中附上已下载的咨询记录。' : 'Attach the downloaded enquiry record before sending.';
+    window.location.href = 'mailto:enquiries@enerstaysustainability.com?subject=' + subject + '&body=' + body;
+    return;
+  }
+  const lines = [
+    'Enerstay Sustainability | Preliminary service enquiry / 初步服务咨询',
+    'Enquiry reference / 咨询编号: ' + reference,
+    'Field reference / 字段依据: ES-RF-60 Part A',
+    'Status / 状态: Preliminary enquiry / 初步咨询',
+    ''
+  ];
+  for (const [name,en,zh] of fields) {
+    lines.push(en + ' / ' + zh + ': ' + (String(data.get(name) ?? '').trim() || '—'), '');
+  }
+  const url = URL.createObjectURL(new Blob(['\uFEFF' + lines.join('\r\n')],{type:'text/plain;charset=utf-8'}));
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = reference + '.txt';
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  status.textContent = (language === 'zh' ? '咨询编号：' : 'Enquiry reference: ') + reference;
+});
+</script>
+</body>
+</html>
