@@ -143,5 +143,5 @@
     font-size: .875rem;
     text-align: center;
   }
-  #readiness-items { scroll-margin-top: 92px; }
+  #readiness-items { scroll-margin-top: 0; }
 }
