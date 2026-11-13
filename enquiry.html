@@ -20,24 +20,35 @@
 .enquiry-top img { width:190px; height:auto; }
 </style>
 </head>
-<body>
-<main class="enquiry">
-  <div class="enquiry-top"><a href="index.html#home"><img src="assets/logo.png" alt="Enerstay Sustainability"></a><button id="language" type="button" class="button">中文</button></div>
-  <p><a href="services.html" data-en="Back to Services" data-zh="返回服务页面">Back to Services</a></p>
-  <h1 data-en="Service enquiry" data-zh="服务咨询">Service enquiry</h1>
-  <p data-en="Provide the information you know. Your answers are arranged in the order used in Part A of ES-RF-60. Required fields are marked *." data-zh="请填写目前已知的信息。导出资料按 ES-RF-60 A 部分整理。带 * 为必填项。"></p>
-  <form id="enquiry-form">
+<body><header class="site-header">
+      <a class="brand" href="index.html#home" aria-label="Enerstay Sustainability home"><img class="brand-logo" src="assets/logo.png" width="1120" height="340" alt="Enerstay Sustainability"></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Primary navigation"><a href="index.html#home" data-i18n="nav.home">Home</a><a href="services.html" data-i18n="nav.services">Services</a><a href="team.html" data-i18n="nav.team">Team</a><a href="experience.html" data-i18n="nav.cases">Experience</a><a href="standards.html" data-i18n="nav.standards">Standards</a><a href="training.html" data-i18n="nav.training">Training</a><a href="research.html" data-i18n="nav.research">Research</a><a href="press/" data-i18n="nav.press">Press</a><a href="jeaca/" data-i18n="nav.journal">Journal</a><a href="trustmark.html" data-i18n="nav.trustmark">Trustmark</a><a href="index.html#contact" data-i18n="nav.contact">Contact</a></nav>
+      <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">ZH</span></button>
+    </header><main><section class="catalog-hero page-catalog-hero services-catalog-hero">
+<div class="catalog-hero-media"><img src="assets/services-hero.png" width="1672" height="941" alt=""></div>
+<div class="catalog-hero-content">
+<h1 data-en="Service enquiry" data-zh="服务咨询">Service enquiry</h1>
+<p class="hero-copy" data-en="Tell us what you need and download your enquiry as an editable Word document." data-zh="请填写所需服务，并下载可编辑的 Word 咨询记录。"></p>
+<a class="hero-back-link" href="services.html" data-en="Back to Services" data-zh="返回服务页面">Back to Services</a>
+</div></section><section class="enquiry">
+<form id="enquiry-form" action="https://formsubmit.co/enquiries@enerstaysustainability.com" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="_subject">
+    <input type="hidden" name="Enquiry reference">
+    <input type="file" name="attachment" accept=".docx" hidden>
     <fieldset><legend data-en="Organisation and contact" data-zh="机构与联系人"></legend><div class="enquiry-grid" id="contact-fields"></div></fieldset>
     <fieldset><legend data-en="Proposed engagement" data-zh="拟议服务"></legend><div class="enquiry-grid" id="engagement-fields"></div></fieldset>
-    <p data-en="Download the enquiry record, then attach it to your email. The download is a preliminary enquiry. Enerstay confirms scope, fees and the formal agreement reference after review." data-zh="请下载咨询记录并作为邮件附件发送。导出文件为初步咨询资料。Enerstay 审阅后确认范围、费用和正式协议编号。"></p>
+    <p data-en="Submit your enquiry to Enerstay with the Word record attached automatically. You can also download a copy for your records." data-zh="提交后，系统会将 Word 咨询记录作为附件发送给 Enerstay。您也可以下载一份留存。"></p>
     <div class="enquiry-actions">
-      <button class="button primary" type="submit" value="download" data-en="Download RF-60 enquiry record" data-zh="下载 RF-60 咨询记录"></button>
-      <button class="button" type="submit" value="email" data-en="Open enquiry email" data-zh="打开咨询邮件"></button>
+      <button class="button primary" type="submit" value="send" data-en="Submit enquiry" data-zh="提交咨询"></button>
+      <button class="button" type="submit" value="download" data-en="Download editable Word" data-zh="下载可编辑的 Word"></button>
     </div>
     <p id="enquiry-status" role="status"></p>
   </form>
-  <noscript>Contact enquiries@enerstaysustainability.com for assistance.</noscript>
-</main>
+
+</section></main>
+<script src="script.js?v=release-20261113-rf60-word"></script>
+<script src="rf60-template.js?v=1"></script>
 <script>
 const fields = [
   ['organisation','Organisation legal name','机构法定名称','text',true],
@@ -46,17 +57,22 @@ const fields = [
   ['email','Contact email','联系人邮箱','email',true],
   ['responsible','Responsible party, if different','责任方（如与申请机构不同）','text'],
   ['service','Service requested','所需服务','text',true],
-  ['programme','Programme and criteria','适用方案与准则','text'],
+  ['programme','Programme','适用方案','text'],
+  ['criteria','Standards or criteria','适用标准或准则','text'],
   ['claim','Subject matter and claim title or revision','对象与声明名称或版本','text'],
-  ['objectives','Objectives and intended users','目标与预期使用者','textarea'],
-  ['scope','Scope, boundary, sites and reporting period','范围、边界、场所及报告期','textarea'],
-  ['assurance','Assurance level and materiality, if known','保证等级与重要性（如已知）','text'],
+  ['objectives','Objectives','目标','textarea'],
+  ['intended','Intended use and users','预期用途与使用者','text'],
+  ['scope','Scope, boundary and reporting period','范围、边界及报告期','textarea'],
+  ['sites','Sites and activities','场所及活动','text'],
+  ['basis','Initial, repeat or transfer engagement','首次、续约或转入项目','text'],
+  ['assurance','Assurance level, if known','保证等级（如已知）','text'],
+  ['materiality','Materiality, if known','重要性（如已知）','text'],
   ['timing','Expected deliverables and timeline','预期交付与时间安排','text'],
   ['evidence','Available evidence and access constraints','现有证据与访问限制','textarea']
 ];
 const form = document.querySelector('#enquiry-form');
-const status = document.querySelector('#enquiry-status');
-const languageButton = document.querySelector('#language');
+const enquiryStatus = document.querySelector('#enquiry-status');
+const languageButton = document.querySelector('[data-lang-toggle]');
 const languageKey = 'enerstay-language-v3';
 let language = 'en';
 try { if (localStorage.getItem(languageKey) === 'zh') language = 'zh'; } catch {}
@@ -73,52 +89,66 @@ for (const [index,[name,en,zh,type,required]] of fields.entries()) {
   label.append(text,input);
   document.querySelector(index < 5 ? '#contact-fields' : '#engagement-fields').append(label);
 }
-function renderLanguage() {
+function renderEnquiryLanguage() {
   document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
   document.querySelectorAll('[data-en]').forEach(element => {
     element.textContent = element.dataset[language];
   });
-  languageButton.textContent = language === 'en' ? '中文' : 'English';
-  status.textContent = '';
+  languageButton.setAttribute('aria-label', language === 'en' ? 'Switch language' : '切换语言');
+  enquiryStatus.textContent = '';
 }
 languageButton.addEventListener('click', () => {
-  language = language === 'en' ? 'zh' : 'en';
+  language = document.documentElement.lang === 'zh-CN' ? 'zh' : 'en';
   try { localStorage.setItem(languageKey,language); } catch {}
-  renderLanguage();
+  renderEnquiryLanguage();
 });
-renderLanguage();
+renderEnquiryLanguage();
 let reference;
-form.addEventListener('submit', event => {
+form.addEventListener('submit', async event => {
   event.preventDefault();
   const data = new FormData(form);
   reference ??= 'ES-RF-60-ENQ-' + new Date().toISOString().slice(0,10).replaceAll('-','') + '-' + crypto.randomUUID().slice(0,8).toUpperCase();
-  if (event.submitter?.value === 'email') {
-    const subject = encodeURIComponent('Service enquiry | ' + reference);
-    const body = encodeURIComponent('Hello Enerstay,\n\nPlease see the attached enquiry record ' + reference + '.\n');
-    status.textContent = language === 'zh' ? '请在邮件中附上已下载的咨询记录。' : 'Attach the downloaded enquiry record before sending.';
-    window.location.href = 'mailto:enquiries@enerstaysustainability.com?subject=' + subject + '&body=' + body;
-    return;
-  }
-  const lines = [
-    'Enerstay Sustainability | Preliminary service enquiry / 初步服务咨询',
-    'Enquiry reference / 咨询编号: ' + reference,
-    'Field reference / 字段依据: ES-RF-60 Part A',
-    'Status / 状态: Preliminary enquiry / 初步咨询',
-    ''
+  const value = name => String(data.get(name) ?? '').trim();
+  const pending = 'To be confirmed by Enerstay';
+  const unknown = 'Not supplied';
+  const values = [
+    [value('organisation'),value('registration'),value('responsible')].filter(Boolean).join(' | '),
+    [value('contact'),value('email')].join(' | '), value('service'), value('programme'),
+    value('claim'), value('objectives'), value('scope'), value('criteria'),
+    value('assurance'), value('materiality'), value('intended'), value('sites'), pending,
+    value('timing'), pending, 'Enerstay will confirm the applicable process after review.',
+    'Enquiry reference: ' + reference, value('claim'), value('responsible'),
+    value('basis'), value('evidence')
   ];
-  for (const [name,en,zh] of fields) {
-    lines.push(en + ' / ' + zh + ': ' + (String(data.get(name) ?? '').trim() || '—'), '');
+  try {
+    const file = await buildRF60(values.map(v => v || unknown));
+    const filename = reference + '.docx';
+    if (event.submitter?.value !== 'download') {
+      const transfer = new DataTransfer();
+      transfer.items.add(new File([file], filename, {type:file.type}));
+      form.elements.namedItem('attachment').files = transfer.files;
+      form.elements.namedItem('_subject').value = 'Service enquiry | ' + reference;
+      form.elements.namedItem('Enquiry reference').value = reference;
+      HTMLFormElement.prototype.submit.call(form);
+      return;
+    }
+    downloadRecord(file, filename);
+  } catch {
+    enquiryStatus.textContent = language === 'zh' ? '无法准备 Word 文件，请重试。' : 'Could not prepare the Word file. Please try again.';
   }
-  const url = URL.createObjectURL(new Blob(['\uFEFF' + lines.join('\r\n')],{type:'text/plain;charset=utf-8'}));
+});
+function downloadRecord(file, filename) {
+  const url = URL.createObjectURL(file);
   const link = document.createElement('a');
   link.href = url;
-  link.download = reference + '.txt';
+  link.download = filename;
   document.body.append(link);
   link.click();
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-  status.textContent = (language === 'zh' ? '咨询编号：' : 'Enquiry reference: ') + reference;
-});
+  enquiryStatus.textContent = (language === 'zh' ? '咨询编号：' : 'Enquiry reference: ') + reference;
+}
 </script>
+<script src="rf60-export.js?v=1"></script>
 </body>
 </html>
