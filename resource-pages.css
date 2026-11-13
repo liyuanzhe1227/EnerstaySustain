@@ -112,3 +112,36 @@
 .resource-page .legal-content p {
   overflow-wrap: anywhere;
 }
+
+.home-readiness-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #fff;
+  font-size: .9375rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.enquiry-intro { max-width: 880px; }
+.readiness-intro h1 { max-width: 26ch; text-wrap: balance; }
+@media (max-width: 500px) {
+  .readiness-intro .resource-wrap,
+  .resource-intro .enquiry-intro { padding-block: 18px 24px; }
+  .readiness-intro h1,
+  .enquiry-intro h1 { font-size: clamp(1.625rem, 7.6vw, 1.875rem); }
+  .readiness-intro .section-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .readiness-intro .section-actions .button {
+    min-width: 0;
+    padding: 8px 6px;
+    min-height: 44px;
+    font-size: .875rem;
+    text-align: center;
+  }
+  #readiness-items { scroll-margin-top: 92px; }
+}

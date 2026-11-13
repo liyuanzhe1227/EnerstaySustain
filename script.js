@@ -2331,7 +2331,7 @@ Object.assign(translations.en, {
   "privacy.contact.title": "Privacy contact",
   "privacy.contact.copy": "For privacy questions or requests, contact:",
   "checklist.kicker": "Free Resource",
-  "checklist.title": "Industrial GHG verification readiness checklist",
+  "checklist.title": "GHG verification readiness checklist",
   "checklist.copy": "Use these ten evidence areas to organize an organizational GHG, PCF or regulated MRV file before independent review.",
   "checklist.print": "Print or save as PDF",
   "checklist.item1.title": "Mandate, entity and reporting period",

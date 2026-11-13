@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RF-60 Service Enquiry | Enerstay Sustainability</title>
 <link rel="stylesheet" href="styles.css?v=resource-pages-1">
-    <link rel="stylesheet" href="resource-pages.css?v=1">
+    <link rel="stylesheet" href="resource-pages.css?v=2">
 <style>
-.enquiry { width:min(92%, 880px); margin: 42px auto 70px; }
-.enquiry h1 { font-size:clamp(32px,5vw,54px); }
+.enquiry { width:min(880px, calc(100% - 2 * clamp(18px, 5vw, 64px))); margin: 26px auto 48px; }
+
 .enquiry fieldset { border:1px solid #d8dedb; background:#fff; border-radius:8px; margin:22px 0; padding:20px; min-width:0; }
 .enquiry legend { font-weight:750; padding:0 8px; }
 .enquiry-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px 16px; }
@@ -19,11 +19,19 @@
 .enquiry label > input { height:44px; margin-top:auto; box-sizing:border-box; }
 .enquiry label.enquiry-long-field { grid-column:1 / -1; }
 .enquiry input,.enquiry textarea,.enquiry select { width:100%; padding:10px; border:1px solid #89948e; border-radius:4px; font:inherit; color:#14241d; background:white; }
-.enquiry textarea { min-height:88px; box-sizing:border-box; resize:vertical; }
+.enquiry textarea { min-height:100px; box-sizing:border-box; resize:vertical; }
 .enquiry-actions { display:flex; gap:10px; flex-wrap:wrap; }
 .enquiry button { cursor:pointer; }
 .enquiry-top { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
 .enquiry-top img { width:190px; height:auto; }
+@media (max-width: 500px) {
+.enquiry fieldset { margin-block: 16px 20px; }
+.enquiry-grid { gap: 14px; }
+.enquiry label { gap: 5px; }
+.enquiry label > span { font-size: .875rem; }
+.enquiry input, .enquiry textarea { font-size: 16px; }
+.enquiry-actions .button { width: 100%; }
+}
 </style>
 </head>
 <body><header class="site-header">
@@ -31,8 +39,8 @@
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
       <nav class="nav" aria-label="Primary navigation"><a href="index.html#home" data-i18n="nav.home">Home</a><a href="services.html" data-i18n="nav.services">Services</a><a href="team.html" data-i18n="nav.team">Team</a><a href="experience.html" data-i18n="nav.cases">Experience</a><a href="standards.html" data-i18n="nav.standards">Standards</a><a href="training.html" data-i18n="nav.training">Training</a><a href="research.html" data-i18n="nav.research">Research</a><a href="press/" data-i18n="nav.press">Press</a><a href="jeaca/" data-i18n="nav.journal">Journal</a><a href="trustmark.html" data-i18n="nav.trustmark">Trustmark</a><a href="index.html#contact" data-i18n="nav.contact">Contact</a></nav>
       <button class="lang-toggle" type="button" aria-label="Switch language" data-lang-toggle><span data-lang-option="en">EN</span><span data-lang-option="zh">ZH</span></button>
-    </header><main class="resource-page"><section class="resource-intro"><div class="resource-wrap"><a class="resource-parent" href="services.html" data-en="Back to Services" data-zh="返回服务页面">Back to Services</a><h1 data-en="Service enquiry" data-zh="服务咨询">Service enquiry</h1>
-<p class="hero-copy" data-en="Tell us what you need and download your enquiry as an editable Word document." data-zh="请填写所需服务，并下载可编辑的 Word 咨询记录。"></p></div></section><section class="enquiry">
+    </header><main class="resource-page"><section class="resource-intro"><div class="resource-wrap enquiry-intro"><a class="resource-parent" href="services.html" data-en="Back to Services" data-zh="返回服务页面">Back to Services</a><h1 data-en="Service enquiry" data-zh="服务咨询">Service enquiry</h1>
+<p class="hero-copy" data-en="Tell us what you need and download your enquiry as an editable Word document." data-zh="请填写所需服务，并下载可编辑的 Word 咨询记录。">Tell us what you need and download your enquiry as an editable Word document.</p></div></section><section class="enquiry">
 <form id="enquiry-form" action="https://formsubmit.co/enquiries@enerstaysustainability.com" method="post" enctype="multipart/form-data">
     <input type="hidden" name="_subject">
     <input type="hidden" name="Enquiry reference">
