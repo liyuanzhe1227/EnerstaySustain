@@ -113,16 +113,6 @@
   overflow-wrap: anywhere;
 }
 
-.home-readiness-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  color: #fff;
-  font-size: .9375rem;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 .enquiry-intro { max-width: 880px; }
 .readiness-intro h1 { max-width: 26ch; text-wrap: balance; }
 @media (max-width: 500px) {
