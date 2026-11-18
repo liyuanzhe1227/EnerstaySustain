@@ -3578,6 +3578,9 @@ Object.assign(translations.zh, {
   "resource.viewItems": "查看清单",
 });
 
+Object.assign(translations.en, {"footer.vvPublic": "V/V Public information", "servicesPage.vv.status.title": "Accreditation assessments underway", "servicesPage.vv.status.sac.copy": "Enerstay’s SAC V/V body application is under assessment. Office assessment visits took place on 13 and 17 November 2026. Accreditation remains subject to satisfactory corrective actions and completion of the required witnessed and further office assessments; it has not yet been granted.", "servicesPage.vv.mark.client": "Opinions or reports made public must be communicated in their entirety, together with the statement they relate to and necessary annexes. Misleading extracts and use outside the stated scope are not permitted. Read the full public information and opinion-use rules."});
+Object.assign(translations.zh, {"footer.vvPublic": "审定与核查公开信息", "servicesPage.vv.status.title": "认可评审进行中", "servicesPage.vv.status.sac.copy": "Enerstay 的 SAC 审定与核查机构申请正在评审中，办公室评审已于 2026 年 11 月 13 日及 17 日进行。认可尚待纠正措施获接受，并完成所需的见证及后续办公室评审，目前尚未授予。", "servicesPage.vv.mark.client": "公开的意见或报告必须全文公开，并同时提供其所对应的声明及必要附件。不得采用误导性节录，或超出约定范围使用。请阅读完整公开信息及意见使用规则。"});
+
 const languageStorageKey = "enerstay-language-v3";
 const toggle = document.querySelector("[data-lang-toggle]");
 const langOptions = document.querySelectorAll("[data-lang-option]");
@@ -3603,6 +3606,9 @@ function renderLanguage(language) {
   } else if (toggle) {
     toggle.textContent = language === "zh" ? "EN" : "中";
   }
+  document.querySelectorAll('[data-en][data-zh]').forEach(node => {
+    node.textContent = node.dataset[language];
+  });
   localStorage.setItem(languageStorageKey, language);
 }
 
