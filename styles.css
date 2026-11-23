@@ -9611,3 +9611,8 @@ html[lang="zh-CN"] .industry-card-head p {
   .site-header .brand { min-width: 0; }
   .site-header .brand-logo { max-width: 100%; }
 }
+
+/* Keep the six-person team balanced on tablet screens. */
+@media (min-width: 641px) and (max-width: 980px) {
+  .team-directory .team-grid > article:nth-child(6):last-child { grid-column: auto; }
+}

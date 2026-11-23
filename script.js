@@ -464,7 +464,6 @@ Object.assign(translations.zh, {
   "team.kicker": "Team & Role Separation",
   "team.title": "团队与角色分离",
   "team.copy": "Enerstay 将主理、培训、审核项目协调和外部技术复核分开管理。涉及正式保证、核查、验证或二方/三方审核时，先进行利益冲突和角色边界判断。",
-  "team.haizhou": "负责合规把控、认证治理风险复核、大客户交付和跨境 TIC 协同。背景覆盖 ISO 管理体系认证治理、技术复核和审核员能力体系。",
   "team.yuanzhe": "负责技术方向、复杂行业判断、监管授权边界和关键交付物复核。",
   "team.zeean": "负责企业培训、合作证书课程、学员沟通和 Enerstay Academy 课程交付。",
   "team.jiahui": "负责审核项目排期、文件协调、客户沟通和项目过程质量跟踪。",
@@ -636,7 +635,6 @@ Object.assign(translations.en, {
   "team.kicker": "Team & Role Separation",
   "team.title": "Team and role separation",
   "team.copy": "Enerstay separates principal technical direction, training delivery, audit project coordination and external technical review. Formal assurance, verification, validation and second/third-party audit work starts with conflict-of-interest and role-boundary checks.",
-  "team.haizhou": "Leads compliance control, certification-governance risk review, key-account delivery and cross-border TIC coordination, with senior experience in ISO management-system certification governance, technical review and auditor competence systems.",
   "team.yuanzhe": "Leads technical direction, complex-sector judgement, regulatory authorization boundaries and key deliverable review.",
   "team.zeean": "Leads corporate training, partner certificate courses, learner communication and Enerstay Academy delivery.",
   "team.jiahui": "Leads audit project scheduling, document coordination, client communication and process quality tracking.",
@@ -1126,7 +1124,6 @@ Object.assign(translations.zh, {
   "team.kicker": "团队",
   "team.title": "多专业协同的交付团队",
   "team.copy": "合规把控、技术判断、课程交付与项目协调分别由具名负责人承担，确保客户对接清晰。",
-  "team.haizhou.role": "合规与大客户负责人",
   "team.yuanzhe.role": "技术与科研负责人",
   "team.zeean.role": "培训负责人",
   "team.jiahui.role": "审核项目负责人",
@@ -1207,7 +1204,6 @@ Object.assign(translations.en, {
   "team.kicker": "Team",
   "team.title": "A multidisciplinary delivery team",
   "team.copy": "Compliance leadership, technical judgement, training delivery and project coordination are assigned to named leads for clear client ownership.",
-  "team.haizhou.role": "Compliance & Key Accounts Lead",
   "team.yuanzhe.role": "Technical & Research Principal",
   "team.zeean.role": "Training Lead",
   "team.jiahui.role": "Audit Project Lead",
@@ -3679,6 +3675,22 @@ engagementForm?.addEventListener("submit", async (event) => {
       submitButton.textContent = activeLanguage === "zh" ? submitButton.dataset.defaultZh : submitButton.dataset.defaultEn;
     }
   }
+});
+
+
+Object.assign(translations.en, {
+  "team.copy": "Yuanzhe Li, Zeean Tay and Jiahui Wu lead technical direction, training and audit delivery, supported by specialist expertise and scheme governance.",
+  "team.harry.role": "Technical Expert",
+  "team.harry": "Technical expert in supplier sustainability and manufacturing EHS, with experience in semiconductor operations, paper and furniture supply chains, waste and wastewater management, and e-commerce ESG. Supports defined assignments within the evaluated technical-expert scope.",
+  "team.stat.leads": "core team leads",
+  "team.stat.roles": "specialist support roles"
+});
+Object.assign(translations.zh, {
+  "team.copy": "以 Yuanzhe Li、Zeean Tay 和 Jiahui Wu 为核心，负责技术方向、培训与审核交付，并由技术专家及体系治理人员提供专业支持。",
+  "team.harry.role": "技术专家",
+  "team.harry": "为供应商可持续发展及制造业环境、健康与安全管理提供技术支持，经验涵盖半导体运营、造纸与家具供应链、废物与废水管理，以及电商 ESG。在经评估的技术专家范围内支持具体项目。",
+  "team.stat.leads": "位核心负责人",
+  "team.stat.roles": "类专业支持角色"
 });
 
 renderLanguage(localStorage.getItem(languageStorageKey) || "en");
