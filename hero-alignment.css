@@ -1,0 +1,44 @@
+/* Shared first-screen spacing across image and resource introductions. */
+:root { --intro-top-space: 64px; --intro-bottom-space: 56px; }
+main > .hero,
+main > .catalog-hero {
+  align-items: start;
+  align-content: start;
+  padding-block: var(--intro-top-space) var(--intro-bottom-space);
+}
+main > .hero > .hero-content,
+main > .catalog-hero > .catalog-hero-content {
+  margin-block: 0;
+}
+main .press-hero > .press-hero-inner {
+  align-content: start;
+  padding-block: var(--intro-top-space) var(--intro-bottom-space);
+}
+main .resource-intro > .resource-wrap,
+main .public-intro {
+  padding-block: var(--intro-top-space) var(--intro-bottom-space);
+}
+main .jeaca-masthead { margin-bottom: 28px; }
+@media (max-width: 980px) {
+  :root { --intro-top-space: 48px; --intro-bottom-space: 44px; }
+}
+@media (max-width: 640px) {
+  :root { --intro-top-space: 36px; --intro-bottom-space: 40px; }
+  main .jeaca-masthead { margin-bottom: 24px; }
+}
+main .journal-hero > .journal-hero-inner {
+  align-content: start;
+  padding-block: var(--intro-top-space) var(--intro-bottom-space);
+}
+main .journal-cover-lockup { margin-bottom: 28px; }
+@media (max-width: 640px) {
+  main .journal-cover-lockup { margin-bottom: 24px; }
+}
+main .public-intro > a:first-child {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-bottom: 12px;
+  font-size: .875rem;
+  font-weight: 700;
+}
