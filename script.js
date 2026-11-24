@@ -3688,7 +3688,7 @@ Object.assign(translations.en, {
 Object.assign(translations.zh, {
   "team.copy": "以 Yuanzhe Li、Zeean Tay 和 Jiahui Wu 为核心，负责技术方向、培训与审核交付，并由技术专家及体系治理人员提供专业支持。",
   "team.harry.role": "技术专家",
-  "team.harry": "为供应商可持续发展及制造业环境、健康与安全管理提供技术支持，经验涵盖半导体运营、造纸与家具供应链、废物与废水管理，以及电商 ESG。在经评估的技术专家范围内支持具体项目。",
+  "team.harry": "为供应商可持续发展及制造业环境、健康与安全管理提供技术支持，经验涵盖半导体运营、造纸与家具供应链、废物与废水管理，以及电商 ESG。按评估范围提供项目技术支持。",
   "team.stat.leads": "位核心负责人",
   "team.stat.roles": "类专业支持角色"
 });
