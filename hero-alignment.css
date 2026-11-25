@@ -1,5 +1,5 @@
 /* Shared first-screen spacing across image and resource introductions. */
-:root { --intro-top-space: 64px; --intro-bottom-space: 56px; }
+:root { --intro-top-space: 64px; --intro-bottom-space: var(--intro-top-space); }
 main > .hero,
 main > .catalog-hero {
   align-items: start;
@@ -20,10 +20,10 @@ main .public-intro {
 }
 main .jeaca-masthead { margin-bottom: 28px; }
 @media (max-width: 980px) {
-  :root { --intro-top-space: 48px; --intro-bottom-space: 44px; }
+  :root { --intro-top-space: 48px; --intro-bottom-space: var(--intro-top-space); }
 }
 @media (max-width: 640px) {
-  :root { --intro-top-space: 36px; --intro-bottom-space: 40px; }
+  :root { --intro-top-space: 36px; --intro-bottom-space: var(--intro-top-space); }
   main .jeaca-masthead { margin-bottom: 24px; }
 }
 main .journal-hero > .journal-hero-inner {
@@ -41,4 +41,29 @@ main .public-intro > a:first-child {
   margin-bottom: 12px;
   font-size: .875rem;
   font-weight: 700;
+}
+
+/* Fit the image to its content instead of filling the browser viewport. */
+main > .hero,
+main > .catalog-hero,
+main .press-hero,
+main .journal-hero,
+main .press-hero > .press-hero-inner,
+main .journal-hero > .journal-hero-inner {
+  min-height: 0;
+  height: auto;
+}
+main > .hero > .hero-content > :last-child,
+main > .catalog-hero > .catalog-hero-content > :last-child,
+main .press-hero-inner > div > :last-child,
+main .journal-hero-inner > :last-child {
+  margin-bottom: 0;
+}
+main .hero-media img,
+main .catalog-hero-media img {
+  object-fit: cover;
+}
+main .press-hero,
+main .journal-hero {
+  background-size: cover;
 }
