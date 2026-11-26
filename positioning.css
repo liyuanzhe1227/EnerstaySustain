@@ -72,3 +72,8 @@
 @media (max-width: 560px) {
   .focus-framework-group .standard-logo-grid { grid-template-columns: 1fr; }
 }
+.focus-framework-group .focus-local-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.focus-sgls-reference > a { margin-top: 8px; font-size: 14px; font-weight: 700; text-underline-offset: 4px; }
+@media (max-width: 760px) {
+  .focus-framework-group .focus-local-grid { grid-template-columns: 1fr; }
+}

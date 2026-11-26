@@ -3833,4 +3833,38 @@ Object.assign(translations.en,{"focus.ghg": "International ISO", "focus.iwa42": 
 Object.assign(translations.zh,{"focus.ghg": "国际 ISO", "focus.iwa42": "净零指南与转型规划。", "focus.iwa48.title": "ESG 实施", "focus.iwa48": "ESG 原则实施框架。", "focus.iaasb": "ISAE 3000（修订版）· ISSA 5000：保证业务要求。"});
 Object.assign(translations.en,{"stats.since.value":"Since 2020","catalog.delivery.value":"EN / ZH"});
 Object.assign(translations.zh,{"stats.since.value":"始于 2020","catalog.delivery.value":"中 / 英"});
+Object.assign(translations.en,{
+  "hero.eyebrow": "Industrial expertise · Independent judgement",
+  "hero.title": "Independent assurance for industry",
+  "hero.copy": "Independent GHG verification, ESG assurance and sustainability services for organisations, products and supply chains. International standards, industry knowledge and traceable evidence guide each engagement.",
+  "servicesPage.title": "Independent assurance and audit services",
+  "standardsPage.title": "International standards and local pathways",
+  "catalog.title": "Practice-led sustainability training",
+  "researchPage.title": "Applied research and technical insight",
+  "cases.title": "Industrial projects and assurance experience",
+  "footer.copy": "Enerstay Sustainability Pte. Ltd. | Singapore-based industrial assurance, sustainability services, training and applied research.",
+  "focus.sg.copy": "NEA CPA, EDB REG(E) and SGLS pathways, with programme-specific eligibility and decision roles.",
+  "focus.sg.sgls": "SGLS · Singapore Green Label",
+  "focus.sgls.copy": "Singapore Green Labelling Scheme. Product certification and label decisions remain with SEC.",
+  "focus.sgls.link": "Explore the SGLS pathway",
+  "servicesPage.family3.title": "MRV and local programme support",
+  "servicesPage.family3.copy": "MRV, traceability and technical documentation for NEA CPA, EDB REG(E) and SGLS pathways. Programme eligibility, approval and certification roles are confirmed before work begins."
+});
+Object.assign(translations.zh,{
+  "hero.eyebrow": "产业专长 · 独立判断",
+  "hero.title": "面向产业的独立保证服务",
+  "hero.copy": "面向组织、产品与供应链，提供独立温室气体核查、ESG 保证及可持续发展服务。以国际标准、行业知识和可追溯证据支撑每项业务。",
+  "servicesPage.title": "独立保证与审核服务",
+  "standardsPage.title": "国际标准与本地项目路径",
+  "catalog.title": "实践导向的可持续发展培训",
+  "researchPage.title": "应用科研与技术洞见",
+  "cases.title": "产业项目与保证服务经验",
+  "footer.copy": "Enerstay Sustainability Pte. Ltd.｜立足新加坡的产业保证、可持续发展服务、培训及应用科研。",
+  "focus.sg.copy": "NEA CPA、EDB REG(E) 与 SGLS 路径，按各计划的资格要求和决定权限开展。",
+  "focus.sg.sgls": "SGLS · 新加坡绿色标签",
+  "focus.sgls.copy": "新加坡绿色标签计划。产品认证及标签决定由 SEC 作出。",
+  "focus.sgls.link": "了解 SGLS 服务路径",
+  "servicesPage.family3.title": "MRV 与本地项目支持",
+  "servicesPage.family3.copy": "以 MRV、可追溯性和技术文件支撑 NEA CPA、EDB REG(E) 与 SGLS 路径，业务开始前明确各计划的资格、批准及认证权限。"
+});
 renderLanguage(localStorage.getItem(languageStorageKey) || "en");
