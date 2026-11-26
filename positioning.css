@@ -125,3 +125,31 @@
   font-weight: 700;
   text-underline-offset: 4px;
 }
+
+/* Team profiles share a compact type scale and bottom-aligned contact rows. */
+.team-directory .team-grid { gap: 20px; }
+.team-directory .team-grid > article { display: flex; flex-direction: column; min-height: 0; min-width: 0; padding: 24px; }
+.team-directory .team-grid > article > span { display: block; margin: 0 0 14px; line-height: 1.4; }
+.team-directory .team-grid > article > h2 { font-size: clamp(22px, 2vw, 28px); line-height: 1.22; margin: 0 0 14px; }
+.team-directory .team-grid > article > p { margin: 0 0 20px; line-height: 1.65; }
+.team-profile-links { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: center; margin-top: auto; }
+.team-directory .team-profile-links a { display: inline-flex; align-items: center; min-height: 44px; min-width: 0; max-width: 100%; margin: 0; padding-block: 6px; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+.team-directory .team-profile-links a[href^="mailto:"] { font-size: 12px; }
+@media (max-width: 640px) {
+  .team-directory .team-grid { gap: 16px; }
+  .team-directory .team-grid > article { padding: 20px; }
+}
+
+.team-directory .team-profile-links a[href^="mailto:"] { flex-basis: 100%; }
+@media (min-width: 981px) {
+  .team-directory .team-grid > article:nth-child(-n+3) .team-profile-links { min-height: 92px; align-content: start; }
+}
+@supports (grid-template-rows: subgrid) {
+  .team-directory .team-grid { row-gap: 14px; }
+  .team-directory .team-grid > article { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 14px; }
+  .team-directory .team-grid > article > span,
+  .team-directory .team-grid > article > h2,
+  .team-directory .team-grid > article > p { margin: 0; }
+  .team-directory .team-profile-links { align-self: end; }
+}
+.team-directory .team-profile-links a { border-bottom: 0; text-decoration: underline; text-underline-offset: 5px; }
