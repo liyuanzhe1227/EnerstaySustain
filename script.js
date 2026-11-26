@@ -3867,4 +3867,6 @@ Object.assign(translations.zh,{
   "servicesPage.family3.title": "MRV 与本地项目支持",
   "servicesPage.family3.copy": "以 MRV、可追溯性和技术文件支撑 NEA CPA、EDB REG(E) 与 SGLS 路径，业务开始前明确各计划的资格、批准及认证权限。"
 });
+Object.assign(translations.en,{"standards.logo.nea": "Carbon Pricing Act reporting and verification.", "standards.logo.edb": "Resource-efficiency grant evidence and endorsement.", "focus.sgls.copy": "Green Label certification administered by SEC.", "focus.nea.link": "NEA programme requirements", "focus.edb.link": "EDB programme information", "focus.sgls.link": "SGLS application pathway"});
+Object.assign(translations.zh,{"standards.logo.nea": "碳定价法排放报告与核查要求。", "standards.logo.edb": "资源效率资助项目的证据与背书要求。", "focus.sgls.copy": "由 SEC 管理的产品绿色标签认证。", "focus.nea.link": "NEA 项目要求", "focus.edb.link": "EDB 项目信息", "focus.sgls.link": "SGLS 申请路径"});
 renderLanguage(localStorage.getItem(languageStorageKey) || "en");

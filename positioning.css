@@ -77,3 +77,51 @@
 @media (max-width: 760px) {
   .focus-framework-group .focus-local-grid { grid-template-columns: 1fr; }
 }
+/* A single card structure at every width, overriding legacy mobile side layouts. */
+.focus-framework-group .focus-local-grid { grid-auto-rows: 1fr; }
+.focus-framework-group .focus-local-grid > article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 76px auto minmax(42px, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+  align-content: stretch;
+  padding: 20px;
+}
+.focus-framework-group .focus-local-grid > article > * {
+  grid-column: 1;
+  grid-row: auto;
+  margin: 0;
+  min-width: 0;
+}
+.focus-framework-group .focus-local-grid > article > img.standard-logo {
+  align-self: center;
+  justify-self: start;
+  width: auto;
+  height: 64px;
+  max-width: 176px;
+  max-height: 64px;
+  object-fit: contain;
+  object-position: left center;
+}
+.focus-framework-group .focus-local-grid > article > strong {
+  min-height: 21px;
+  line-height: 1.3;
+}
+.focus-framework-group .focus-local-grid > article > em {
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: normal;
+}
+.focus-framework-group .focus-local-grid > article > a {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  align-self: end;
+  min-height: 44px;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
