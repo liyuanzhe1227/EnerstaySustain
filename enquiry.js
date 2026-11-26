@@ -3,8 +3,8 @@ const enquiryOptions = {
   ['Organisational GHG verification','组织温室气体核查'],
   ['Product carbon footprint verification','产品碳足迹核查'],
   ['Management-system or supplier audit / assessment','管理体系或供应商审核／评价'],
-  ['ESG assurance or assurance-readiness support','ESG 鉴证或鉴证准备支持'],
-  ['Industrial MRV or grant support','工业 MRV 或资助项目支持'],
+  ['ESG assurance or assurance-readiness support','ESG 保证或保证准备支持'],
+  ['MRV, traceability or grant support','MRV、追溯性或资助支持'],
   ['Training','培训'],
   ['Other service','其他服务']
  ],
