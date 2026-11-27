@@ -3,3 +3,6 @@
 .research-source-note a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; color: var(--ink); text-underline-offset: 4px; }
 .research-catalog .research-paper-card h3 { font-size: clamp(18px, 1.7vw, 22px); line-height: 1.3; overflow-wrap: anywhere; text-wrap: pretty; }
 .research-catalog .research-paper-card .paper-meta { align-items: flex-start; line-height: 1.5; }
+/* Keep journal metadata on two readable rows and align every paper title. */
+.research-catalog .research-paper-card .paper-meta { min-height: 70px; align-content: start; }
+.research-catalog .research-paper-card .paper-meta strong { flex-basis: 100%; }
